@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en"><!--<![endif]-->
+ 	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Max-Logistic</title>
+		<!-- fonts files -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="fonts/fonts.css">
+		
+		<!-- CSS files -->
+
+	    <!-- Bootstrap css -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <!-- UIkit CSS -->
+	    <link rel="stylesheet" href="css/uikit.min.css">
+
+	    <!-- Theme -->
+        <link rel="stylesheet" href="css/reset.css">
+
+	    <!-- Custom css -->
+	    <link rel="stylesheet" href="style.css">
+
+
+	</head>
+  	<body>
+    <!-- Start Header Area -->
+		<header class="header_area">
+			<div class="header_logo_area">
+				<div class="container">
+					<div class="row">
+						<div class="header_logo clearfix">
+							<div class="col-md-5 col-sm-3">
+								<div class="site_logo">
+									<a href="/"><img src="images/site-logo-one.png" alt="site logo"></a>
+								</div>
+							</div>
+							<div class="col-md-7 col-sm-9">
+								<div class="row">
+									<div class="header_top_service clearfix">
+										<div class="col-md-4 col-sm-4">
+											<div class="header_we_are clearfix">
+												
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="header_we_are clearfix">
+												<dl>
+													<dt>Call Us On</dt>
+													<dd><a href="tel:+61-(123)-456-789">+61 (123) 456 789</a></dd>
+												</dl>
+												<i><img src="images/call-us-on.png" alt=""></i>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="header_we_are clearfix">
+												<dl>
+													<dt>We Are Open</dt>
+													<dd>9.00 AM  -  6.00 Pm</dd>
+												</dl>
+												<i><img src="images/we-are-open.png" alt=""></i>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header_bottom_area">
+				<div class="container">
+					<div class="row">
+						<div class="main_menu">
+				            <nav class="navbar navbar-default">
+				                <!-- Brand and toggle get grouped for better mobile display -->
+				                <div class="navbar-header">
+				                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				                    <span class="sr-only">Toggle navigation</span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                    <span class="icon-bar"></span>
+				                  </button>
+				                  <!-- <a class="navbar-brand" href="#"><img src="img/logo-seven.png" alt=""></a> -->
+				                </div>
+
+				                <!-- Collect the nav links, forms, and other content for toggling -->
+				                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+									<ul class="nav navbar-nav">
+									  <li>
+										  <a href="/index.html#aboutus">Giới thiệu</a>
+									  </li>
+									  <li><a href="/index.html#services">Dịch vụ</a></li>
+									  <li role="presentation" class="dropdown">
+										  <a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+											Tiện ích
+										  </a>
+										  <ul id="menu1" class="dropdown-menu" role="menu">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="container-size.html">Kích thước container</a></li>
+											<li class="dropdown-button" role="presentation"><a role="menuitem" tabindex="-1">Incoterms</a>
+												  <div class="dropdown-content">
+													<a href="incoterms-2000.html">Incoterms 2000</a>
+													<a href="incoterms-2010.html">Incoterms 2010</a>
+													<a href="incoterms-2020.html">Incoterms 2020</a>
+												  </div>
+											</li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="convert-unit.html">Chuyển đổi đơn vị</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="list-port.html">Cảng biển, sân bay chính</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="dictionary.html">Từ điển hàng hải</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="exchange.html">Tỷ giá ngoại tệ</a></li>
+											
+										  </ul>
+									  </li>
+									  <li><a href="/index.html#career">Tuyển dụng</a></li>
+									  <li><a href="/index.html#contactus">Liên hệ</a></li>
+									  <li role="presentation" class="dropdown">
+										  <a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+											Ngôn ngữ
+										  </a>
+										  <ul id="menu2" class="dropdown-menu" role="menu">
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tiếng Việt</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tiếng Anh</a></li>
+										  </ul>
+									  </li>
+									</ul>
+								  </div>
+				            </nav>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- End Header Area -->
+		
+		<section class="incoterms-2000">
+			<div class="container">
+				<div class="row section-padding">
+					<div class="col-md-12">
+						<div class="all_blog_posts">
+							<div class="section_title nice_title left">
+								<h4>INCOTERMS 2020
+								</h4>
+							</div>
+							<div class="content">
+								<p><span>Incoterms 2020</span> mới đây đã được ICC (International Chamber of Commerce) công bố. Incoterms có rất nhiều phiên bản khác nhau, mỗi phiên bản ứng với một thời điểm nhất định của sự phát triển của nền kinh tế thế giới và có tính kế thừa của các phiên bản trước. Incoterms không mang tính bắt buộc phải sử dụng, nhưng khi đã sử dụng thì các bên phải tuân thủ và chịu mọi rủi ro, chi phí và trách nhiệm theo điều kiện đã được thống nhất. Bạn cần hiểu rằng, việc Incoterms 2020 ra đời không có nghĩa là thay thế Incoterms 2010 hay các phiên bản Incoterms trước đó. Doanh nghiệp nên lựa chọn điều kiện Incoterms phù hợp với hợp đồng mua bán của bên xuất khẩu và nhập khẩu.
+								</p>
+								<p>
+									Vì nội dung Incoterms 2020 khá dài, vì vậy chúng tôi xin tóm tắt lại nội dung chính các điều khoản Incoterms 2020 để bạn tiện theo dõi.
+								</p>
+								<img src="/images/2020-1.jpg">
+								<span>EXW | Ex Works – Giao hàng tại xưởng
+								</span></br>
+								<p>Nếu bên bán muốn xuất khẩu nhưng không đủ khả năng làm bất cứ việc gì liên quan đến lô hàng như: thủ tục hải quan, vận tải, mua bảo hiểm… do thiếu kinh nghiệm xuất khẩu thì nên đề nghị ký hợp đồng theo điều kiện EXW. Với điều kiện này bên bán chỉ cần đặt hàng tại nhà xưởng của mình, bên mua sẽ trả tiền hàng (giá trị Invoice) và cho người đến mang hàng đi.
+
+								</p>
+								<p>1.EXW nghĩa là người bán giao hàng cho người mua khi hàng hóa được đặt dưới quyền định đoạt của người mua tại một địa điểm chỉ định (nhà máy hoặc nhà kho), và địa điểm chỉ định có thể là cơ sở của người bán hoặc không.</p>
+								<p>
+									2.Để giao hàng, người bán không cần bốc xếp hàng lên phương tiện, cũng không cần làm thủ tục hải quan xuất khẩu.
+								</p>	
+								<p>
+									3.Việc giao hàng xảy ra – rủi ro được chuyển giao – khi hàng hóa được đặt dưới quyền định đoạt của người mua (chưa xếp lên phương tiện).
+								</p>
+								<p>
+									4.EXW là điều kiện Incoterms quy định trách nhiệm tối thiểu của người bán.
+								</p>
+								<p>
+									5.EXW được sử dụng với mọi phương thức vận tải.
+								</p>
+								<p>
+									6.Delivery point = Named place: Địa điểm giao hàng cũng chính là địa điểm chỉ định.
+								</p>
+								<span>FCA | Free Carrier – Giao cho người chuyên chở</span></br>
+								<p>
+									Nếu bên bán có khả năng làm thủ tục hải quan xuất khẩu, để thuận tiện bên bán nên nhận làm việc này (tự chịu chi phí phát sinh là thuế xuất khẩu) và đề nghị ký hợp đồng theo điều kiện FCA. Bên bán thường dự tính trước tiền thuế xuất khẩu phải nộp và tính vào tiền hàng phải thu bên mua.
+								</p>
+								<span>Nội dung chính:</span></br>
+								<p>
+									1.FCA có nghĩa là người bán giao hàng cho người mua một trong hai cách sau:
+								</p>
+								<p>
+									Khi địa điểm chỉ định là cơ sở của người bán, hàng được giao khi chúng được bốc lên phương tiện vận tải do người mua sắp xếp hoặc
+								</p>
+								<p>
+									Khi địa điểm chỉ định là nơi khác, hàng được giao khi hoàn thành việc bốc xếp lên phương tiện vận tải của người bán và tới địa điểm khác được chỉ định và sẵn sàng để dỡ xuống khỏi phương tiện vận tải của người bán và đặt dưới quyền định đoạt của người vận tải hoặc người khác do người mua chỉ định.
+								</p>
+								<p>
+									2.Bất cứ địa điểm nào trong hai địa điểm trên được chỉ định để giao hàng, địa điểm đó xác định nơi chi phí và rủi ro được chuyển giao cho người mua.
+								</p>
+								<p>
+									3.FCA yêu cầu người bán thực hiện thủ tục hải quan xuất khẩu.
+								</p>
+								<p>
+									4.B/L ghi chú “on board” trong hợp đồng sử dụng FCA – Để thực hiện tính khả thi của điều kiện FCA đối với những người bán cần một B/L có ghi chú “on board”, FCA của Incoterms 2020 lần đầu tiên quy định nếu hai bên đã thỏa thuận trong hợp đồng, người mua phải chỉ định người vận tải phát hành B/L ghi chú “on board” cho người bán.
+
+								</p>
+								<p>
+									5.FCA được sử dụng với mọi phương thức vận tải.
+								</p>
+								<p>
+									6.Delivery point = Named place: Địa điểm giao hàng cũng chính là địa điểm chỉ định. 
+								</p>
+
+								<span>CPT | Carriage Paid To – Cước phí trả tới</span></br>
+<p>Nếu bên mua muốn nhận hàng như điều kiện FCA nhưng lại không có khả năng thực hiện vận tải hàng thì có thể đàm phán ký hợp đồng theo điều kiện CPT. Bên bán thường dự tính trước các chi phí vận tải phát sinh và tính vào tiền hàng phải thu bên mua.
+
+</p>
+								<span>Nội dung chính:
+								</span></br>
+								<p>1.CPT có nghĩa là người bán giao hàng cho người mua – và chuyển giao rủi ro về hàng hóa cho người mua khi:</p>
+								<p>Hàng được giao cho người chuyên chở được thuê bởi người bán hoặc</p>
+<p>Người bán mua lô hàng được giao như vậy để giao hàng cho người mua.
+
+</p>
+<p>2.Ngay khi hàng được giao cho người mua như vậy, người bán không đảm bảo hàng sẽ tới điểm đến trong tình trạng tốt và đầy đủ. Rủi ro được chuyển giao từ người bán sang người mua khi hàng được giao cho người mua bằng cách giao cho người chuyên chở.
+
+</p>
+<p>3.Người bán phải ký hợp đồng vận tải để đưa hàng từ điểm giao hàng tớ điểm đến được thỏa thuận.</p>
+<p>4.CPT được sử dụng với mọi phương thức vận tải.</p>
+<p>5.Delivery point ≠ Named place: Địa điểm giao hàng khác địa điểm chỉ định.</p>
+
+								<span>CIP | Carriage & Insurance Paid to – Cước phí và bảo hiểm trả tới</span></br>
+								<p>Nếu bên mua muốn nhận hàng như điều kiện CPT nhưng cũng cần thêm việc người bán mua bảo hiểm cho lô hàng thì ký hợp đồng với điều kiện CIP. Bên bán mua bảo hiểm và chịu chi phí bảo hiểm nhưng bên mua chịu rủi ro về mất mát hoặc hư hỏng của lô hàng trong quá trình vận tải.
+
+								</p>
+								<span>Nội dung chính: 
+								</span></br>
+								<p>1.CIP có nghĩa là người bán giao hàng cho người mua – và chuyển giao rủi ro về hàng hóa cho người mua khi:
+								</p>
+								<p>
+									Hàng được giao cho người chuyên chở được thuê bởi người bán hoặc
+
+
+								</p>
+								<p>
+									Người bán mua lô hàng được giao như vậy để giao hàng cho người mua.
+
+
+								</p>
+								<p>
+									2.Ngay khi hàng được giao cho người mua như vậy, người bán không đảm bảo hàng sẽ tới điểm đến trong tình trạng tốt và đầy đủ. Rủi ro được chuyển giao từ người bán sang người mua khi hàng được giao cho người mua bằng cách giao cho người chuyên chở.
+								</p>
+								<p>
+									3.Người bán phải ký hợp đồng vận tải để đưa hàng từ điểm giao hàng tới điểm đến được thỏa thuận.
+								</p>
+								<p>
+									4.Người bán phải mua bảo hiểm cho hàng hóa (bảo hiểm từ điểm giao hàng tới ít nhất là điểm đến).
+								</p>
+								<p>
+									5.CIP được sử dụng với mọi phương thức vận tải.
+								</p>
+								<p>
+									6.Delivery point ≠ Named place: Địa điểm giao hàng khác địa điểm chỉ định.
+								</p>
+
+								<span>FAS | Free Alongside Ship – Giao dọc mạn tàu</span></br>
+								<p>Nếu bên bán có thêm khả năng đưa hàng ra cầu tàu tại cảng xuất khẩu, bên bán nên làm việc này (tự chịu chi phí và rủi ro phát sinh phát sinh, tính trước các chi phí này vào tiền hàng) và ký hợp đồng theo điều kiện FAS.</p>
+								<span>Nội dung chính:</span></br>
+								<p>
+									1.FAS có nghĩa là người bán giao hàng cho người mua khi:
+								</p>
+								<p>
+									Hàng hóa được đặt dọc mạn tàu được chỉ định bởi người mua tại cảng bốc hàng được chỉ định hoặc
+								</p>
+								<p>
+									Người bán mua lô hàng được giao như vậy để giao hàng cho người mua.
+								</p>
+								<p>
+									2.Rủi ro về mất mát hoặc hư hỏng của lô hàng được chuyển giao khi hàng hóa được đặt dọc mạn tàu, và người mua chịu mọi chi phí từ thời điểm đó.
+								</p>
+								<p>
+									3.FAS yêu cầu người bán thực hiện thủ tục hải quan xuất khẩu.
+								</p>
+								<p>
+									4.FAS được sử dụng với phương thức vận tải biển.
+								</p>
+								<p>
+									5.Delivery point = Named place: Địa điểm giao hàng cũng chính là địa điểm chỉ định.
+								</p>
+
+								<span>FOB | Free On Board – Giao hàng trên tàu</span></br>
+								<p>Nếu bên bán có thêm khả năng đưa hàng lên boong tàu an toàn tại cảng xuất khẩu, 
+									bên bán nên làm việc này (tự chịu chi phí và rủi ro phát sinh, tính trước chi phí này vào tiền hàng) và ký hợp đồng theo điều kiện FOB.</p>
+								<span>Nội dung chính:</span></br>
+								<p>1.FOB có nghĩa là người bán giao hàng cho người mua khi:</p>
+								<p>Hàng được đặt trên boong tàu được chỉ định bởi người mua tại cảng bốc hàng được chỉ định hoặc</p>
+								<p>Người bán mua lô hàng được giao như vậy để giao hàng cho người mua.</p>
+								<p>2.Rủi ro về mất mát hoặc hư hỏng của lô hàng được chuyển giao khi hàng hóa được đặt trên boong tàu, và người mua chịu mọi chi phí từ thời điểm đó.</p>
+								<p>3.FOB yêu cầu người bán thực hiện thủ tục hải quan xuất khẩu.</p>
+								<p>4.FOB được sử dụng với phương thức vận tải biển.</p>
+								<p>5.Delivery point = Named place: Địa điểm giao hàng cũng chính là địa điểm chỉ định.</p>
+
+								<span>CFR/ CNF/ C+F/ C&F | Cost and Freight – Tiền hàng và cước phí</span>
+								<p>Nếu bên bán có thêm khả năng thuê tàu, bên bán nên làm việc này (tự chịu chi phí phát sinh để thuê tàu đưa hàng tới cảng nhập khẩu, tính trước chi phí này vào tiền hàng – không chịu rủi ro phát sinh) và ký hợp đồng theo điều kiện CFR.</p>
+								<span>Nội dung chính:</span></br>
+								<p>1.CFR có nghĩa là người bán giao hàng cho người mua khi:</p>
+								<p>Hàng được đặt trên boong tàu hoặc</p>
+								<p>Người bán mua lô hàng được giao như vậy để giao hàng cho người mua.</p>
+								<p>2.Rủi ro về mất mát hoặc hư hỏng của lô hàng được chuyển giao khi hàng hóa được đặt trên boong tàu, tại thời điểm đó người bán hoàn thành nghĩa vụ giao hàng bất kể hàng hóa có đến cảng dỡ trong tình trạng tốt và đầy đủ hay không.</p>
+								<p>3.Với CFR, người bán không chịu trách nhiệm mua bảo hiểm cho hàng hóa do đó người mua tự thực hiện mua bảo hiểm.</p>
+								<p>4.Người bán phải ký hợp đồng vận tải hàng hóa từ nơi giao hàng tới cảng đến được chỉ định.</p>
+								<p>5.CFR được sử dụng với phương thức vận tải biển.</p>
+								<p>6.Delivery point ≠ Named place: Địa điểm giao hàng khác địa điểm chỉ định.</p>
+
+								<span>CIF | Cost, Insurance & Freight – Tiền hàng, bảo hiểm và cước phí</span>
+								<p>Nếu bên bán có thêm khả năng mua bảo hiểm cho lô hàng khi hàng được vận tải trên tàu biển, bên bán nên làm việc này (tự chịu chi phí phát sinh để mua bảo hiểm, tính trước chi phí này vào tiền hàng) và ký hợp đồng theo điều kiện CIF.</p>
+								<span>Nội dung chính:</span></br>
+								<p>1.CIF có nghĩa là người bán giao hàng cho người mua khi:</p>
+								<p>Hàng được đặt trên boong tàu hoặc</p>
+								<p>Người bán mua lô hàng được giao như vậy để giao hàng cho người mua.</p>
+								<p>2.Rủi ro về mất mát hoặc hư hỏng của lô hàng được chuyển giao khi hàng hóa được đặt trên boong tàu, tại thời điểm đó người bán hoàn thành nghĩa vụ giao hàng bất kể hàng hóa có đến cảng dỡ trong tình trạng tốt và đầy đủ hay không.</p>
+								<p>3.Với CIF, người bán chịu trách nhiệm mua bảo hiểm cho hàng hóa.</p>
+								<p>4.Người bán phải ký hợp đồng vận tải hàng hóa từ nơi giao hàng tới cảng đến được chỉ định.</p>
+								<p>5.CIF được sử dụng với phương thức vận tải biển.</p>
+								<p>6.Delivery point ≠ Named place: Địa điểm giao hàng khác địa điểm chỉ định.</p>
+
+								<span>DAP | Delivered At Place – Giao tại địa điểm</span>
+								<p>Nếu bên mua không có khả năng hoặc kinh nghiệm đưa hàng về đến nội địa nhập khẩu của mình, bên bán có thể làm thêm việc này (tính trước chi phí này vào tiền hàng) và ký hợp đồng theo điều kiện DAP.
+								</p>
+								<span>Nội dung chính:</span></br>
+								<p>1.DAP có nghĩa là người bán giao hàng cho người mua – và chuyển giao rủi ro về hàng hóa cho người mua khi hàng được đặt dưới quyền định đoạt của người mua trên phương tiện vận tải chở đến và sẵn sàng để dỡ tại địa điểm đến được chỉ định.</p>
+								<p>2.Người bán chịu mọi rủi ro để đưa hàng tới địa điểm đến được chỉ định. Rủi ro về mất mát hoặc hư hỏng của lô hàng được chuyển giao cho người mua tại điểm giao hàng.</p>
+								<p>3.Mọi chi phí phát sinh trước điểm giao hàng do người bán chịu và mọi chi phí sau điểm giao hàng do người mua chịu.</p>
+								<p>4.Người bán phải ký hợp đồng vận tải để đưa hàng đến địa điểm chỉ định.</p>
+								<p>5.DAP được sử dụng với mọi phương thức vận tải.</p>
+								<p>6.Delivery point = Named place: Địa điểm giao hàng cũng chính là địa điểm chỉ định.</p>
+
+								<span>DPU | Delivery at Place Unloaded – Giao tại địa điểm đã dỡ xuống</span>
+								<p>Nếu bên mua không có khả năng hoặc kinh nghiệm đưa hàng về đến kho nhập khẩu đồng thời cũng không có khả năng hoặc kinh nghiệm dỡ hàng xuống khỏi phương tiện vận tải chở đến, bên bán có thể làm thêm việc này (tính trước chi phí này vào tiền hàng) và ký hợp đồng theo điều kiện DPU.
+								</p>
+								<span>Nội dung chính:</span></br>
+								<p>1.DPU có nghĩa là người bán giao hàng cho người mua – và chuyển giao rủi ro về hàng hóa cho người mua ngay khi hàng hóa được dỡ xuống từ phương tiện vận tải chở đến và đặt dưới quyền định đoạt của người mua tại địa điểm đến được chỉ định.</p>
+								<p>2.Người bán chịu mọi rủi ro về mất mát hoặc hư hỏng của hàng hóa để đưa hàng tới điểm đến được chỉ định và dỡ xuống. DPU là điều kiện Incoterms duy nhất yêu cầu người bán dỡ hàng tại điểm đến (người bán chịu chi phí và rủi ro cho việc dỡ hàng xuống).</p>
+								<p>3.Mọi chi phí phát sinh trước điểm giao hàng do người bán chịu và mọi chi phí sau điểm giao hàng do người mua chịu.</p>
+								<p>4.Người bán phải ký hợp đồng vận tải để đưa hàng đến địa điểm chỉ định.</p>
+								<p>5.DPU được sử dụng với mọi phương thức vận tải.</p>
+								<p>6.Delivery point = Named place: Địa điểm giao hàng cũng chính là địa điểm chỉ định.</p>
+
+								<span>DDP | Delivered Duty Paid – Giao đã trả thuế
+								</span>
+								<p>Nếu bên mua không có khả năng hoặc kinh nghiệm làm thủ tục hải quan nhập khẩu cho lô hàng, bên bán có thể làm thêm việc này (tính trước số tiền thuế nhập khẩu … phải nộp này vào tiền hàng) và ký hợp đồng theo điều kiện DDP.
+								</p>
+								<span>Nội dung chính:</span></br>
+								<p>1.DDP có nghĩa là người bán giao hàng cho người mua khi hàng hóa đã hoàn thành thủ tục hải quan nhập khẩu được đặt dưới quyền định đoạt của người mua trên phương tiện vận tải chở đến và sẵn sàng để dỡ tại điểm đến được chỉ định.</p>
+								<p>2.Người bán chịu mọi rủi ro về mất mát hoặc hư hỏng của hàng hóa để đưa hàng tới điểm đến được chỉ định.</p>
+								<p>3.Mọi chi phí phát sinh trước điểm giao hàng do người bán chịu (bao gồm chi phí làm thủ tục hải quan nhập khẩu) và mọi chi phí sau điểm giao hàng do người mua chịu.</p>
+								<p>4.Người bán phải ký hợp đồng vận tải để đưa hàng đến địa điểm chỉ định.</p>
+								<p>5.DDP được sử dụng với mọi phương thức vận tải.</p>
+								<p>6.Delivery point = Named place: Địa điểm giao hàng cũng chính là địa điểm chỉ định.</p>
+
+								<img src="/images/2020-2.jpg">
+							</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- jQuery Latest version -->
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- UIKIT JS -->
+        <script src="js/uikit.min.js"></script>
+
+        <!-- revolution slider js -->
+        <script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+		<script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- jQuery Counterup -->
+        <script src="js/jquery.counterup.min.js"></script>
+		
+		<!-- jQuery Waypoints -->
+        <script src="js/waypoints.min.js"></script>
+
+        <!-- jQuery owl carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+
+        <!-- jQuery VenoBox -->
+        <script src="js/venobox.min.js"></script>
+
+        <!-- WOW Animation -->
+        <script src="js/wow.js"></script>
+           
+        <!--Activating WOW Animation only for modern browser-->
+        <!--[if !IE]><!-->
+            <script type="text/javascript">new WOW().init();</script>
+        <!--<![endif]-->
+
+        <!--Oh Yes, IE 9+ Supports animation, lets activate for IE 9+-->
+        <!--[if gte IE 9]>
+            <script type="text/javascript">new WOW().init();</script>
+        <![endif]-->		 
+
+        <!--Opacity & Other IE fix for older browser-->
+        <!--[if lte IE 8]>
+            <script type="text/javascript" src="js/ie-opacity-polyfill.js"></script>
+        <![endif]-->	    
+
+        <!-- jQuery main script -->
+        <script src="js/main.js"></script>
+  </body>
+</html>
