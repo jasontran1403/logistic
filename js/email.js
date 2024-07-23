@@ -39,6 +39,12 @@ btnSend.addEventListener("click", () => {
     Subject : `${fullName.value} - ${phoneNumber.value} - ${email.value}`,
     Body : `${message.value}`,
 }).then(
-  message => alert(message)
+  message => {
+    if (message === "OK") {
+        toastr.success("Gửi tin nhắn thành công, chúng tôi sẽ sớm phản hồi cho bạn");
+    } else {
+        toastr.error("Gửi tin nhắn thất bại, xin vui lòng thử lại sau");
+    }
+  }
 );
 });
