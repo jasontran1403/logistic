@@ -96,9 +96,18 @@ html {
 }
 
 .test {
+  min-height: 320px;
+  margin: 10px;
+}
+
+.test2 {
+  min-height: 200px;
+  margin: 10px;
+}
+
+.test1 {
   min-height: 430px;
   margin: 10px;
-  color: white!important;
 }
 
 .main_menu .navbar-default{
@@ -548,6 +557,7 @@ html {
 .transport_features_area {
   background: rgba(0, 0, 0, 0) url("images/transport-features.jpg") no-repeat scroll center center / cover ;
   overflow: hidden;
+  min-height: 950px;
 }
 body#home_two .transport_features_area {
   background: rgba(0, 0, 0, 0) url("images/transport-features-two.jpg") no-repeat scroll center center / cover ;
@@ -610,6 +620,7 @@ body#home_two .transport_features_area {
 
 .all_testimonial_area {
   background: rgba(0, 0, 0, 0) url("images/client-says-bg.jpg") no-repeat scroll center center / cover ;
+  font-size: 16px;
 }
 body#home_two .all_testimonial_area {
   background: rgba(0, 0, 0, 0) url("images/client-says-bg-2.jpg") no-repeat scroll center center / cover ;
@@ -797,13 +808,15 @@ caption {
 ===============================================*/
 
 .side-img {
-  height: 800px;
-  width: 1200px;
+  height: 500px;
 }
 
+.image {
+  height: 100%;
+}
 
 .side-content {
-  height: 600px;
+  height: 500px;
   overflow-x: scroll;
   overflow-y: scroll;
 }
@@ -916,9 +929,7 @@ caption {
 body#about_us .all_testimonial_area {
   background: rgba(0, 0, 0, 0) url("images/about-client-says-bg.jpg") no-repeat scroll center center / cover ;
 }
-.single_weare_best {
-  min-height: 400px;
-}
+
 body#about_us .single_weare_best_at > dl, body#home_two .single_weare_best_at > dl {
   float: right;
   margin-bottom: 0;

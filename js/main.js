@@ -19,23 +19,26 @@
 
 
 	    // Our Clients caro
-	    $('.client-carousel').owlCarousel({
-			loop:true,
-			autoplay:true,
-			margin:30,
-			nav:false,
-			responsive:{
-				0:{
-					items:1
-				},
-				600:{
-					items:3
-				},
-				1000:{
-					items:5
-				}
-			}
-		});
+$('.client-carousel').owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000, // Time between slides (5 seconds)
+    smartSpeed: 1000, // Transition speed (1 second)
+    margin: 30,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+});
+
 
 
 
@@ -147,4 +150,5 @@
 	});
 	
 })(jQuery);
+
 
