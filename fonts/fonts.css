@@ -1,8 +1,8 @@
-@font-face{font-family:'Oxygen';src:url('Oxygen.eot');src:url('Oxygen.eot') format('embedded-opentype'),
-url('Oxygen.woff2') format('woff2'),
-url('Oxygen.woff') format('woff'),
-url('Oxygen.ttf') format('truetype'),
-url('Oxygen.svg#Oxygen') format('svg');}
+@font-face{font-family:'Montserrat';src:url('Montserrat.eot');src:url('Montserrat.eot') format('embedded-opentype'),
+url('Montserrat.woff2') format('woff2'),
+url('Montserrat.woff') format('woff'),
+url('Montserrat.ttf') format('truetype'),
+url('Montserrat.svg#Montserrat') format('svg');}
 @font-face{font-family:'RobotoMedium';src:url('RobotoMedium.eot');src:url('RobotoMedium.eot') format('embedded-opentype'),
 url('RobotoMedium.woff2') format('woff2'),
 url('RobotoMedium.woff') format('woff'),

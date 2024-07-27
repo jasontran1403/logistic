@@ -13,7 +13,7 @@
 	    <title>Max-Logistic</title>
 		<!-- fonts files -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="fonts/Oxygen.css">
+		<link rel="stylesheet" href="fonts/Montserrat.css">
 		<link rel="stylesheet" href="fonts/RobotoMedium.css">
 		<link rel="stylesheet" href="fonts/RobotoLight.css">
 		<link rel="stylesheet" href="fonts/Lato-Semibold.css">

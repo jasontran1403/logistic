@@ -47,6 +47,8 @@ CSS INDEX
 1.               Start Header CSS
 ===============================================*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -84,9 +86,21 @@ html {
 .header_top {
   margin: 7px 0;
 }
+
+.section-content {
+  width: 90%;
+}
+
 .header_top_area {
   background: #252b3f none repeat scroll 0 0;
 }
+
+.test {
+  min-height: 430px;
+  margin: 10px;
+  color: white!important;
+}
+
 .main_menu .navbar-default{
   background: transparent;
   border: none;
@@ -100,7 +114,6 @@ html {
 .header_top_menu a {
   border-right: 1px solid #fff;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   padding: 0 14px;
   -moz-transition: 0.5s;
@@ -152,7 +165,7 @@ html {
 
 
 .header_logo {
-  margin: 40px 0;
+  margin: 40px 0px 40px 0px;
 }
 .header_we_are > dl {
   float: left;
@@ -169,7 +182,7 @@ html {
 }
 .header_we_are dt {
   color: #666666;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
@@ -193,7 +206,7 @@ html {
 }
 .main_menu .navbar-default .navbar-nav > li > a{
   color: #252b3f;
-  font-family: "RobotoLight";
+  font-family: 'Montserrat', sans-serif;
   padding: 24px 38px;
   text-transform: uppercase;
   display: block;
@@ -218,7 +231,7 @@ html {
 }
 .main_menu .dropdown-menu > li > a{
   border-bottom: 1px solid #e4e4e4;
-  font-family: "RobotoLight";
+  font-family: 'Montserrat', sans-serif;
   padding: 10px 25px;
 }
 .main_menu .dropdown-menu > li:last-child > a{
@@ -230,7 +243,7 @@ html {
 .main_menu .navbar-default .navbar-nav > li:last-child > a{
   background: #1874c1;
   color: #fff;
-  font-family: 'RobotoMedium';
+  font-family: 'Montserrat', sans-serif;
 }
 .main_menu .navbar-default .navbar-nav > li.active:last-child > a{
   background-color: #0060b1;
@@ -383,7 +396,7 @@ html {
 }
 .single_weare_best dt {
   color: #313131;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -427,7 +440,7 @@ html {
   -webkit-appearance: none;
   margin-bottom: 17px;
   height: 43px;
-  font-family: "Open Sans",sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #959595;
@@ -439,7 +452,7 @@ html {
 }
 .get_quote_area .form-group input[type="text"] {
   color: #959595;
-  font-family: "Open Sans",sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   height: 43px;
@@ -457,7 +470,7 @@ html {
 .icon_arrow:after{
   color: #959595;
   content: "";
-  font-family: "FontAwesome";
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 42px;
   position: absolute;
@@ -497,17 +510,27 @@ html {
 .single-counter > h4 {
   color: #222222;
   font-size: 14px;
-  font-family: 'RobotoMedium';
+  font-family: 'Montserrat', sans-serif;
 }
 .single-counter span{
   color: #333333;
   display: block;
-  font-family: "RobotoBold";
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 30px;
   margin-bottom: 22px;
   margin-top: 36px;
+}
+
+.site_logo {
+  height: 100px;
+  width: 100px;
+}
+
+.header_logo_area {
+  height: 150px;
+  overflow: hidden;
 }
 
 /* ============================================
@@ -523,7 +546,7 @@ html {
   color: #fff;
 }
 .transport_features_area {
-  background: rgba(0, 0, 0, 0) url("images/transport-features.jpg") no-repeat scroll 55% center / cover ;
+  background: rgba(0, 0, 0, 0) url("images/transport-features.jpg") no-repeat scroll center center / cover ;
   overflow: hidden;
 }
 body#home_two .transport_features_area {
@@ -605,7 +628,7 @@ body#home_two .all_testimonial_area {
 }
 .testi_studient_txt p{
   color: #fff;
-  font-family: "RobotoLightItalic";
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-style: italic;
   line-height: 32px;
@@ -613,14 +636,14 @@ body#home_two .all_testimonial_area {
 }
 .testi_studient_txt h3{
   color: #fff;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   margin-bottom: 8px;
 }
 .testi_studient_txt span{
   color: #fff;
   display: block;
-  font-family: "OxygenBold";
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   margin-bottom: 15px;
 }
@@ -773,9 +796,20 @@ caption {
 11.         Start Breadcrumd Area
 ===============================================*/
 
+.side-img {
+  height: 800px;
+  width: 1200px;
+}
+
+
+.side-content {
+  height: 600px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
 
 .breadcrumb_main_area{
-  background: url(images/breadcrumb-one.jpg) no-repeat center center / cover #000000;
+  background: url(images/top.png) no-repeat center center / cover #000000;
   position: relative;
 }
 .breadcrumb_bg {
@@ -790,7 +824,7 @@ caption {
 }
 .breadcrumb_bg h6 {
   color: #cfcfcf;
-  font-family: 'Oxygen';
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
 }
 .breadcrumb_main_area .breadcrumb a {
@@ -807,12 +841,11 @@ caption {
 }
 .breadcrumb_main h3 {
   color: #fff;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   line-height: 30px;
   margin: 96px 0 32px;
 }
-
 
 /* ============================================
             End Breadcrumd Area
@@ -883,6 +916,9 @@ caption {
 body#about_us .all_testimonial_area {
   background: rgba(0, 0, 0, 0) url("images/about-client-says-bg.jpg") no-repeat scroll center center / cover ;
 }
+.single_weare_best {
+  min-height: 400px;
+}
 body#about_us .single_weare_best_at > dl, body#home_two .single_weare_best_at > dl {
   float: right;
   margin-bottom: 0;
@@ -892,7 +928,7 @@ body#about_us .single_weare_best_at > dl, body#home_two .single_weare_best_at > 
   color: #fff;
 }
 body#about_us .single_weare_best_at > dl > dt, body#home_two .single_weare_best_at > dl > dt {
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
@@ -1026,7 +1062,7 @@ body#blog_page .breadcrumb_bg h6{
   padding: 0 30px 30px 0;
   color: #313131;
   font-size: 13px;
-  font-family: 'RobotoMedium';
+  font-family: 'Montserrat', sans-serif;
 }
 .single_blog_post .blog_details > a:hover{
   color: #017cc0;
@@ -1100,7 +1136,7 @@ body#blog_page .breadcrumb_bg h6{
   text-transform: none;
   font-size: 12px;
   color: #999;
-  font-family: 'Oxygen';
+  font-family: 'Montserrat', sans-serif;
 }
 .single_widget .recent_posts_wid h6 a:hover{
   color: #0072a5;
@@ -1246,7 +1282,7 @@ body#blog_page .breadcrumb_bg h6{
   margin-bottom: 22px;
 }
 .address_list dt, .address_list dd {
-  font-family: "Oxygen";
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 25px;
@@ -1365,7 +1401,7 @@ body#blog_page .breadcrumb_bg h6{
 .single_footer_widgets .about_us a {
   color: #898989;
   font-size: 13px;
-  font-family: 'RobotoMedium';
+  font-family: 'Montserrat', sans-serif;
 }
 .about_us i {
   display: inline-block;
@@ -1612,7 +1648,7 @@ body#services_page .single_weoffer_best > dl {
   width: 73%;
 }
 body#services_page .single_weoffer_best > dl > dt {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 18px;
@@ -1650,7 +1686,7 @@ body#services_page .single_weoffer_best i {
   border: 1px solid #017cc0;
   border-radius: 80px;
   color: #017cc0;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.9px;
   line-height: 35px;
   padding: 6px 34px;
@@ -1708,7 +1744,7 @@ body#services_page .single_weoffer_best i {
 .all_frequent_queries a {
   color: #313131;
   display: block;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 60px;
 }
@@ -1721,7 +1757,7 @@ body#faq_main_page .section_title{
 .single_why_chose_truck > a {
   color: #999999;
   float: right;
-  font-family: "Lato",sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 39px;
@@ -1826,7 +1862,7 @@ body#faq_main_page .section_title{
 }
 .keep_quick dl dt, .keep_contact dl dt {
   color: #313131;
-  font-family: "Oxygen";
+  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 31px;
@@ -1851,7 +1887,7 @@ body#faq_main_page .section_title{
   background: #0072a5 none repeat scroll 0 0;
   border: medium none;
   color: #fff;
-  font-family: 'RobotoMedium';
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   /*font-weight: 600;*/
   padding: 13px 68px;
@@ -1887,7 +1923,7 @@ body#faq_main_page .section_title{
   border-style: none none solid;
   border-width: medium medium 3px;
   color: #fff;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   padding: 17px 34px;
@@ -1914,7 +1950,7 @@ body#faq_main_page .section_title{
   border: 0 none;
   color: #fff;
   float: right;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 29px;
@@ -1953,7 +1989,7 @@ body#faq_main_page .section_title{
 }
 .all_parking_trucks .nav.nav-tabs li a {
   color: #6b6b6b;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.9px;
   line-height: 30px;
   padding: 0 20px;
@@ -2015,7 +2051,7 @@ body#faq_main_page .section_title{
   background: #0072a5 none repeat scroll 0 0;
   bottom: 0;
   color: #fff;
-  font-family: "RobotoMedium";
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   left: 0;
   padding: 15px 0;
@@ -2078,13 +2114,13 @@ body#faq_main_page .section_title{
   text-transform: none;
 }
 .why_choose_home_two .section_title h4{
-  font-family: Roboto Medium;
+  font-family: 'Montserrat', sans-serif;
   font-size:24px;
   color:#333333;
   line-height: 30px;
 }
 .why_choose_home_two h4{
-  font-family: Oxygen;
+  font-family: 'Montserrat', sans-serif;
   font-size:14px;
   color:#959595;
 }
@@ -2113,7 +2149,7 @@ body#faq_main_page .section_title{
     color:#313131;
 }
 .single_blog_info p{
-    font-family: Oxygen;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color:#777777;
     line-height: 26px
@@ -2169,7 +2205,7 @@ body#home_two .owl-carousel .owl-item img {
 }
 .client_home_two_txt h3 {
   color: #017cc0;
-  font-family: "Oxygen";
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   padding: 15px 0;
 }

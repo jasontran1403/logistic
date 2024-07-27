@@ -1602,7 +1602,7 @@ to{background-position:-576px;}
 .vbox-content{text-align:center;float:left;width:100%;position:relative;overflow:hidden;}
 .vbox-container img{max-width:100%;height:auto;}
 .vwrap{opacity:1;transition:opacity .25s ease-in-out;-moz-transition:opacity .25s ease-in-out;-webkit-transition:opacity .25s ease-in-out;width:100%;height:100%;float:left;position:relative;margin:0;padding:0;left:0;overflow:hidden;z-index:1;}
-body{font-family:'Oxygen';font-size:14px;color:#313131;overflow-x:hidden;}
+body{font-family:'Montserrat';font-size:14px;color:#313131;overflow-x:hidden;}
 p{color:#313131;font-size:14px;}
 ::-moz-selection{color:#fff;background:#252b3f;}
 ::selection{color:#fff;background:#0c0b09;}
