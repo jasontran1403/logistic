@@ -92,13 +92,15 @@ html {
   padding: 0 0 10px 0;
   margin: 0;
 }
+/* 
 .header_area {
   position: absolute;
   z-index: 9999;
   top: 2%;
   left: 50%;
   transform: translateX(-50%);
-}
+  color: white;
+} */
 
 
 .main_menu .navbar-default{
@@ -352,11 +354,14 @@ html {
   justify-content: end;
 }
 .main_menu .navbar-default .navbar-nav > li > a{
-  color: #ffff;
+  color: #252b3f;
   font-family: 'Montserrat', sans-serif;
-  padding: 20px 38px;
+  padding: 0 38px;
   text-transform: uppercase;
   display: block;
+}
+.main_menu .nav.navbar-nav li:hover > a {
+  background: #f1f5f7;
 }
 .main_menu .nav.navbar-nav li.dropdown > a {
   background: url("images/dropdown_bg.png") no-repeat scroll 90% center;
@@ -690,7 +695,7 @@ html {
   color: #fff;
 }
 .transport_features_area {
-  background: rgba(0, 0, 0, 0) url("images/transport-features.jpg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("images/picture1.png") no-repeat scroll center center / cover ;
   overflow: hidden;
   min-height: 950px;
 }
@@ -754,7 +759,7 @@ body#home_two .transport_features_area {
 ===============================================*/
 
 .all_testimonial_area {
-  background: rgba(0, 0, 0, 0) url("images/client-says-bg.jpg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("images/picture2.png") no-repeat scroll center center / cover ;
   font-size: 16px;
 }
 body#home_two .all_testimonial_area {
