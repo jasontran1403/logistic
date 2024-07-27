@@ -4,7 +4,7 @@ Template Name: Max Logistics
 Author: Hastech
 Author URI: http://hastech.company/
 Version: 1.0
-Description: This Template is created for Logistic supports
+Description: This Template is created for Logistic supports.
     
 -------------------------------------------------------------
     
@@ -92,9 +92,12 @@ html {
   padding: 0 0 10px 0;
   margin: 0;
 }
-
-.header_top_area {
-  background: #252b3f none repeat scroll 0 0;
+.header_area {
+  position: absolute;
+  z-index: 9999;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
@@ -103,7 +106,8 @@ html {
   border: none;
 }
 .header_bottom_area {
-  background: #e9eff2 none repeat scroll 0 0;
+  background: transparent;
+
 }
 .header_top_menu {
   margin: 8px 0;
@@ -348,14 +352,11 @@ html {
   justify-content: end;
 }
 .main_menu .navbar-default .navbar-nav > li > a{
-  color: #252b3f;
+  color: #ffff;
   font-family: 'Montserrat', sans-serif;
-  padding: 24px 38px;
+  padding: 20px 38px;
   text-transform: uppercase;
   display: block;
-}
-.main_menu .nav.navbar-nav li:hover > a {
-  background: #f1f5f7;
 }
 .main_menu .nav.navbar-nav li.dropdown > a {
   background: url("images/dropdown_bg.png") no-repeat scroll 90% center;
