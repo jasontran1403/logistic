@@ -51,6 +51,7 @@ CSS INDEX
 
 html {
   scroll-behavior: smooth;
+  width: 100svw;
 }
 
 			
@@ -174,12 +175,10 @@ html {
 }
 
 .background-hangkhong > * {
-  position: relative; /* Ensures child elements are above the pseudo-element */
   z-index: 1;
 }
 
 .background-haiquan {
-  position: relative;
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
 }
 
@@ -198,12 +197,10 @@ html {
 }
 
 .background-haiquan > * {
-  position: relative; /* Ensures child elements are above the pseudo-element */
   z-index: 1;
 }
 
 .background-noidia {
-  position: relative;
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
 }
 
@@ -222,12 +219,10 @@ html {
 }
 
 .background-noidia > * {
-  position: relative; /* Ensures child elements are above the pseudo-element */
   z-index: 1;
 }
 
 .background-bien {
-  position: relative;
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
 }
 
@@ -246,12 +241,10 @@ html {
 }
 
 .background-bien > * {
-  position: relative; /* Ensures child elements are above the pseudo-element */
   z-index: 1;
 }
 
 .background-quocte {
-  position: relative;
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
 }
 
@@ -270,12 +263,10 @@ html {
 }
 
 .background-quocte > * {
-  position: relative; /* Ensures child elements are above the pseudo-element */
   z-index: 1;
 }
 
 .background-khac {
-  position: relative;
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
 }
 
@@ -294,7 +285,6 @@ html {
 }
 
 .background-khac > * {
-  position: relative; /* Ensures child elements are above the pseudo-element */
   z-index: 1;
 }
 
