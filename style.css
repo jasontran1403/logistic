@@ -2953,7 +2953,19 @@ body#home_two .single-counter {
   width: 100svw;
   padding: 50px 10px 0 40px;
 }
+.section-util {
+  color: red;
+  position: relative;
+  transform: translateX(-12%);
+}
 
+#accordion {
+  width: 93svw;
+}
+
+.transport_features_area {
+  min-height: 400px;
+}
 
 }
 /* ============================================
@@ -2972,6 +2984,10 @@ body#home_two .single-counter {
 
 .side-content {
   min-height: 100svh;
+}
+
+.section-util {
+  margin-left: -100px!important;
 }
 
 .side-img {
