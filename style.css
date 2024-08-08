@@ -83,24 +83,29 @@ html {
         position: relative; /* Position relative to ensure dropdown-content is correctly positioned */
       }
 
+
+
 .header_top {
   margin: 7px 0;
 }
 
 .section-content {
-  width: 99%;
-  padding: 0 0 10px 0;
+  /* width: 99%; */
+  /* padding: 0 0 10px 0; */
+  width: 100svw!important;
   margin: 0;
 }
-/* 
+
+
+
 .header_area {
   position: absolute;
   z-index: 9999;
-  top: 2%;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
-} */
+  position: fixed;
+  width: 100svw;
+}
 
 
 .main_menu .navbar-default{
@@ -108,9 +113,12 @@ html {
   border: none;
 }
 .header_bottom_area {
-  background: transparent;
-
 }
+.header_area.scrolled {
+  background-color: #808080; /* Màu xám */
+  transition: background-color 0.3s ease;
+}
+
 .header_top_menu {
   margin: 8px 0;
 }
@@ -127,45 +135,6 @@ html {
 .header_top_menu a:hover{
   color: #017cc0;
 }
-.header_top_menu ul li:first-child a{
-  padding: 0 16px 0 0;
-  text-transform: uppercase;
-}
-.header_top_menu ul li:last-child a{
-  border-right: none;
-}
-.header_top_social i {
-  color: #959595;
-  display: block;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  width: 40px;
-  font-size: 15px;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.header_top_social a:hover i{
-  color: #fff;
-}
-.header_top_social a:hover i.fa-twitter{
-  background: #55acee;
-}
-.header_top_social a:hover i.fa-facebook{
-  background: #3b5998;
-}
-.header_top_social a:hover i.fa-google-plus{
-  background: #e51c23;
-}
-.header_top_social a:hover i.fa-dribbble{
-  background: #EA4C89;
-}
-.header_top_social a:hover i.fa-linkedin{
-  background: #007BB6;
-}
-
 
 .header_logo {
   margin: 40px 0px 40px 0px;
@@ -354,23 +323,28 @@ html {
   justify-content: end;
 }
 .main_menu .navbar-default .navbar-nav > li > a{
-  color: #252b3f;
+  color: white;
   font-family: 'Montserrat', sans-serif;
-  padding: 0 38px;
+  margin: 35px 20px;
   text-transform: uppercase;
   display: block;
 }
 .main_menu .nav.navbar-nav li:hover > a {
   background: #f1f5f7;
+  color: black;
 }
 .main_menu .nav.navbar-nav li.dropdown > a {
   background: url("images/dropdown_bg.png") no-repeat scroll 90% center;
+  padding-right: 30px; /* Thêm khoảng cách giữa text và background image */
 }
 .main_menu .nav.navbar-nav li.dropdown:hover > a {
   background: #f1f5f7 url("images/dropdown_bg.png") no-repeat scroll 90% center;
+  padding-right: 30px; /* Thêm khoảng cách giữa text và background image */
 }
+
 .main_menu .navbar-nav > li > .dropdown-menu{
-  top: 99%;
+  top: 42%;
+  left: 84%;
   min-width: 200px;
   background-color: #f1f5f7;
   text-transform: uppercase;
@@ -425,6 +399,8 @@ html {
 
 .main_slider_area {
   position: relative;
+  max-height: 100svh!important;
+  max-width: 100svw!important;
 }
 
 /* ============================================
@@ -575,7 +551,7 @@ html {
 .get_quote_area {
   background: rgba(0, 0, 0, 0) url("images/get-a-quote.jpg") no-repeat scroll 67% center / cover ;
   color: #fff;
-  padding: 90px 0;
+  padding: 40px 0;
 }
 .get_quote_area .section_title > h4 {
   color: #fff;
@@ -948,7 +924,7 @@ caption {
 ===============================================*/
 
 .side-img {
-  height: 500px;
+  height: 600px;
 }
 
 .image {
@@ -1399,7 +1375,7 @@ body#blog_page .breadcrumb_bg h6{
 
 
 .footer_area {
-  border-top: 4px solid #dcdcdc;
+  /* border-top: 4px solid #dcdcdc; */
 }
 .footer_top_area {
   background: url(images/footer-top.jpg) no-repeat center center /cover;
@@ -2252,6 +2228,11 @@ body#faq_main_page .section_title{
 .main_two_slider_area h1, .main_two_slider_area p{
   color: #fff;
 }
+.details {
+  color: white;
+  padding: 0 30px 0px 30px;
+  text-align: center;
+}
 .main_two_slider_area h1{
   font-weight: 400;
   text-transform: none;
@@ -2637,6 +2618,11 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
 .container{
   width: 970px;
 }
+
+.side-img {
+  display: none;
+}
+
 .header_we_are > dl {
   width: 67%;
 }
@@ -2720,6 +2706,10 @@ body#home_two .transport_features .section-content ul li img {
   width:750px;
 }
 
+.side-img {
+  display: none;
+}
+
 .header_we_are i {
   width: 22%;
 }
@@ -2797,6 +2787,10 @@ body#services_page .get_quote_area{
 @media only screen and (max-width: 767px) {
 .header_logo_area {
   display: none;
+}
+
+.why-us{
+  width: 100svw!important;
 }
 
 .main_menu .navbar-default .navbar-nav {
@@ -2950,6 +2944,16 @@ body#home_two .single-counter {
   margin-bottom: 30px;
 }
 
+.side-img {
+  display: none;
+}
+
+.side-content {
+  height: 100svh;
+  width: 100svw;
+  padding: 50px 10px 0 40px;
+}
+
 
 }
 /* ============================================
@@ -2966,6 +2970,13 @@ body#home_two .single-counter {
   width:450px;
 }
 
+.side-content {
+  min-height: 100svh;
+}
+
+.side-img {
+  display: none;
+}
 
 }
 /* ============================================

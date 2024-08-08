@@ -152,3 +152,11 @@ $('.client-carousel').owlCarousel({
 })(jQuery);
 
 
+
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 0) {
+	  $('.header_area').addClass('scrolled');
+	} else {
+	  $('.header_area').removeClass('scrolled');
+	}
+  });
