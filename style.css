@@ -113,8 +113,7 @@ html {
   background: transparent;
   border: none;
 }
-.header_bottom_area {
-}
+
 .header_area.scrolled {
   background-color: #808080; /* Màu xám */
   transition: background-color 0.3s ease;
@@ -154,10 +153,10 @@ html {
   display: inline-block;
 }
 
-
 .background-hangkhong {
-  position: relative;
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
+  min-height: 380px;
+  padding: 20px 20px 20px 20px;
 }
 
 .background-hangkhong::before {
@@ -180,6 +179,8 @@ html {
 
 .background-haiquan {
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
+  min-height: 380px;
+  padding: 20px 20px 20px 20px;
 }
 
 .background-haiquan::before {
@@ -202,6 +203,8 @@ html {
 
 .background-noidia {
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
+  min-height: 380px;
+  padding: 20px 20px 20px 20px;
 }
 
 .background-noidia::before {
@@ -224,6 +227,10 @@ html {
 
 .background-bien {
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
+  min-height: 380px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .background-bien::before {
@@ -246,6 +253,8 @@ html {
 
 .background-quocte {
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
+  min-height: 380px;
+  padding: 20px 20px 20px 20px;
 }
 
 .background-quocte::before {
@@ -268,6 +277,8 @@ html {
 
 .background-khac {
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
+  min-height: 380px;
+  padding: 20px 20px 20px 20px;
 }
 
 .background-khac::before {
@@ -2777,6 +2788,10 @@ body#services_page .get_quote_area{
 @media only screen and (max-width: 767px) {
 .header_logo_area {
   display: none;
+}
+
+.main_menu .navbar-default .navbar-nav {
+  display: block;
 }
 
 .why-us{
