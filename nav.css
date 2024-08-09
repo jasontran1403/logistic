@@ -18,6 +18,36 @@ header .logo-2 {
   display: none;
 }
 
+.language {
+  margin: 8px 16px 0 16px;
+}
+
+.main-header .language > a {
+  margin: 20px 0 0 0;
+}
+
+.lang {
+padding: 0 !important;
+margin:0 2px !important;
+display:inline-block !important;
+width:16px !important;
+height:16px !important;
+background:url(images/lang.png) no-repeat 0 center;
+position:relative;
+cursor:pointer;
+vertical-align:middle
+}
+
+.lang.ivn{background-position:0 center !important;}
+.lang.ien{background-position:-16px center !important;}
+.lang.ifr{background-position:-32px center !important;}
+.lang.icn{background-position:-48px center !important;}
+.lang.ijp{background-position:-64px center !important;}
+.lang.ikr{background-position:-80px center !important;}
+.lang.ith{background-position:-96px center !important;}
+.lang.iit{background-position:-112px center !important;}
+.lang.ide{background-position:-128px center !important;}
+
 header.clone {
   width: 100%;
   position: fixed;
@@ -357,6 +387,7 @@ header.clone #mainmenu a {
   header.clone #logo .logo-2 {
     display: inline-block !important;
   }
+
 
   header.clone #logo img {
     max-height: 60px;

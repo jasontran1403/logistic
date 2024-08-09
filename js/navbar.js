@@ -3,7 +3,38 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 jQuery(document).ready(function () {
 	'use strict'; // use strict mode
-
+	$(document).ready(function() {
+		// Lấy đường dẫn hiện tại
+		const path = window.location.href;
+	  
+		// Hàm để cập nhật tham số ngôn ngữ trong URL
+		function updateLanguageInPath(lang) {
+		  const regex = /([?&])lang=[^&]*/;
+		  
+		  if (path.match(regex)) {
+			// Nếu đã có tham số ?lang=, thay thế bằng giá trị mới
+			return path.replace(regex, `$1lang=${lang}`);
+		  } else {
+			// Nếu chưa có ?lang=, thêm nó vào cuối URL
+			const separator = path.includes('?') ? '&' : '?';
+			return `${path}${separator}lang=${lang}`;
+		  }
+		}
+	  
+		// Bắt sự kiện khi nút "Tiếng Việt" được nhấn
+		$('.lang.ivn').on('click', function() {
+		  const newUrl = updateLanguageInPath('vi');
+		  window.location.href = newUrl;
+		});
+	  
+		// Bắt sự kiện khi nút "English" được nhấn
+		$('.lang.ien').on('click', function() {
+		  const newUrl = updateLanguageInPath('en');
+		  window.location.href = newUrl;
+		});
+	  });
+	  
+	  
 	var $header = jQuery("header"),
 		$clone = $header.before($header.clone().addClass("clone"));
 	jQuery(window).on("scroll", function () {
@@ -33,12 +64,7 @@ jQuery(document).ready(function () {
 		$(this).data('iteration', iteration);
 	});
 	//--------------------------------------------------------------
-	var isRatio43 = 4/3;
-	var isRatio34 = 3/4;
-	auto_size( ".news-list .news-item .imgthumb", 0, isRatio34);
-	fix_size(".idx-service .inner",0);
-	//fix_size(".news-list .news-item",0);
-	fix_size(".team-profile .text",0);
+	
 	//--------------------------------------------------------------
 });
 
