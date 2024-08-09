@@ -56,38 +56,42 @@ html {
 
 			
 			/* Style for dropdown-content */
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        left: 100%; /* Position to the right of the parent element */
-        top: 0; /* Align with the top of the parent element */
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%; /* Position to the right of the parent element */
+  top: 0; /* Align with the top of the parent element */
+  background-color: #057d80;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
       
       /* Style for dropdown-content links */
-      .dropdown-content a {
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
       
       /* Show dropdown-content when hovering over the parent element */
-      .dropdown-button:hover .dropdown-content {
-        display: block;
-      }
+.dropdown-button:hover .dropdown-content {
+  display: block;
+}
       
       /* Additional styling for positioning and appearance */
-      .dropdown-button {
-        position: relative; /* Position relative to ensure dropdown-content is correctly positioned */
-      }
+.dropdown-button {
+  position: relative; /* Position relative to ensure dropdown-content is correctly positioned */
+}
 
 
 
 .header_top {
   margin: 7px 0;
+}
+
+#drop2 {
+  padding: 15px 15px 15px 15px;
 }
 
 .section-content {
@@ -97,7 +101,9 @@ html {
   margin: 0;
 }
 
-
+.util-content:hover {
+  color: white;
+}
 
 .header_area {
   position: absolute;
@@ -108,6 +114,15 @@ html {
   width: 100svw;
 }
 
+.navbar-nav li a:hover {
+  background-color: transparent!important;
+  color: #057d80;
+}
+
+.navbar-nav li:hover {
+  background-color: transparent!important;
+  color: #057d80;
+}
 
 .main_menu .navbar-default{
   background: transparent;
@@ -115,7 +130,8 @@ html {
 }
 
 .header_area.scrolled {
-  background-color: #808080; /* Màu xám */
+  background-color: #d5d3d3; /* Màu xám */
+  color: black!important;
   transition: background-color 0.3s ease;
 }
 
@@ -153,6 +169,39 @@ html {
   display: inline-block;
 }
 
+.btn-border-light {
+  display: block;
+  border: solid 3px rgba(255,255,255,.5);
+  color: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+.btn-border-light:hover {
+  background-color: white;
+  color: black!important;
+}
+
+
+.contact-now {
+  background-color:  #057d80;
+  font-size: 16px;
+  padding: 30px 0 30px 0;
+}
+
+.contact-now-section {
+  display: flex;
+  flex-direction: row;
+}
+
 .banner-content-1 {
   z-index: 1!important;
   left: 50% !important;
@@ -160,7 +209,7 @@ html {
   max-width: auto!important;
   max-height: auto!important;
   white-space: nowrap!important;
-  color: #2789c6!important;
+  color: #ffffff!important;
   font-family: 'Montserrat'!important;
   font-size: 20px!important;
   letter-spacing: 1px!important;
@@ -174,7 +223,7 @@ html {
   max-height: auto!important;
   white-space: nowrap!important; 
   color: #fff!important; 
-  font-family: 'Montserrat'!important; 
+  font-family: 'Montserrat'!important;
   font-size: 16px!important; 
   letter-spacing: 1px!important;
 }
@@ -201,6 +250,10 @@ html {
 
 .background-hangkhong > * {
   z-index: 1;
+}
+
+.util-content {
+  color: white;
 }
 
 .background-haiquan {
@@ -350,7 +403,7 @@ html {
   justify-content: end;
 }
 .main_menu .navbar-default .navbar-nav > li > a{
-  color: white;
+  color: rgb(194, 189, 189);
   font-family: 'Montserrat', sans-serif;
   margin: 35px 20px;
   text-transform: uppercase;
@@ -365,15 +418,16 @@ html {
   padding-right: 30px; /* Thêm khoảng cách giữa text và background image */
 }
 .main_menu .nav.navbar-nav li.dropdown:hover > a {
-  background: #f1f5f7 url("images/dropdown_bg.png") no-repeat scroll 90% center;
+  background: transparent url("images/dropdown_bg.png") no-repeat scroll 90% center;
   padding-right: 30px; /* Thêm khoảng cách giữa text và background image */
 }
 
 .main_menu .navbar-nav > li > .dropdown-menu{
   top: 42%;
   left: 84%;
+  color: white;
   min-width: 200px;
-  background-color: #f1f5f7;
+  background-color: #057d80;
   text-transform: uppercase;
 }
 .main_menu .navbar-nav > li > .dropdown-menu li:hover a{
@@ -2646,6 +2700,7 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
   width: 970px;
 }
 
+
 .side-img {
   display: none;
 }
@@ -2816,6 +2871,29 @@ body#services_page .get_quote_area{
   display: none;
 }
 
+.content-center {
+  max-width: 100svh!important;
+}
+
+.side-content {
+  padding: 20px 10px 10px 20px!important;
+}
+
+section {
+  max-width: 100svh;
+  overflow: hidden;
+}
+
+.contact-now-section {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.call-now {
+  margin-top: 20px;
+}
+
 .main_menu .navbar-default .navbar-nav {
   display: block;
 }
@@ -2835,7 +2913,7 @@ body#services_page .get_quote_area{
   margin-bottom: 30px;
 }
 .transport_features_area {
-  background: #1874C1;
+  background: #057d80;
 }
 .transport_features_area .panel-title span {
   height: 40px;
@@ -2975,6 +3053,8 @@ body#home_two .single-counter {
   margin-bottom: 30px;
 }
 
+
+
 .side-img {
   display: none;
 }
@@ -2982,8 +3062,8 @@ body#home_two .single-counter {
 .side-content {
   height: 100svh;
   width: 100svw;
-  padding: 50px 10px 0 40px;
 }
+
 .section-util {
   color: red;
   position: relative;

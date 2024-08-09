@@ -1672,6 +1672,7 @@ h3{font-size:28px;color:#333333;}
 h4{font-size:24px;color:#131e2a;}
 h5{font-size:18px;color:#222222;}
 h6{font-size:15px;color:#222222;}
+
 .section_title.nice_title > h4{color:#333333;line-height:21px;margin-bottom:15px;padding-bottom:30px;position:relative;}
 .section_title.nice_title > h4::after{background:#0072a5 none repeat scroll 0 0;bottom:0;content:"";height:1px;left:calc(50% - 73px);position:absolute;width:20px;}
 .section_title.nice_title > h4::before{background:#dadada none repeat scroll 0 0;bottom:0;content:"";height:1px;left:calc(50% - 48px);position:absolute;width:120px;}

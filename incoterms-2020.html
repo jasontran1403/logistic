@@ -18,7 +18,7 @@
 
 	    <!-- Theme -->
         <link rel="stylesheet" href="css/reset.css">
-
+		<link rel="stylesheet" href="nav.css">
 	    <!-- Custom css -->
 	    <link rel="stylesheet" href="style.css">
 
@@ -28,77 +28,70 @@
 		    	<!-- Start Header Area -->
 				<button onclick="topFunction()" id="myBtn"></button>
 				<!-- Start Header Area -->
-				<header class="header_area">
-				<div class="header_bottom_area">
-					<div class="container">
-						<div class="row">
-							<div class="main_menu">
-								<nav class="navbar navbar-default">
-									<!-- Brand and toggle get grouped for better mobile display -->
-									<div class="c">
-									  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-										<span class="sr-only"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									  </button>
-									  <!-- <a class="navbar-brand" href="#"><img src="img/logo-seven.png" alt=""></a> -->
-									</div>
-		
-									<!-- Collect the nav links, forms, and other content for toggling -->
-									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-										<ul class="nav navbar-nav">
-											<li><a style="padding: 0; margin: 0;" href="/"><img src="images/logo.png" alt="site logo" style="height: 100px; width: 100px;"></a></li>
-											<li>
-												<a href="/index.html#aboutus">Giới thiệu</a>
-											</li>
-											<li><a href="/index.html#services">Dịch vụ</a></li>
-											<li role="presentation" class="dropdown">
-												<a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-												Tiện ích
-												</a>
-												<ul id="menu1" class="dropdown-menu" role="menu">
-												<li role="presentation"><a role="menuitem" tabindex="-1" href="container-size.html">Kích thước container</a></li>
-												<li class="dropdown-button" role="presentation"><a role="menuitem" tabindex="-1">Incoterms</a>
-														<div class="dropdown-content">
-														<a href="incoterms-2000.html">Incoterms 2000</a>
-														<a href="incoterms-2010.html">Incoterms 2010</a>
-														<a href="incoterms-2020.html">Incoterms 2020</a>
-														</div>
-												</li>
-												<li role="presentation"><a role="menuitem" tabindex="-1" href="convert-unit.html">Chuyển đổi đơn vị</a></li>
-												<li role="presentation"><a role="menuitem" tabindex="-1" href="list-port.html">Cảng biển, sân bay chính</a></li>
-												<li role="presentation"><a role="menuitem" tabindex="-1" href="dictionary.html">Từ điển hàng hải</a></li>
-												<li role="presentation"><a role="menuitem" tabindex="-1" href="exchange.html">Tỷ giá ngoại tệ</a></li>
-												
-												</ul>
-											</li>
-											<li><a href="/career.html">Tuyển dụng</a></li>
-											<li><a href="/index.html#contactus">Liên hệ</a></li>
-											<li role="presentation" class="dropdown">
-												<a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
-												Ngôn ngữ
-												</a>
-												<ul id="menu2" class="dropdown-menu" role="menu">
-												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tiếng Việt</a></li>
-												<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Tiếng Anh</a></li>
-												</ul>
-											</li>
-										</ul>
-									</div>
-								</nav>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-			<!-- End Header Area -->
+		<header>
+            <div class="container">
+                <span id="menu-btn"></span>
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- logo begin -->
+                        <div id="logo">
+                            <div class="inner">
+                                <a href="/" title="Trang chủ">
+                                    <img src="/images/logo.png" alt="" class="logo-1">
+                                    <img src="/images/logo.png" alt="" class="logo-2">
+                                </a>
+
+                            </div>
+                        </div>
+                        <!-- logo close -->
+                    </div>
+
+                    <div class="col-md-9">
+                        <!-- mainmenu begin -->
+                        <nav id="mainmenu-container">
+                            <ul id="mainmenu">
+								<li><a href="/index.html#aboutus" title="Giới thiệu">Giới thiệu</a></li>
+								<li><a href="/index.html#services" title="Dịch vụ">Dịch vụ</a></li>
+                                <li><a href="javascript:void(0);" title="Tiện ích">Tiện ích</a>
+                                    <ul>
+										<li><a href="/container-size.html" title="Kích thước container">Kích thước container</a></li>
+										<li><a href="javascript:void(0);" title="Incoterms">Incoterms</a>
+											<ul id="sub">
+												<li><a href="/incoterms-2000.html" title="Incoterms 2000">Incoterms 2000</a></li>
+												<li><a href="/incoterms-2010.html" title="Incoterms 2010">Incoterms 2010</a></li>
+												<li><a href="/incoterms-2020.html" title="Incoterms 2020">Incoterms 2020</a></li>
+											</ul>
+										</li>
+										<li><a href="/convert-unit.html" title="Chuyển đổi đơn vị">Chuyển đổi đơn vị</a></li>
+										<li><a href="/list-port.html" title="Cảng biển, sân bay chính">Cảng biển, sân bay chính</a></li>
+										<li><a href="/dictionary.html" title="Từ điền hàng hải">Từ điền hàng hải</a></li>
+										<li><a href="/exchange.html" title="Tỷ giá ngoại tệ">Tỷ giá ngoại tệ</a></li>
+									</ul>
+                                </li>
+                                
+								<li><a href="/index.html#news" title="Tin tức">Tin tức</a></li>
+                                <li><a href="/index.html#contactus" title="Liên hệ">Liên hệ</a></li>
+								<li><a href="/career.html" title="Tuyển dụng">Tuyển dụng</a></li>
+				                <li>
+									<div class="language">
+										<a class="lang ivn" href="/trang-chu.html" title="Tiếng Việt"></a>
+										<a class="lang ien" href="/home-en.html" title="English"></a>
+									</div><!-- .langauge -->
+				                </li>
+                            </ul>
+                        </nav>
+                        <!-- mainmenu close -->
+                    </div>
+                </div>
+            </div>
+        </header>
+		<!-- End Header Area -->
 
 		<!-- start breadcrumb -->
         <section class="breadcrumb_main_area">
             <!-- <div class="container-fluid"> -->
             <div class="row">
-                <div class="breadcrumb_main nice_title content-center"  style="padding-top: 200px;">
+                <div class="breadcrumb_main nice_title content-center" style="padding-top: 200px; max-width: 50svw; margin: 0 auto 50px auto;">
                     <h3>INCOTERMS 2020</h3>
                     <img src="images/breadcrumb-nice-title-one.png" alt="">
 					<p class="details">
@@ -113,7 +106,7 @@
 		<section class="incoterms-2000">
 			<div class="container section-content" style="width: 100%; padding: 0;">
 				<div class="row">
-					<div class="col-md-7 side-content" style="padding: 50px 30px 50px 30px;">
+					<div class="col-md-7 side-content" style="padding: 50px 100px 50px 100px;">
 						<div class="all_blog_posts">
 							<!-- <div class="section_title nice_title left">
 								<h4>
@@ -331,63 +324,25 @@
 						</div>
 					</div>
 					<div class="col-md-5 side-img" style="padding: 0; margin: 0;">
-						<img class="col-md-12 image" src="images/side.png" alt="">
+						<img class="col-md-12 image" src="images/inconterm.jpg" alt="">
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Start Get A Quote Area -->
-		<section class="get_quote_area content-left" id="contactus">
+		<div class="contact-now text-light">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="section_title nice_title_white_left">
-							<h4>Liên hệ với chúng tôi</h4>
-							<p>
-								Để chúng tôi có thể liên hệ với quý anh chị trong thời gian sớm nhất, xin vui lòng điền thông tin vào ô trống.
-							</p>
-						</div>
+				<div class="row contact-now-section">
+					<div class="col-6">
+						<h2 style="color: white; font-size: 18px;">Liên hệ với chúng tôi ngay bây giờ để nhận được báo giá cho tất cả các nhu cầu vận chuyển toàn cầu của bạn.</h2>
 					</div>
-				</div>
-				<div class="row">
-					<div class="section_content">
-						<div class="col-md-7">
-							<div class="row">
-								<div class="form-group col-md-6 col-sm-6">
-									<div class="input-group">
-										<input id="fullName" type="text" placeholder="Họ và Tên">
-									</div>
-								</div>
-								
-								<div class="form-group col-md-6 col-sm-6">
-									<div class="input-group">
-										<input id="companyName" type="text" placeholder="Tên doanh nghiệp ">
-									</div>
-								</div>
-								<div class="form-group col-md-6 col-sm-6">
-									<div class="input-group">
-										<input id="email" type="text" placeholder="Địa chỉ email">
-									</div>
-								</div>
-								<div class="form-group col-md-6 col-sm-6">
-									<div class="input-group">
-										<input id="phoneNumber" type="text" placeholder="Số điện thoại">
-									</div>
-								</div>
-								<div class="form-group col-md-12 col-sm-12">
-									<textarea id="message" cols="30" rows="10" placeholder="Nội dung lời nhắn đến chúng tôi"></textarea>
-								</div>
-								<div class="form-group submit col-md-3 col-sm-3">
-									<button id="send" class="btn">Gửi</button>
-								</div>
-							</div>
-						</div>
+	
+					<div class="col-6 call-now">
+						<a style="color: white;" href="/index.html#contactus" title="Liên hệ ngay" class="btn-border-light">Liên Hệ Ngay</a>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End Get A Quote Area -->
+		</div>
 
 		<!-- Start Footer -->
 		<footer class="footer_area">
@@ -537,5 +492,6 @@
 
         <!-- jQuery main script -->
         <script src="js/main.js"></script>
+		<script src="js/navbar.js"></script>
   </body>
 </html>
