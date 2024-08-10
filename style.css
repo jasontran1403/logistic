@@ -211,7 +211,6 @@ html {
   white-space: nowrap!important;
   color: #ffffff!important;
   font-family: 'Montserrat'!important;
-  font-size: 20px!important;
   letter-spacing: 1px!important;
 }
 
@@ -224,8 +223,23 @@ html {
   white-space: nowrap!important; 
   color: #fff!important; 
   font-family: 'Montserrat'!important;
-  font-size: 16px!important; 
   letter-spacing: 1px!important;
+}
+
+
+.banner-content-text-1 {
+  color: #ffffff!important;
+  font-family: 'Montserrat'!important;
+  text-align: center;
+  font-size: 36px!important;
+}
+
+.banner-content-text-2 {
+  color: #fff!important; 
+  letter-spacing: 1px!important;
+  font-family: 'Montserrat'!important;
+  text-align: center;
+  font-size: 16px!important;
 }
 
 .background-hangkhong {
@@ -2869,6 +2883,52 @@ body#services_page .get_quote_area{
 @media only screen and (max-width: 767px) {
 .header_logo_area {
   display: none;
+}
+
+.banner-content-1 {
+  z-index: 1!important;
+  left: 50% !important;
+  top: 40% !important;
+  transform: translateX(-50%)!important;
+  max-width: 400px!important;
+  white-space: nowrap!important;
+  color: #ffffff!important;
+  font-family: 'Montserrat'!important;
+  font-size: 18px!important;
+  letter-spacing: 1px!important;
+}
+
+.banner-content-2 {
+  z-index: 2!important;
+  left: 30% !important;
+  transform: translateX(-30%)!important;
+  min-width: 400px!important;
+  white-space: wrap!important; 
+  color: #fff!important; 
+  font-family: 'Montserrat'!important;
+  font-size: 12px!important; 
+  letter-spacing: 1px!important;
+}
+
+.banner-content-text-1 {
+  color: #ffffff!important;
+  font-family: 'Montserrat'!important;
+  font-size: 18px!important;
+  text-align: center;
+  width: 300px!important;
+  text-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.banner-content-text-2 {
+  font-size: 12px!important;
+  color: #fff!important; 
+  letter-spacing: 1px!important;
+  font-family: 'Montserrat'!important;
+  text-align: center;
+  padding-left: 30px!important;
+  padding-right: 30px!important;
+  margin-top: 20px!important;
 }
 
 .content-center {
