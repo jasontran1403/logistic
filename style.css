@@ -46,7 +46,7 @@ CSS INDEX
 /* ============================================
 1.               Start Header CSS
 ===============================================*/
-
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 html {
@@ -263,6 +263,7 @@ html {
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
   min-height: 380px;
   padding: 20px 20px 20px 20px;
+  width: 500px;
   background-image: url(images/vc_hangkhong.jpg);
 }
 
@@ -271,8 +272,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  
   
   background-size: cover;
   background-position: center;
