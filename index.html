@@ -1,861 +1,1366 @@
 <!DOCTYPE html>
-<html lang="en"><!--<![endif]-->
- 	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <title>Max-Logistic</title>
-		
-		<!-- fonts files -->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<html lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Max-Logistic</title>
 
-		<link rel="stylesheet" href="fonts/fonts.css">
-		<!-- CSS files -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	    <!-- Bootstrap css -->
-	    <link rel="stylesheet" href="css/bootstrap.min.css">
-	    <!-- UIkit CSS -->
+    <!-- fonts files -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-	    <!-- Owl carousel 2 css -->
-	    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <!-- CSS files -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- UIkit CSS -->
 
-	    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
-	    <link rel="stylesheet" type="text/css" href="js/rs-plugin/css/extralayers.css" media="screen" />	
-		<link rel="stylesheet" type="text/css" href="js/rs-plugin/css/settings.css" media="screen" />
+    <!-- Owl carousel 2 css -->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
 
-	    <!-- Theme -->
-        <link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="nav.css">
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/rs-plugin/css/extralayers.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/rs-plugin/css/settings.css"
+      media="screen"
+    />
 
-	    <!-- Custom css -->
-	    <link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <!-- Theme -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="loading.css" />
 
-	    <!-- Favicons -->
-	    <link rel="apple-touch-icon-precomposed" href="images/logo.png">
-	    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
-	</head>
-  	<body id="home_one">
-		<button onclick="topFunction()" id="myBtn"></button>
-		<!-- Start Header Area -->
-		<header>
-            <div class="container">
-                <span id="menu-btn"></span>
-                <div class="row">
-                    <div class="col-md-3">
-                        <!-- logo begin -->
-                        <div id="logo">
-                            <div class="inner">
-                                <a href="/" title="Trang chủ">
-                                    <img src="/images/logo.png" alt="" class="logo-1">
-                                    <img src="/images/logo.png" alt="" class="logo-2">
-                                </a>
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
 
-                            </div>
-                        </div>
-                        <!-- logo close -->
-                    </div>
-
-                    <div class="col-md-9">
-                        <!-- mainmenu begin -->
-                        <nav id="mainmenu-container">
-                            <ul id="mainmenu">
-								<li><a href="/index.html#aboutus" title="Giới thiệu">Giới thiệu</a></li>
-								<li><a href="/index.html#services" title="Dịch vụ">Dịch vụ</a></li>
-                                <li><a href="javascript:void(0);" title="Tiện ích">Tiện ích</a>
-                                    <ul>
-										<li><a href="/container-size.html" title="Kích thước container">Kích thước container</a></li>
-										<li><a href="javascript:void(0);" title="Incoterms">Incoterms</a>
-											<ul id="sub">
-												<li><a href="/incoterms-2000.html" title="Incoterms 2000">Incoterms 2000</a></li>
-												<li><a href="/incoterms-2010.html" title="Incoterms 2010">Incoterms 2010</a></li>
-												<li><a href="/incoterms-2020.html" title="Incoterms 2020">Incoterms 2020</a></li>
-											</ul>
-										</li>
-										<li><a href="/convert-unit.html" title="Chuyển đổi đơn vị">Chuyển đổi đơn vị</a></li>
-										<li><a href="/list-port.html" title="Cảng biển, sân bay chính">Cảng biển, sân bay chính</a></li>
-										<li><a href="/dictionary.html" title="Từ điền hàng hải">Từ điền hàng hải</a></li>
-										<li><a href="/exchange.html" title="Tỷ giá ngoại tệ">Tỷ giá ngoại tệ</a></li>
-									</ul>
-                                </li>
-                                
-								<li><a href="/index.html#news" title="Tin tức">Tin tức</a></li>
-                                <li><a href="/index.html#contactus" title="Liên hệ">Liên hệ</a></li>
-								<li><a href="/career.html" title="Tuyển dụng">Tuyển dụng</a></li>
-				                <li>
-									<div class="language">
-										<a class="lang ivn" title="Tiếng Việt"></a>
-										<a class="lang ien" title="English"></a>
-									</div><!-- .langauge -->
-				                </li>
-                            </ul>
-                        </nav>
-                        <!-- mainmenu close -->
-                    </div>
-                </div>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="images/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+  </head>
+  <body id="home_one">
+    <!-- <div id="preloader">
+    </div> -->
+    <button onclick="topFunction()" id="myBtn"></button>
+    <!-- Start Header Area -->
+    <header>
+      <div class="container">
+        <span id="menu-btn"></span>
+        <div class="row">
+          <div class="col-md-3">
+            <!-- logo begin -->
+            <div id="logo">
+              <div class="inner">
+                <a href="/" title="Trang chủ">
+                  <img src="/images/logo.png" alt="" class="logo-1" />
+                  <img src="/images/logo.png" alt="" class="logo-2" />
+                </a>
+              </div>
             </div>
-        </header>
-		<!-- End Header Area -->
+            <!-- logo close -->
+          </div>
 
+          <div class="col-md-9">
+            <!-- mainmenu begin -->
+            <nav id="mainmenu-container">
+              <ul id="mainmenu">
+                <li>
+                  <a href="/index.html#aboutus" title="Giới thiệu"
+                    >Giới thiệu</a
+                  >
+                </li>
+                <li>
+                  <a href="/index.html#services" title="Dịch vụ">Dịch vụ</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);" title="Tiện ích">Tiện ích</a>
+                  <ul>
+                    <li>
+                      <a
+                        href="/container-size.html"
+                        title="Kích thước container"
+                        >Kích thước container</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" title="Incoterms"
+                        >Incoterms</a
+                      >
+                      <ul id="sub">
+                        <li>
+                          <a href="/incoterms-2000.html" title="Incoterms 2000"
+                            >Incoterms 2000</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/incoterms-2010.html" title="Incoterms 2010"
+                            >Incoterms 2010</a
+                          >
+                        </li>
+                        <li>
+                          <a href="/incoterms-2020.html" title="Incoterms 2020"
+                            >Incoterms 2020</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="/convert-unit.html" title="Chuyển đổi đơn vị"
+                        >Chuyển đổi đơn vị</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/list-port.html" title="Cảng biển, sân bay chính"
+                        >Cảng biển, sân bay chính</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/dictionary.html" title="Từ điền hàng hải"
+                        >Từ điền hàng hải</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/exchange.html" title="Tỷ giá ngoại tệ"
+                        >Tỷ giá ngoại tệ</a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
-		<!-- Start Mail Slider Area -->
-		<div class="main_slider_area" id="aboutus">
-			<div class="tp-banner-container">
-				<div class="tp-banner" >
-						<ul>
-							<!-- 1st SLIDE Start -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="2000" data-thumb="images/11.jpg" data-delay="5000" data-saveperformance="off" data-title="Runstars">
-								<!-- MAIN IMAGE -->
-								<img src="images/11.jpg" alt="kenburns6"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                <li><a href="/index.html#news" title="Tin tức">Tin tức</a></li>
+                <li>
+                  <a href="/index.html#contactus" title="Liên hệ">Liên hệ</a>
+                </li>
+                <li>
+                  <a href="/career.html" title="Tuyển dụng">Tuyển dụng</a>
+                </li>
+                <li>
+                  <div class="language">
+                    <a class="lang ivn" title="Tiếng Việt"></a>
+                    <a class="lang ien" title="English"></a>
+                  </div>
+                  <!-- .langauge -->
+                </li>
+              </ul>
+            </nav>
+            <!-- mainmenu close -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Area -->
 
-								<!-- LAYERS -->
-								<!-- LAYER NR. 1 -->
-								<div class="tp-caption black_heavy_70 customin stt tp-resizeme banner-content-1"
-									data-x="-200"
-									data-y="250"
-									data-customin="x:0;y:-200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
-     								data-speed="1500"
-									data-start="1000"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.3"
-									data-endelementdelay="0.1"
-								>
-								<p class="banner-content-text-1">RUNSTARS LOGISTICS</p>
-								</div>
+    <!-- Start Mail Slider Area -->
+    <div class="main_slider_area" id="aboutus">
+      <div class="tp-banner-container">
+        <div class="tp-banner">
+          <ul>
+            <!-- 1st SLIDE Start -->
+            <li
+              data-transition="fade"
+              data-slotamount="1"
+              data-masterspeed="2000"
+              data-thumb="images/11.jpg"
+              data-delay="5000"
+              data-saveperformance="on"
+              data-title="Runstars"
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="images/11.jpg"
+                alt="kenburns6"
+                data-bgposition="center top"
+                data-bgfit="cover"
+                data-bgrepeat="no-repeat"
+              />
 
-								<!-- LAYER NR. 2 -->
-								<div class="tp-caption black_heavy_70 customin stb tp-resizeme banner-content-2"
-									data-x="-200"
-									data-y="313"
-									data-customin="x:0;y:200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
-									data-speed="1550"
-									data-start="1400"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.5"
-									data-endelementdelay="0.1"
-								>
-									<p class="banner-content-text-2">Tự hào là một trong những đơn vị cung cấp dịch vụ hàng đầu trong ngành vận tải và giao nhận.</p>
-								</div>
+              <!-- LAYERS -->
+              <!-- LAYER NR. 1 -->
+              <div
+                class="tp-caption black_heavy_70 customin stt tp-resizeme banner-content-1"
+                data-x="-200"
+                data-y="250"
+                data-customin="x:0;y:-200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                data-speed="1500"
+                data-start="1000"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.3"
+                data-endelementdelay="0.1"
+              >
+                <p class="banner-content-text-1">RUNSTARS LOGISTICS</p>
+              </div>
 
-								<!-- LAYER NR. 4 -->
-								<div class="tp-caption customin tp-resizeme"
-									data-x="0"
-									data-y="430"
-									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-									data-speed="1500"
-									data-start="2300"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.2"
-									data-endelementdelay="0.2"
-									data-linktoslide="next"
-									style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
-								</div>
+              <!-- LAYER NR. 2 -->
+              <div
+                class="tp-caption black_heavy_70 customin stb tp-resizeme banner-content-2"
+                data-x="-200"
+                data-y="313"
+                data-customin="x:0;y:200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                data-speed="1550"
+                data-start="1000"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.5"
+                data-endelementdelay="0.1"
+              >
+                <p class="banner-content-text-2">
+                  Tự hào là một trong những đơn vị cung cấp dịch vụ hàng đầu
+                  trong ngành vận tải và giao nhận.
+                </p>
+              </div>
 
-								<!-- LAYER NR. 5 -->
-								<div class="tp-caption customin tp-resizeme"
-									data-x="140"
-									data-y="430" 
-									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-									data-speed="1500"
-									data-start="2600"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.1"
-									data-endelementdelay="0.1"
-									data-linktoslide="next"
-									style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-								</div>
-								
-							</li>
-							<!-- 1st SLIDE End -->
+              <!-- LAYER NR. 4 -->
+              <div
+                class="tp-caption customin tp-resizeme"
+                data-x="0"
+                data-y="430"
+                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                data-speed="1500"
+                data-start="2300"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.2"
+                data-endelementdelay="0.2"
+                data-linktoslide="next"
+                style="
+                  z-index: 4;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                "
+              ></div>
 
-							<!-- 2nd SLIDE Start -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="2000" data-thumb="images/22.jpg" data-delay="5000"  data-saveperformance="off"  data-title="Runstars">
-								<!-- MAIN IMAGE -->
-								<img src="images/22.jpg" alt="kenburns6"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+              <!-- LAYER NR. 5 -->
+              <div
+                class="tp-caption customin tp-resizeme"
+                data-x="140"
+                data-y="430"
+                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                data-speed="1500"
+                data-start="2600"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.1"
+                data-endelementdelay="0.1"
+                data-linktoslide="next"
+                style="
+                  z-index: 5;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                "
+              ></div>
+            </li>
+            <!-- 1st SLIDE End -->
 
-								<!-- LAYERS -->
-								<!-- LAYER NR. 1 -->
-								<div class="tp-caption black_heavy_70 customin stt tp-resizeme banner-content-1"
-									data-x="-200"
-									data-y="250"
-									data-customin="x:0;y:-200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
-     								data-speed="1500"
-									data-start="1200"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.3"
-									data-endelementdelay="0.1"
-								>
-								<p class="banner-content-text-1">ĐỘI NGŨ NHÂN VIÊN GIÀU KINH NGHIỆM VÀ TẬN TÂM</p>
-								</div>
+            <!-- 2nd SLIDE Start -->
+            <li
+              data-transition="fade"
+              data-slotamount="1"
+              data-masterspeed="2000"
+              data-thumb="images/22.jpg"
+              data-delay="5000"
+              data-saveperformance="on"
+              data-title="Runstars"
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="images/22.jpg"
+                alt="kenburns6"
+                data-bgposition="center top"
+                data-bgfit="cover"
+                data-bgrepeat="no-repeat"
+              />
 
-								<!-- LAYER NR. 2 -->
-								<div class="tp-caption black_heavy_70 customin stb tp-resizeme banner-content-2"
-									data-x="-200"
-									data-y="313"
-									data-customin="x:0;y:200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
-									data-speed="1550"
-									data-start="1600"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.1"
-									data-endelementdelay="0.1"
-								>
-									<p class="banner-content-text-2">Chúng tôi cam kết mang đến cho quý khách hàng những dịch vụ và giải pháp vận tải ưu việt nhất.</p>
-								</div>
-								
-								<!-- LAYER NR. 4 -->
-								<div class="tp-caption customin tp-resizeme lft"
-									data-x="0"
-									data-y="430"
-									data-customin="x:0;y:-200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
-     								data-speed="1500"
-									data-start="2400"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.2"
-									data-endelementdelay="0.2"
-									data-linktoslide="next"
-									style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
-								</div>
+              <!-- LAYERS -->
+              <!-- LAYER NR. 1 -->
+              <div
+                class="tp-caption black_heavy_70 customin stt tp-resizeme banner-content-1"
+                data-x="-200"
+                data-y="250"
+                data-customin="x:0;y:-200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                data-speed="1500"
+                data-start="1200"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.3"
+                data-endelementdelay="0.1"
+              >
+                <p class="banner-content-text-1">
+                  ĐỘI NGŨ NHÂN VIÊN GIÀU KINH NGHIỆM VÀ TẬN TÂM
+                </p>
+              </div>
 
-								<!-- LAYER NR. 5 -->
-								<div class="tp-caption customin tp-resizeme fade"
-									data-x="140"
-									data-y="430" 
-									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-									data-speed="1500"
-									data-start="2900"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.1"
-									data-endelementdelay="0.1"
-									data-linktoslide="next"
-									style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-								</div>
-								
-							</li>
-							<!-- 2nd SLIDE End -->
-							<!-- 3rd Slide Start -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="2000" data-thumb="images/33.jpg" data-delay="5000"  data-saveperformance="off" data-title="Runstars">
-								<!-- MAIN IMAGE -->
-								<img src="images/33.jpg" alt="kenburns6"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+              <!-- LAYER NR. 2 -->
+              <div
+                class="tp-caption black_heavy_70 customin stb tp-resizeme banner-content-2"
+                data-x="-200"
+                data-y="313"
+                data-customin="x:0;y:200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                data-speed="1550"
+                data-start="1600"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.1"
+                data-endelementdelay="0.1"
+              >
+                <p class="banner-content-text-2">
+                  Chúng tôi cam kết mang đến cho quý khách hàng những dịch vụ và
+                  giải pháp vận tải ưu việt nhất.
+                </p>
+              </div>
 
-								<!-- LAYERS -->
-								<!-- LAYER NR. 1 -->
-								<div class="tp-caption black_heavy_70 customin stt tp-resizeme banner-content-1"
-									data-x="450"
-									data-y="250"
-									data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
-									data-speed="1500"
-									data-start="1000"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.3"
-									data-endelementdelay="0.1"
-								>
-								<p class="banner-content-text-1">Luôn đặt lợi ích của khách hàng lên hàng đầu</p>
-								</div>
+              <!-- LAYER NR. 4 -->
+              <div
+                class="tp-caption customin tp-resizeme lft"
+                data-x="0"
+                data-y="430"
+                data-customin="x:0;y:-200;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                data-speed="1500"
+                data-start="2400"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.2"
+                data-endelementdelay="0.2"
+                data-linktoslide="next"
+                style="
+                  z-index: 4;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                "
+              ></div>
 
-								<!-- LAYER NR. 4 -->
-								<div class="tp-caption customin tp-resizeme skewfromleft"
-									data-x="730"
-									data-y="430"
-									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-									data-speed="500"
-									data-start="2500"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.2"
-									data-endelementdelay="0.2"
-									data-linktoslide="next"
-									style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
-								</div>
+              <!-- LAYER NR. 5 -->
+              <div
+                class="tp-caption customin tp-resizeme fade"
+                data-x="140"
+                data-y="430"
+                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                data-speed="1500"
+                data-start="2900"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.1"
+                data-endelementdelay="0.1"
+                data-linktoslide="next"
+                style="
+                  z-index: 5;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                "
+              ></div>
+            </li>
+            <!-- 2nd SLIDE End -->
+            <!-- 3rd Slide Start -->
+            <li
+              data-transition="fade"
+              data-slotamount="1"
+              data-masterspeed="2000"
+              data-thumb="images/33.jpg"
+              data-delay="5000"
+              data-saveperformance="on"
+              data-title="Runstars"
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="images/33.jpg"
+                alt="kenburns6"
+                data-bgposition="center top"
+                data-bgfit="cover"
+                data-bgrepeat="no-repeat"
+              />
 
-								<!-- LAYER NR. 5 -->
-								<div class="tp-caption customin tp-resizeme skewfromleft"
-									data-x="820"
-									data-y="430"
-									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-									data-speed="500"
-									data-start="2600"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.1"
-									data-endelementdelay="0.1"
-									data-linktoslide="next"
-									style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-								</div>
-							</li>
-							<!-- 3rd Slide End -->
-							 <!-- 4th Slide Start -->
-							<li data-transition="fade" data-slotamount="1" data-masterspeed="2000" data-thumb="images/44.jpg" data-delay="5000"  data-saveperformance="off" data-title="Runstars">
-								<!-- MAIN IMAGE -->
-								<img src="images/44.jpg" alt="kenburns6"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+              <!-- LAYERS -->
+              <!-- LAYER NR. 1 -->
+              <div
+                class="tp-caption black_heavy_70 customin stt tp-resizeme banner-content-1"
+                data-x="450"
+                data-y="250"
+                data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                data-speed="1500"
+                data-start="1000"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.3"
+                data-endelementdelay="0.1"
+              >
+                <p class="banner-content-text-1">
+                  Luôn đặt lợi ích của khách hàng lên hàng đầu
+                </p>
+              </div>
 
-								<!-- LAYERS -->
-								<!-- LAYER NR. 1 -->
-								<div class="tp-caption black_heavy_70 customin stt tp-resizeme banner-content-1"
-									data-x="450"
-									data-y="250"
-									data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
-									data-speed="1500"
-									data-start="1000"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.3"
-									data-endelementdelay="0.1"
-								>
-									<p class="banner-content-text-1">Luôn đặt lợi ích của khách hàng lên hàng đầu</p>
-								</div>
+              <!-- LAYER NR. 4 -->
+              <div
+                class="tp-caption customin tp-resizeme skewfromleft"
+                data-x="730"
+                data-y="430"
+                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                data-speed="500"
+                data-start="2500"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.2"
+                data-endelementdelay="0.2"
+                data-linktoslide="next"
+                style="
+                  z-index: 4;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                "
+              ></div>
 
-								<!-- LAYER NR. 4 -->
-								<div class="tp-caption customin tp-resizeme skewfromleft"
-									data-x="730"
-									data-y="430"
-									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-									data-speed="500"
-									data-start="2500"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.2"
-									data-endelementdelay="0.2"
-									data-linktoslide="next"
-									style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
-								</div>
+              <!-- LAYER NR. 5 -->
+              <div
+                class="tp-caption customin tp-resizeme skewfromleft"
+                data-x="820"
+                data-y="430"
+                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                data-speed="500"
+                data-start="2600"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.1"
+                data-endelementdelay="0.1"
+                data-linktoslide="next"
+                style="
+                  z-index: 5;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                "
+              ></div>
+            </li>
+            <!-- 3rd Slide End -->
+            <!-- 4th Slide Start -->
+            <li
+              data-transition="fade"
+              data-slotamount="1"
+              data-masterspeed="2000"
+              data-thumb="images/44.jpg"
+              data-delay="5000"
+              data-saveperformance="on"
+              data-title="Runstars"
+            >
+              <!-- MAIN IMAGE -->
+              <img
+                src="images/44.jpg"
+                alt="kenburns6"
+                data-bgposition="center top"
+                data-bgfit="cover"
+                data-bgrepeat="no-repeat"
+              />
 
-								<!-- LAYER NR. 5 -->
-								<div class="tp-caption customin tp-resizeme skewfromleft"
-									data-x="820"
-									data-y="430"
-									data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-									data-speed="500"
-									data-start="2600"
-									data-easing="Power3.easeInOut"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="0.1"
-									data-endelementdelay="0.1"
-									data-linktoslide="next"
-									style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-								</div>
-							</li>
-							<!-- 4th Slide End -->
-						</ul>
-						<div class="tp-bannertimer"></div>
-				</div>
-			</div>
-		</div>
-		<!-- End Mail Slider Area -->
-		
-		<!-- start why us area -->
-		<section class="why_us_area section-padding content-center whitesmoke-bg">
-			<div class="container why-us">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="section_title nice_title">
-							<h4>Tại sao chọn chúng tôi</h4>
-							<p>
-								Lý do để chúng tôi là sự lựa chọn trở thành đối tác của bạn
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="section_content clearfix">
-						<div class="col-md-4 col-sm-4">
-							<div class="single_why_us">
-								<div class="single_why_hover">
-									
-								</div>
-								<div class="icon_one">
-									<img src="images/tsc1.png" alt="">
-								</div>
-								<h5>Hiệu quả cao</h5>
-								<p>
-									Cam kết đem lại giá trị tốt nhất cho khách hàng	
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="single_why_us">
-								<div class="single_why_hover"></div>
-								<div class="icon_two">
-									<img src="images/tsc2.png" alt="">
-								</div>
-								<h5>Chi phí cạnh tranh</h5>
-								<p>
-									Trách nhiệm cao trong công việc, chúng tôi luôn đưa ra những giải pháp giúp tiết kiệm thời gian và chi phí cho bạn
-								</p>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="single_why_us">
-								<div class="single_why_hover"></div>
-								<div class="icon_three">
-									<img src="images/tsc3.png" alt="">
-								</div>
-								<h5>Nhanh chóng và uy tín</h5>
-								<p>
-									Đội ngũ quản lý và nhân viên chuyên nghiệp, kinh nghiệm, bạn có thể tin tưởng tuyệt đối vào dịch vụ của chúng tôi	
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End why us area -->
+              <!-- LAYERS -->
+              <!-- LAYER NR. 1 -->
+              <div
+                class="tp-caption black_heavy_70 customin stt tp-resizeme banner-content-1"
+                data-x="450"
+                data-y="250"
+                data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                data-speed="1500"
+                data-start="1000"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.3"
+                data-endelementdelay="0.1"
+              >
+                <p class="banner-content-text-1">
+                  Luôn đặt lợi ích của khách hàng lên hàng đầu
+                </p>
+              </div>
 
-		<!-- start Weare Best Area -->
-		<section class="weare_best_area content-center" id="services" style="padding-top: 50px;">
-			<div class="container section-content">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="section_title nice_title">
-							<h4>Dịch vụ cung cấp</h4>
-							<p>
-								Runstarss cung cấp tất cả các dịch vụ của ngành giao nhận vận tải
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="section_content clearfix">
+              <!-- LAYER NR. 4 -->
+              <div
+                class="tp-caption customin tp-resizeme skewfromleft"
+                data-x="730"
+                data-y="430"
+                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                data-speed="500"
+                data-start="2500"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.2"
+                data-endelementdelay="0.2"
+                data-linktoslide="next"
+                style="
+                  z-index: 4;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                "
+              ></div>
 
-						<div class="col-md-4 col-12">
-							<div class="weare_best_left_service">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="single_weare_best clearfix background-haiquan">
-											<dl>
-												<dt style="color: white; font-weight: bolder; opacity: 1!important;">Dịch Vụ Thủ Tục Hải Quan</dt>
-												<dd><span style="color: white; font-weight: bolder; opacity: 1!important;">
-													Runstarss có đội ngũ nhân viên am hiểu về quy định, thủ tục hải quan, xuất nhập khẩu hàng hóa, nắm rõ quy trình thông quan hàng hóa cung cấp các dịch vụ khai báo hải quan, giao nhận hàng hóa xuất nhập khẩu, giúp quý khách hàng thông quan hàng hóa nhanh chóng nhằm đảm bảo việc kinh doanh của đối tác được thuận lợi.  	
-												</span>
-												</dd>
-											</dl>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="single_weare_best clearfix background-bien">
-											<dl>
-												<dt style="color: white; font-weight: bolder; opacity: 1!important;">Vận Chuyển Đường Biển</dt>
-												<dd><span style="color: white; font-weight: bolder; opacity: 1!important;">
-													Chúng tôi làm hàng LCL và FCL và dịch vụ door to door từ/tới tất cả các cảng lớn trên thế giới thông qua mạng lưới đại lý toàn cầu.
-													Dịch vụ tin cậy, tài chính ổn định và đội ngũ nhân viên giàu kinh nghiệm là những nhân tố chính đem lại sự hợp tác lâu dài với hãng tàu và tất cả đối tác.
-													Giải pháp giao hàng đa dạng
-													</span>
-													<ul style="color: white; font-weight: bolder; opacity: 1!important;">
-														<li><span>Cảng tới cảng</span></li>
-														<li><span>Cảng tới Kho</span></li>
-														<li><span>Kho tới cảng</span></li>
-														<li><span>Kho tới Kho</span></li>
-													</ul>
-													<span style="color: white; font-weight: bolder; opacity: 1!important;">
-													Runstars đảm bảo chúng tôi theo dõi hàng hóa của khách hàng suốt lộ trình tới điểm đến và thông báo để đảm bảo sự yên tâm cho khách hàng.
-													</span>
-												</dd>
-											</dl>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-12">
-							<div class="weare_best_right_service">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="single_weare_best clearfix background-hangkhong">
-											<dl>
-												<dt style="color: white; font-weight: bolder; opacity: 1!important;">Vận Chuyển Đường Hàng Không</dt>
-												<dd><span style="color: white; font-weight: bolder; opacity: 1!important;">
-													Dịch vụ vận chuyển hàng không của Runstars là lựa chọn đáng tin cậy cho việc đưa sản phẩm ra thị trường nhanh chóng và hiệu quả. Chúng tôi cung cấp dịch vụ xuất và nhập hàng bằng đường hàng không, phục vụ tất cả các loại hàng hóa từ và đến bất kỳ nơi nào trên thế giới.
-													Ngoài ra, chúng tôi còn đáp ứng nhu cầu vận tải nội địa từ sân bay Tân Sơn Nhất đến sân bay Nội Bài hoặc Đà Nẵng với gói cước vận chuyển tốt nhất. 
-													Cam kết của chúng tôi là đảm bảo thời gian vận chuyển và dịch vụ tốt nhất cho khách hàng.</span>
-													</dd>
-											</dl>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="single_weare_best clearfix background-quocte">
-											<dl>
-												<dt style="color: white; font-weight: bolder; opacity: 1!important;">Chuyển Phát Nhanh Quốc Tế</dt>
-												<dd>
-													<span style="color: white; font-weight: bolder; opacity: 1!important;">
-													Với phương châm “Nhanh chóng - Tiết kiệm - An toàn”, Runstars không ngừng cố gắng cải thiện, nâng cao chất lượng dịch vụ để có thể mang đến cho khách hàng sự lựa chọn thông minh và đúng đắn.
+              <!-- LAYER NR. 5 -->
+              <div
+                class="tp-caption customin tp-resizeme skewfromleft"
+                data-x="820"
+                data-y="430"
+                data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                data-speed="500"
+                data-start="2600"
+                data-easing="Power3.easeInOut"
+                data-splitin="none"
+                data-splitout="none"
+                data-elementdelay="0.1"
+                data-endelementdelay="0.1"
+                data-linktoslide="next"
+                style="
+                  z-index: 5;
+                  max-width: auto;
+                  max-height: auto;
+                  white-space: nowrap;
+                "
+              ></div>
+            </li>
+            <!-- 4th Slide End -->
+          </ul>
+          <div class="tp-bannertimer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Mail Slider Area -->
 
-													Chúng tôi không cam kết đem lại cho khách hàng dịch vụ rẻ nhất, nhưng chúng tôi cam kết đem lại dịch vụ chất lượng và chuyên nghiệp nhất.
-												</span>
-												</dd>
-											</dl>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-						<div class="col-md-4 col-12">
-							<div class="weare_best_right_service">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="single_weare_best clearfix background-noidia">
-											<dl>
-												<dt style="color: white; font-weight: bolder; opacity: 1!important;">Vận chuyển nội địa</dt>
-												<dd><span style="color: white; font-weight: bolder; opacity: 1!important;">
-													Dịch vụ vận chuyển hàng không của Runstars là lựa chọn đáng tin cậy cho việc đưa sản phẩm ra thị trường nhanh chóng và hiệu quả. Chúng tôi cung cấp dịch vụ xuất và nhập hàng bằng đường hàng không, phục vụ tất cả các loại hàng hóa từ và đến bất kỳ nơi nào trên thế giới.
-													Ngoài ra, chúng tôi còn đáp ứng nhu cầu vận tải nội địa từ sân bay Tân Sơn Nhất đến sân bay Nội Bài hoặc Đà Nẵng với gói cước vận chuyển tốt nhất. 
-													Cam kết của chúng tôi là đảm bảo thời gian vận chuyển và dịch vụ tốt nhất cho khách hàng.</span>
-													</dd>
-											</dl>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="single_weare_best clearfix background-khac">
-											<dl>
-												<dt style="color: white; font-weight: bolder; opacity: 1!important;">Dịch vụ khác</dt>
-												<dd>
-													<span style="color: white; font-weight: bolder; opacity: 1!important;">
-													Với phương châm “Nhanh chóng - Tiết kiệm - An toàn”, Runstars không ngừng cố gắng cải thiện, nâng cao chất lượng dịch vụ để có thể mang đến cho khách hàng sự lựa chọn thông minh và đúng đắn.
-
-													Chúng tôi không cam kết đem lại cho khách hàng dịch vụ rẻ nhất, nhưng chúng tôi cam kết đem lại dịch vụ chất lượng và chuyên nghiệp nhất.
-												</span>
-												</dd>
-											</dl>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Weare Best Area -->
-
-		<!-- Start Client Says Area -->
-		<section class="all_testimonial_area section-padding content-center">
-			<div class="container">
-				<div class="all_testimonial_container">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3">
-							<div class="section_title nice_title_white">
-								<h4>Phản hồi</h4>
-								<p>
-									Những khách hàng phản hồi về dịch vụ của chúng tôi
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="container">
-							<div class="all_testimonial">
-		                        <div class="single_testi_slider">
-		                            <div class="testi_studient_txt">
-		                                <p>Dịch vụ chu đáo, uy tín, nhanh chóng, chất lượng giá cạnh tranh</p>
-		                                <h3>Nguyễn Văn A</h3>
-		                                <span>CEO, AOC Packers</span>
-		                            </div>
-		                        </div>
-		                        <div class="single_testi_slider">
-		                            <div class="testi_studient_txt">
-		                                <p>Dịch vụ chu đáo, uy tín, nhanh chóng</p>
-		                                <h3>Nguyễn Văn B</h3>
-										<span>COO, AOC Packers</span>
-		                            </div>
-		                        </div>
-		                    </div>
-							<div class="testi_slider_nav">
-				                <i class="fa fa-angle-left testi_prev"></i>
-				                <i class="fa fa-angle-right testi_next"></i>
-				            </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Client Says Area -->
-		
-		<!-- Start Transport Features Area -->
-        <section class="transport_features_area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-offset-6 col-sm-6">
-                    	<div class="transport_features">
-	                        <div class="section_title nice_title_white_left">
-	                            <h4>Tiện ích</h4>
-	                            <p>
-	                            	Những thông tin hữu ích trong lĩnh vực logistics quý khách có thể tham khảo ở đây:
-								</p>
-	                        </div>
-	                        <div class="section-content section-services section-util">
-	                        	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-								  <div class="panel panel-default">
-								    <div class="panel-heading" role="tab" id="headingOne">
-								      <h4 class="panel-title">
-								        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-								          Kích thước container
-								          <span></span>
-								        </a>
-								      </h4>
-								    </div>
-								    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" >
-								      <div style="background-color: #057d80;" class="panel-body">
-								        <a class="util-content" style="text-decoration: none;" href="/container-size.html">Định nghĩa container là hình hộp chữ nhật có vỏ bọc bằng thép, được dùng cho vận chuyển hàng hóa trên biển và trên đất liền. Có sức chứa hàng cao và tùy theo từng loại
-										</a>
-								      </div>
-								    </div>
-								  </div>
-								  <div class="panel panel-default">
-								    <div class="panel-heading" role="tab" id="headingTwo">
-								      <h4 class="panel-title">
-								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-											Incoterms
-								          <span></span>
-								        </a>
-								      </h4>
-								    </div>
-								    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-										<div style="background-color: #057d80;" class="panel-body">
-										<ul>
-											<li><a style="text-decoration: none; color: white;" href="/incoterms-2000.html">Incoterms 2000</a></li>
-											<li><a style="text-decoration: none; color: white;" href="/incoterms-2010.html">Incoterms 2010</a></li>
-											<li><a style="text-decoration: none; color: white;" href="/incoterms-2020.html">Incoterms 2020</a></li>
-										</ul>
-									</div>
-								    </div>
-								  </div>
-								  <div class="panel panel-default">
-								    <div class="panel-heading" role="tab" id="headingThree">
-								      <h4 class="panel-title">
-								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-											Chuyển đổi đơn vị
-								          <span></span>
-								        </a>
-								      </h4>
-								    </div>
-								    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-										<div style="background-color: #057d80;" class="panel-body">
-											<a class="util-content" style="text-decoration: none;" href="/convert-unit.html">
-										Bảng chuyển đổi các đơn vị tính trong vận chuyển hàng hóa</a>
-									</div>
-								    </div>
-								  </div>
-								  <div class="panel panel-default">
-								    <div class="panel-heading" role="tab" id="headingFour">
-								      <h4 class="panel-title">
-								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-											Cảng biển, sân bay chính
-								          <span></span>
-								        </a>
-								      </h4>
-								    </div>
-								    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-										<div style="background-color: #057d80;" class="panel-body">
-											<a class="util-content" style="text-decoration: none;" href="/list-port.html">
-										Danh sách các cảng biển và sân bay chính ở Việt Nam</a>
-									</div>
-								    </div>
-								  </div>
-								  <div class="panel panel-default">
-								    <div class="panel-heading" role="tab" id="headingFive">
-								      <h4 class="panel-title">
-								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-											Từ điển hành hải
-								          <span></span>
-								        </a>
-								      </h4>
-								    </div>
-								    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-										<div style="background-color: #057d80;" class="panel-body">
-											<a class="util-content" style="text-decoration: none;" href="/dictionary.html">
-										Từ điển các từ chuyên ngành được sử dụng trong hàng hải</a>
-									</div>
-								    </div>
-								  </div>
-								  <div class="panel panel-default">
-								    <div class="panel-heading" role="tab" id="headingSix">
-								      <h4 class="panel-title">
-								        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-											Tỷ giá ngoại tệ
-								          <span></span>
-								        </a>
-								      </h4>
-								    </div>
-								    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-										<div style="background-color: #057d80;" class="panel-body">
-											<a class="util-content" style="text-decoration: none;" href="/exchange.html">
-										Tỷ giá tham khảo theo thời gian thực được cập nhật từ trang website của Tổng Cục Hải Quan</a>
-									</div>
-								    </div>
-								  </div>
-								</div>
-	                        </div>
-                    	</div>
-                    </div>
-                </div>
+    <!-- start why us area -->
+    <section class="why_us_area section-padding content-center whitesmoke-bg">
+      <div class="container why-us">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="section_title nice_title">
+              <h4>Tại sao chọn chúng tôi</h4>
+              <p>Lý do để chúng tôi là sự lựa chọn trở thành đối tác của bạn</p>
             </div>
-        </section>
-        <!-- End Transport Features Area -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="section_content clearfix">
+            <div class="col-md-4 col-sm-4">
+              <div class="single_why_us">
+                <div class="single_why_hover"></div>
+                <div class="icon_one">
+                  <img src="images/tsc1.png" alt="" />
+                </div>
+                <h5>Hiệu quả cao</h5>
+                <p>Cam kết đem lại giá trị tốt nhất cho khách hàng</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="single_why_us">
+                <div class="single_why_hover"></div>
+                <div class="icon_two">
+                  <img src="images/tsc2.png" alt="" />
+                </div>
+                <h5>Chi phí cạnh tranh</h5>
+                <p>
+                  Trách nhiệm cao trong công việc, chúng tôi luôn đưa ra những
+                  giải pháp giúp tiết kiệm thời gian và chi phí cho bạn
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="single_why_us">
+                <div class="single_why_hover"></div>
+                <div class="icon_three">
+                  <img src="images/tsc3.png" alt="" />
+                </div>
+                <h5>Nhanh chóng và uy tín</h5>
+                <p>
+                  Đội ngũ quản lý và nhân viên chuyên nghiệp, kinh nghiệm, bạn
+                  có thể tin tưởng tuyệt đối vào dịch vụ của chúng tôi
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End why us area -->
 
+    <!-- start Weare Best Area -->
+    <section
+      class="weare_best_area content-center"
+      id="services"
+      style="padding-top: 50px"
+    >
+      <div class="container section-content">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="section_title nice_title">
+              <h4>Dịch vụ cung cấp</h4>
+              <p>
+                Runstarss cung cấp tất cả các dịch vụ của ngành giao nhận vận
+                tải
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="section_content clearfix">
+            <div class="col-md-4 col-12">
+              <div class="weare_best_left_service">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="single_weare_best clearfix background-haiquan">
+                      <dl>
+                        <dt
+                          style="
+                            color: white;
+                            font-weight: bolder;
+                            opacity: 1 !important;
+                          "
+                        >
+                          Dịch Vụ Thủ Tục Hải Quan
+                        </dt>
+                        <dd>
+                          <span
+                            style="
+                              color: white;
+                              font-weight: bolder;
+                              opacity: 1 !important;
+                            "
+                          >
+                            Runstarss có đội ngũ nhân viên am hiểu về quy định,
+                            thủ tục hải quan, xuất nhập khẩu hàng hóa, nắm rõ
+                            quy trình thông quan hàng hóa cung cấp các dịch vụ
+                            khai báo hải quan, giao nhận hàng hóa xuất nhập
+                            khẩu, giúp quý khách hàng thông quan hàng hóa nhanh
+                            chóng nhằm đảm bảo việc kinh doanh của đối tác được
+                            thuận lợi.
+                          </span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="single_weare_best clearfix background-bien">
+                      <dl>
+                        <dt
+                          style="
+                            color: white;
+                            font-weight: bolder;
+                            opacity: 1 !important;
+                          "
+                        >
+                          Vận Chuyển Đường Biển
+                        </dt>
+                        <dd>
+                          <span
+                            style="
+                              color: white;
+                              font-weight: bolder;
+                              opacity: 1 !important;
+                            "
+                          >
+                            Chúng tôi làm hàng LCL và FCL và dịch vụ door to
+                            door từ/tới tất cả các cảng lớn trên thế giới thông
+                            qua mạng lưới đại lý toàn cầu. Dịch vụ tin cậy, tài
+                            chính ổn định và đội ngũ nhân viên giàu kinh nghiệm
+                            là những nhân tố chính đem lại sự hợp tác lâu dài
+                            với hãng tàu và tất cả đối tác. Giải pháp giao hàng
+                            đa dạng
+                          </span>
+                          <ul
+                            style="
+                              color: white;
+                              font-weight: bolder;
+                              opacity: 1 !important;
+                            "
+                          >
+                            <li><span>Cảng tới cảng</span></li>
+                            <li><span>Cảng tới Kho</span></li>
+                            <li><span>Kho tới cảng</span></li>
+                            <li><span>Kho tới Kho</span></li>
+                          </ul>
+                          <span
+                            style="
+                              color: white;
+                              font-weight: bolder;
+                              opacity: 1 !important;
+                            "
+                          >
+                            Runstars đảm bảo chúng tôi theo dõi hàng hóa của
+                            khách hàng suốt lộ trình tới điểm đến và thông báo
+                            để đảm bảo sự yên tâm cho khách hàng.
+                          </span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="weare_best_right_service">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div
+                      class="single_weare_best clearfix background-hangkhong"
+                    >
+                      <dl>
+                        <dt
+                          style="
+                            color: white;
+                            font-weight: bolder;
+                            opacity: 1 !important;
+                          "
+                        >
+                          Vận Chuyển Đường Hàng Không
+                        </dt>
+                        <dd>
+                          <span
+                            style="
+                              color: white;
+                              font-weight: bolder;
+                              opacity: 1 !important;
+                            "
+                          >
+                            Dịch vụ vận chuyển hàng không của Runstars là lựa
+                            chọn đáng tin cậy cho việc đưa sản phẩm ra thị
+                            trường nhanh chóng và hiệu quả. Chúng tôi cung cấp
+                            dịch vụ xuất và nhập hàng bằng đường hàng không,
+                            phục vụ tất cả các loại hàng hóa từ và đến bất kỳ
+                            nơi nào trên thế giới. Ngoài ra, chúng tôi còn đáp
+                            ứng nhu cầu vận tải nội địa từ sân bay Tân Sơn Nhất
+                            đến sân bay Nội Bài hoặc Đà Nẵng với gói cước vận
+                            chuyển tốt nhất. Cam kết của chúng tôi là đảm bảo
+                            thời gian vận chuyển và dịch vụ tốt nhất cho khách
+                            hàng.</span
+                          >
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="single_weare_best clearfix background-quocte">
+                      <dl>
+                        <dt
+                          style="
+                            color: white;
+                            font-weight: bolder;
+                            opacity: 1 !important;
+                          "
+                        >
+                          Chuyển Phát Nhanh Quốc Tế
+                        </dt>
+                        <dd>
+                          <span
+                            style="
+                              color: white;
+                              font-weight: bolder;
+                              opacity: 1 !important;
+                            "
+                          >
+                            Với phương châm “Nhanh chóng - Tiết kiệm - An toàn”,
+                            Runstars không ngừng cố gắng cải thiện, nâng cao
+                            chất lượng dịch vụ để có thể mang đến cho khách hàng
+                            sự lựa chọn thông minh và đúng đắn. Chúng tôi không
+                            cam kết đem lại cho khách hàng dịch vụ rẻ nhất,
+                            nhưng chúng tôi cam kết đem lại dịch vụ chất lượng
+                            và chuyên nghiệp nhất.
+                          </span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12">
+              <div class="weare_best_right_service">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="single_weare_best clearfix background-noidia">
+                      <dl>
+                        <dt
+                          style="
+                            color: white;
+                            font-weight: bolder;
+                            opacity: 1 !important;
+                          "
+                        >
+                          Vận chuyển nội địa
+                        </dt>
+                        <dd>
+                          <span
+                            style="
+                              color: white;
+                              font-weight: bolder;
+                              opacity: 1 !important;
+                            "
+                          >
+                            Dịch vụ vận chuyển hàng không của Runstars là lựa
+                            chọn đáng tin cậy cho việc đưa sản phẩm ra thị
+                            trường nhanh chóng và hiệu quả. Chúng tôi cung cấp
+                            dịch vụ xuất và nhập hàng bằng đường hàng không,
+                            phục vụ tất cả các loại hàng hóa từ và đến bất kỳ
+                            nơi nào trên thế giới. Ngoài ra, chúng tôi còn đáp
+                            ứng nhu cầu vận tải nội địa từ sân bay Tân Sơn Nhất
+                            đến sân bay Nội Bài hoặc Đà Nẵng với gói cước vận
+                            chuyển tốt nhất. Cam kết của chúng tôi là đảm bảo
+                            thời gian vận chuyển và dịch vụ tốt nhất cho khách
+                            hàng.</span
+                          >
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="single_weare_best clearfix background-khac">
+                      <dl>
+                        <dt
+                          style="
+                            color: white;
+                            font-weight: bolder;
+                            opacity: 1 !important;
+                          "
+                        >
+                          Dịch vụ khác
+                        </dt>
+                        <dd>
+                          <span
+                            style="
+                              color: white;
+                              font-weight: bolder;
+                              opacity: 1 !important;
+                            "
+                          >
+                            Với phương châm “Nhanh chóng - Tiết kiệm - An toàn”,
+                            Runstars không ngừng cố gắng cải thiện, nâng cao
+                            chất lượng dịch vụ để có thể mang đến cho khách hàng
+                            sự lựa chọn thông minh và đúng đắn. Chúng tôi không
+                            cam kết đem lại cho khách hàng dịch vụ rẻ nhất,
+                            nhưng chúng tôi cam kết đem lại dịch vụ chất lượng
+                            và chuyên nghiệp nhất.
+                          </span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Weare Best Area -->
 
-		<!-- Start Our Clients Area -->
-		<section class="our_clients_area section-padding content-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="section_title nice_title">
-							<h4>Đối tác</h4>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="logo_caro">
-							<div class="client-carousel">
-								<div class="item">
-									<a><img src="images/dhl.png" alt="Logo Image" /></a>
-								</div>
-								<div class="item">
-									<a><img src="images/fedex.png" alt="Logo Image" /></a>
-								</div>
-								<div class="item">
-									<a><img src="images/ups.png" alt="Logo Image" /></a>
-								</div>
-								<div class="item">
-									<a><img src="images/maersk.jpg" alt="Logo Image" /></a>
-								</div>
-								<div class="item">
-									<a><img src="images/cma.jpg" alt="Logo Image" /></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Our Clients Area -->
+    <!-- Start Client Says Area -->
+    <section class="all_testimonial_area section-padding content-center">
+      <div class="container">
+        <div class="all_testimonial_container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="section_title nice_title_white">
+                <h4>Phản hồi</h4>
+                <p>Những khách hàng phản hồi về dịch vụ của chúng tôi</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container">
+              <div class="all_testimonial">
+                <div class="single_testi_slider">
+                  <div class="testi_studient_txt">
+                    <p>
+                      Dịch vụ chu đáo, uy tín, nhanh chóng, chất lượng giá cạnh
+                      tranh
+                    </p>
+                    <h3>Nguyễn Văn A</h3>
+                    <span>CEO, AOC Packers</span>
+                  </div>
+                </div>
+                <div class="single_testi_slider">
+                  <div class="testi_studient_txt">
+                    <p>Dịch vụ chu đáo, uy tín, nhanh chóng</p>
+                    <h3>Nguyễn Văn B</h3>
+                    <span>COO, AOC Packers</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testi_slider_nav">
+                <i class="fa fa-angle-left testi_prev"></i>
+                <i class="fa fa-angle-right testi_next"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Client Says Area -->
 
-		<section class="all_testimonial_area  section-padding content-center">
-			<div class="container">
-				<div class="row" style="margin-bottom: 20px;">
-					<div class="col-md-12">
-						<div class="">
-							<h3>Tầm nhìn</h3>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="content">
-								<p>Đối tác đáng tin cậy: Trở thành đối tác tin cậy và lựa chọn hàng đầu của khách hàng.</p>
-								<p>Dịch vụ và giải pháp tối ưu: Cung cấp những dịch vụ và giải pháp hậu cần tốt nhất với chi phí cạnh tranh nhất.</p>
-								<p>Sự hài lòng toàn cầu: Đảm bảo sự hài lòng tối đa cho quý khách hàng cũng như các đối tác toàn cầu.</p>
-								<p>Phát triển kinh doanh quốc tế: Góp phần thúc đẩy sự phát triển kinh doanh quốc tế giữa Việt Nam và các quốc gia trên toàn thế giới.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container" style="margin-top: 60px; ">
-				<div class="row" style="margin-bottom: 20px;">
-					<div class="col-md-12">
-						<div class="">
-							<h3>Giá trị cốt lõi</h3>
-							
-						</div>
-					</div>
-				</div>
-				<div class="row"> 
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<div class="content">
-							<p>Chúng tôi tin rằng có thể mang đến cho quý khách hàng sự hài lòng thông qua:</p>
-								<p>Phong cách làm việc nhanh nhẹn: Luôn hoàn thành công việc một cách nhanh chóng và hiệu quả.</p>
-								<p>Tinh thần trách nhiệm cao: Cam kết thực hiện đúng cam kết và trách nhiệm đối với mỗi khách hàng.</p>
-								<p>Tác phong chuyên nghiệp: Đội ngũ nhân viên làm việc với sự chuyên nghiệp và tận tâm, đảm bảo dịch vụ chất lượng cao.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Start Transport Features Area -->
+    <section class="transport_features_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-6 col-sm-6">
+            <div class="transport_features">
+              <div class="section_title nice_title_white_left">
+                <h4>Tiện ích</h4>
+                <p>
+                  Những thông tin hữu ích trong lĩnh vực logistics quý khách có
+                  thể tham khảo ở đây:
+                </p>
+              </div>
+              <div class="section-content section-services section-util">
+                <div
+                  class="panel-group"
+                  id="accordion"
+                  role="tablist"
+                  aria-multiselectable="true"
+                >
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Kích thước container
+                          <span></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapseOne"
+                      class="panel-collapse collapse in"
+                      role="tabpanel"
+                      aria-labelledby="headingOne"
+                    >
+                      <div style="background-color: #057d80" class="panel-body">
+                        <a
+                          class="util-content"
+                          style="text-decoration: none"
+                          href="/container-size.html"
+                          >Định nghĩa container là hình hộp chữ nhật có vỏ bọc
+                          bằng thép, được dùng cho vận chuyển hàng hóa trên biển
+                          và trên đất liền. Có sức chứa hàng cao và tùy theo
+                          từng loại
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Incoterms
+                          <span></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapseTwo"
+                      class="panel-collapse collapse"
+                      role="tabpanel"
+                      aria-labelledby="headingTwo"
+                    >
+                      <div style="background-color: #057d80" class="panel-body">
+                        <ul>
+                          <li>
+                            <a
+                              style="text-decoration: none; color: white"
+                              href="/incoterms-2000.html"
+                              >Incoterms 2000</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              style="text-decoration: none; color: white"
+                              href="/incoterms-2010.html"
+                              >Incoterms 2010</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              style="text-decoration: none; color: white"
+                              href="/incoterms-2020.html"
+                              >Incoterms 2020</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Chuyển đổi đơn vị
+                          <span></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapseThree"
+                      class="panel-collapse collapse"
+                      role="tabpanel"
+                      aria-labelledby="headingThree"
+                    >
+                      <div style="background-color: #057d80" class="panel-body">
+                        <a
+                          class="util-content"
+                          style="text-decoration: none"
+                          href="/convert-unit.html"
+                        >
+                          Bảng chuyển đổi các đơn vị tính trong vận chuyển hàng
+                          hóa</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          Cảng biển, sân bay chính
+                          <span></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapseFour"
+                      class="panel-collapse collapse"
+                      role="tabpanel"
+                      aria-labelledby="headingFour"
+                    >
+                      <div style="background-color: #057d80" class="panel-body">
+                        <a
+                          class="util-content"
+                          style="text-decoration: none"
+                          href="/list-port.html"
+                        >
+                          Danh sách các cảng biển và sân bay chính ở Việt Nam</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseFive"
+                        >
+                          Từ điển hành hải
+                          <span></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapseFive"
+                      class="panel-collapse collapse"
+                      role="tabpanel"
+                      aria-labelledby="headingFive"
+                    >
+                      <div style="background-color: #057d80" class="panel-body">
+                        <a
+                          class="util-content"
+                          style="text-decoration: none"
+                          href="/dictionary.html"
+                        >
+                          Từ điển các từ chuyên ngành được sử dụng trong hàng
+                          hải</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingSix">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapseSix"
+                          aria-expanded="false"
+                          aria-controls="collapseSix"
+                        >
+                          Tỷ giá ngoại tệ
+                          <span></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapseSix"
+                      class="panel-collapse collapse"
+                      role="tabpanel"
+                      aria-labelledby="headingSix"
+                    >
+                      <div style="background-color: #057d80" class="panel-body">
+                        <a
+                          class="util-content"
+                          style="text-decoration: none"
+                          href="/exchange.html"
+                        >
+                          Tỷ giá tham khảo theo thời gian thực được cập nhật từ
+                          trang website của Tổng Cục Hải Quan</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Transport Features Area -->
 
-		<!-- Start Get A Quote Area -->
-		<section class="get_quote_area content-left" id="contactus">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="section_title nice_title_white_left">
-							<h4>Liên hệ với chúng tôi</h4>
-							<p>
-								Để chúng tôi có thể liên hệ với quý anh chị trong thời gian sớm nhất, xin vui lòng điền thông tin vào ô trống.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="section_content">
-						<div class="col-md-7">
-							<div class="row">
-								<div class="form-group col-md-6 col-sm-6">
-									<div class="input-group">
-										<input id="fullName" type="text" placeholder="Họ và Tên">
-									</div>
-								</div>
-								
-								<div class="form-group col-md-6 col-sm-6">
-									<div class="input-group">
-										<input id="companyName" type="text" placeholder="Tên doanh nghiệp ">
-									</div>
-								</div>
-								<div class="form-group col-md-6 col-sm-6">
-									<div class="input-group">
-										<input id="email" type="text" placeholder="Địa chỉ email">
-									</div>
-								</div>
-								<div class="form-group col-md-6 col-sm-6">
-									<div class="input-group">
-										<input id="phoneNumber" type="text" placeholder="Số điện thoại">
-									</div>
-								</div>
-								<div class="form-group col-md-12 col-sm-12">
-									<textarea id="message" cols="30" rows="10" placeholder="Nội dung lời nhắn đến chúng tôi"></textarea>
-								</div>
-								<div class="form-group submit col-md-3 col-sm-3">
-									<button id="send" class="btn">Gửi</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Get A Quote Area -->
+    <!-- Start Our Clients Area -->
+    <section class="our_clients_area section-padding content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="section_title nice_title">
+              <h4>Đối tác</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="logo_caro">
+              <div class="client-carousel">
+                <div class="item">
+                  <a><img src="images/dhl.png" alt="Logo Image" /></a>
+                </div>
+                <div class="item">
+                  <a><img src="images/fedex.png" alt="Logo Image" /></a>
+                </div>
+                <div class="item">
+                  <a><img src="images/ups.png" alt="Logo Image" /></a>
+                </div>
+                <div class="item">
+                  <a><img src="images/maersk.jpg" alt="Logo Image" /></a>
+                </div>
+                <div class="item">
+                  <a><img src="images/cma.jpg" alt="Logo Image" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Our Clients Area -->
 
-		<!-- Start Client Says Area -->
-		 <!--
+    <section class="all_testimonial_area section-padding content-center">
+      <div class="container">
+        <div class="row" style="margin-bottom: 20px">
+          <div class="col-md-12">
+            <div class="">
+              <h3>Tầm nhìn</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="content">
+              <p>
+                Đối tác đáng tin cậy: Trở thành đối tác tin cậy và lựa chọn hàng
+                đầu của khách hàng.
+              </p>
+              <p>
+                Dịch vụ và giải pháp tối ưu: Cung cấp những dịch vụ và giải pháp
+                hậu cần tốt nhất với chi phí cạnh tranh nhất.
+              </p>
+              <p>
+                Sự hài lòng toàn cầu: Đảm bảo sự hài lòng tối đa cho quý khách
+                hàng cũng như các đối tác toàn cầu.
+              </p>
+              <p>
+                Phát triển kinh doanh quốc tế: Góp phần thúc đẩy sự phát triển
+                kinh doanh quốc tế giữa Việt Nam và các quốc gia trên toàn thế
+                giới.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" style="margin-top: 60px">
+        <div class="row" style="margin-bottom: 20px">
+          <div class="col-md-12">
+            <div class="">
+              <h3>Giá trị cốt lõi</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="content">
+              <p>
+                Chúng tôi tin rằng có thể mang đến cho quý khách hàng sự hài
+                lòng thông qua:
+              </p>
+              <p>
+                Phong cách làm việc nhanh nhẹn: Luôn hoàn thành công việc một
+                cách nhanh chóng và hiệu quả.
+              </p>
+              <p>
+                Tinh thần trách nhiệm cao: Cam kết thực hiện đúng cam kết và
+                trách nhiệm đối với mỗi khách hàng.
+              </p>
+              <p>
+                Tác phong chuyên nghiệp: Đội ngũ nhân viên làm việc với sự
+                chuyên nghiệp và tận tâm, đảm bảo dịch vụ chất lượng cao.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Get A Quote Area -->
+    <section class="get_quote_area content-left" id="contactus">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="section_title nice_title_white_left">
+              <h4>Liên hệ với chúng tôi</h4>
+              <p>
+                Để chúng tôi có thể liên hệ với quý anh chị trong thời gian sớm
+                nhất, xin vui lòng điền thông tin vào ô trống.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="section_content">
+            <div class="col-md-7">
+              <div class="row">
+                <div class="form-group col-md-6 col-sm-6">
+                  <div class="input-group">
+                    <input id="fullName" type="text" placeholder="Họ và Tên" />
+                  </div>
+                </div>
+
+                <div class="form-group col-md-6 col-sm-6">
+                  <div class="input-group">
+                    <input
+                      id="companyName"
+                      type="text"
+                      placeholder="Tên doanh nghiệp "
+                    />
+                  </div>
+                </div>
+                <div class="form-group col-md-6 col-sm-6">
+                  <div class="input-group">
+                    <input id="email" type="text" placeholder="Địa chỉ email" />
+                  </div>
+                </div>
+                <div class="form-group col-md-6 col-sm-6">
+                  <div class="input-group">
+                    <input
+                      id="phoneNumber"
+                      type="text"
+                      placeholder="Số điện thoại"
+                    />
+                  </div>
+                </div>
+                <div class="form-group col-md-12 col-sm-12">
+                  <textarea
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Nội dung lời nhắn đến chúng tôi"
+                  ></textarea>
+                </div>
+                <div class="form-group submit col-md-3 col-sm-3">
+                  <button id="send" class="btn">Gửi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Get A Quote Area -->
+
+    <!-- Start Client Says Area -->
+    <!--
 		<section class="all_testimonial_area  section-padding content-center">
 			<div class="container">
 				<div class="all_testimonial_container">
@@ -899,216 +1404,242 @@
 			</div>
 		</section>
 		-->
-		<!-- End Client Says Area -->
+    <!-- End Client Says Area -->
 
+    <!-- Start From Our Blog Area -->
+    <section
+      class="from_our_blog_area section-padding content-center"
+      id="news"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="section_title nice_title">
+              <h4>Tin tức</h4>
+              <p>Thông tin nổi bật trong ngành nghề Xuất Nhập Khẩu 2024</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="section_content">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="single_blog_post_home">
+                  <div class="col-md-11 col-sm-12 col-xs-12">
+                    <div class="single_blog_info">
+                      <img src="images/news1.jpg" alt="" />
+                      <h6>
+                        <a
+                          href="https://congthuong.vn/ca-tra-viet-nam-chinh-phuc-hon-140-thi-truong-tren-the-gioi-334083.html"
+                          target="_blank"
+                          >Cá tra Việt Nam chinh phục hơn 140 thị trường trên
+                          thế giới</a
+                        >
+                      </h6>
+                      <span><i class="fa fa-calendar"></i>23 Th 7, 2024</span>
+                      <p>
+                        Cá tra của Việt Nam là mặt hàng thủy sản được nhiều quốc
+                        gia trên thế giới ưa chuộng. Tính đến nay, cá tra đã
+                        chinh phục được hơn 140 thị trường trên thế giới.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="single_blog_post_home">
+                  <div class="col-md-11 col-sm-12 col-xs-12">
+                    <div class="single_blog_info">
+                      <img src="images/news2.jpg" alt="" />
+                      <h6>
+                        <a
+                          href="https://congthuong.vn/soc-trang-xuat-khau-gao-dat-muc-cao-nhat-tu-truoc-den-nay-334030.html"
+                          target="_blank"
+                          >Sóc Trăng: Xuất khẩu gạo đạt mức cao nhất từ trước
+                          đến nay</a
+                        >
+                      </h6>
+                      <span><i class="fa fa-calendar"></i>23 Th 7, 2024</span>
+                      <p>
+                        Với trị giá 325 triệu USD, tăng gần 56,7% so với cùng
+                        kỳ, 6 tháng đầu năm 2024, giá trị xuất khẩu gạo Sóc
+                        Trăng đạt mức cao nhất từ trước đến nay.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End From Our Blog Area -->
 
-		<!-- Start From Our Blog Area -->
-		<section class="from_our_blog_area section-padding content-center" id="news">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="section_title nice_title">
-							<h4>Tin tức</h4>
-							<p>
-								Thông tin nổi bật trong ngành nghề Xuất Nhập Khẩu 2024
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="section_content">
-						<div class="col-md-6">
-							<div class="row">
-								<div class="single_blog_post_home">
-									<div class="col-md-11 col-sm-12 col-xs-12">
-										<div class="single_blog_info">
-											<img src="images/news1.jpg" alt="">
-											<h6><a href="https://congthuong.vn/ca-tra-viet-nam-chinh-phuc-hon-140-thi-truong-tren-the-gioi-334083.html" target="_blank">Cá tra Việt Nam chinh phục hơn 140 thị trường trên thế giới</a></h6>
-											<span><i class="fa fa-calendar"></i>23 Th 7, 2024</span>
-											<p>
-												Cá tra của Việt Nam là mặt hàng thủy sản được nhiều quốc gia trên thế giới ưa chuộng. Tính đến nay, cá tra đã chinh phục được hơn 140 thị trường trên thế giới.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="row">
-								<div class="single_blog_post_home">
-									<div class="col-md-11 col-sm-12 col-xs-12">
-										<div class="single_blog_info">
-											<img src="images/news2.jpg" alt="">
-											<h6><a href="https://congthuong.vn/soc-trang-xuat-khau-gao-dat-muc-cao-nhat-tu-truoc-den-nay-334030.html" target="_blank">Sóc Trăng: Xuất khẩu gạo đạt mức cao nhất từ trước đến nay</a></h6>
-											<span><i class="fa fa-calendar"></i>23 Th 7, 2024</span>
-											<p>
-												Với trị giá 325 triệu USD, tăng gần 56,7% so với cùng kỳ, 6 tháng đầu năm 2024, giá trị xuất khẩu gạo Sóc Trăng đạt mức cao nhất từ trước đến nay.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End From Our Blog Area -->
+    <!-- Start Footer -->
+    <footer class="footer_area">
+      <div class="footer_top_area">
+        <div class="container">
+          <div class="footer_top_up">
+            <div class="row">
+              <div class="footer_widgets">
+                <div class="col-md-6 col-sm-6">
+                  <div class="single_footer_widgets margin-top-95">
+                    <h4 class="widget_title">contact Us</h4>
+                    <ul class="address_list">
+                      <li>
+                        <i><img src="images/map-location.png" alt="" /></i>
+                        <dl>
+                          <dt>50 Main Design Street</dt>
+                          <dd>Australia - Alabama 55455</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <i><img src="images/mobile-icon.png" alt="" /></i>
+                        <dl>
+                          <dt>+1 (234) 5678 90,</dt>
+                          <dd>+1 (098) 7654 32</dd>
+                        </dl>
+                      </li>
+                      <li>
+                        <i><img src="images/message-icon.png" alt="" /></i>
+                        <dl>
+                          <dt>office@transport.com</dt>
+                          <dd>info@transport.com</dd>
+                        </dl>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3 hidden-sm">
+                  <div class="single_footer_widgets margin-top-95">
+                    <h4 class="widget_title">Newsletter</h4>
+                    <p>Objectively innovate empowered manufactured</p>
+                    <form action="index.html" class="subscribe_form">
+                      <input type="text" placeholder="Email Address" />
+                    </form>
+                    <span>
+                      Holisticly predominate extensible testing procedures for
+                      reliable supply chains.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 hidden-sm hidden-xs">
+                <div class="single_footer_widgets">
+                  <div class="footer_fixed_img">
+                    <img src="images/footer_fixed_img.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_top_bottom">
+            <div class="row">
+              <div class="col-md-3 hidden-sm">
+                <div class="single_footer_widgets margin-bottom-65"></div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="single_footer_widgets margin-bottom-65"></div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="single_footer_widgets margin-bottom-65"></div>
+              </div>
+              <div class="col-md-3 hidden-sm">
+                <div class="single_footer_widgets margin-bottom-65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom_area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <div class="footer_bottom_left"></div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <div class="footer_bottom_right floatright"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
-		
-		<!-- Start Footer -->
-		<footer class="footer_area">
-			<div class="footer_top_area">
-				<div class="container">
-					<div class="footer_top_up">
-						<div class="row">
-							<div class="footer_widgets">
-								<div class="col-md-6 col-sm-6">
-									<div class="single_footer_widgets margin-top-95">
-										<h4 class="widget_title">contact Us</h4>
-										<ul class="address_list">
-											<li>
-												<i><img src="images/map-location.png" alt=""></i>
-												<dl>
-													<dt>50 Main Design Street</dt>
-													<dd>Australia - Alabama 55455</dd>
-												</dl>
-											</li>
-											<li>
-												<i><img src="images/mobile-icon.png" alt=""></i>
-												<dl>
-													<dt>+1 (234) 5678 90,</dt>
-													<dd>+1 (098) 7654 32</dd>
-												</dl>
-											</li>
-											<li>
-												<i><img src="images/message-icon.png" alt=""></i>
-												<dl>
-													<dt>office@transport.com</dt>
-													<dd>info@transport.com</dd>
-												</dl>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3 hidden-sm">
-									<div class="single_footer_widgets margin-top-95">
-										<h4 class="widget_title">Newsletter</h4>
-										<p>
-											Objectively innovate empowered manufactured
-										</p>
-										<form action="index.html" class="subscribe_form">
-	                                        <input type="text" placeholder="Email Address">
-	                                    </form>
-	                                    <span>
-	                                    	Holisticly predominate extensible testing procedures for reliable supply chains.
-	                                    </span>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 hidden-sm hidden-xs">
-								<div class="single_footer_widgets">
-									<div class="footer_fixed_img">
-										<img src="images/footer_fixed_img.png" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="footer_top_bottom">
-						<div class="row">
-							<div class="col-md-3 hidden-sm">
-								<div class="single_footer_widgets margin-bottom-65">
-									
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="single_footer_widgets margin-bottom-65">
-									
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="single_footer_widgets margin-bottom-65">
-									
-								</div>
-							</div>
-							<div class="col-md-3 hidden-sm">
-								<div class="single_footer_widgets margin-bottom-65">
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer_bottom_area">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-sm-6">
-							<div class="footer_bottom_left">
-								
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6">
-							<div class="footer_bottom_right floatright">
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- End Footer -->
+    <!-- jQuery Latest version -->
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
 
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
 
-	
-		<!-- jQuery Latest version -->
-        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <!-- revolution slider js -->
+    <script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-        <!-- Bootstrap JS -->
-        <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery Counterup -->
+    <script src="js/jquery.counterup.min.js"></script>
 
-        <!-- revolution slider js -->
-        <script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-		<script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- jQuery Waypoints -->
+    <script src="js/waypoints.min.js"></script>
 
-        <!-- jQuery Counterup -->
-        <script src="js/jquery.counterup.min.js"></script>
-		
-		<!-- jQuery Waypoints -->
-        <script src="js/waypoints.min.js"></script>
+    <!-- jQuery owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
 
-        <!-- jQuery owl carousel -->
-        <script src="js/owl.carousel.min.js"></script>
+    <!-- jQuery VenoBox -->
+    <script src="js/venobox.min.js"></script>
 
-        <!-- jQuery VenoBox -->
-        <script src="js/venobox.min.js"></script>
+    <!-- WOW Animation -->
+    <script src="js/wow.js"></script>
 
-        <!-- WOW Animation -->
-        <script src="js/wow.js"></script>
-           
-        <!--Activating WOW Animation only for modern browser-->
-        <!--[if !IE]><!-->
-            <script type="text/javascript">new WOW().init();</script>
-        <!--<![endif]-->
+    <!--Activating WOW Animation only for modern browser-->
+    <!--[if !IE]><!-->
+    <script type="text/javascript">
+      new WOW().init();
+    </script>
+    <!--<![endif]-->
 
-        <!--Oh Yes, IE 9+ Supports animation, lets activate for IE 9+-->
-        <!--[if gte IE 9]>
-            <script type="text/javascript">new WOW().init();</script>
-        <![endif]-->		 
+    <!--Oh Yes, IE 9+ Supports animation, lets activate for IE 9+-->
+    <!--[if gte IE 9]>
+      <script type="text/javascript">
+        new WOW().init();
+      </script>
+    <![endif]-->
 
-        <!--Opacity & Other IE fix for older browser-->
-        <!--[if lte IE 8]>
-            <script type="text/javascript" src="js/ie-opacity-polyfill.js"></script>
-        <![endif]-->	    
+    <!--Opacity & Other IE fix for older browser-->
+    <!--[if lte IE 8]>
+      <script type="text/javascript" src="js/ie-opacity-polyfill.js"></script>
+    <![endif]-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-	<script src="https://smtpjs.com/v3/smtp.js">
-	</script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-        <!-- jQuery main script -->
-        <script src="js/main.js"></script>
-		<script src="js/email.js"></script>
-		<script src="js/navbar.js"></script>
+    <!-- jQuery main script -->
+    <script src="js/main.js"></script>
+    <script src="js/email.js"></script>
+    <script src="js/navbar.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function() {
+        // Giả sử bạn đã khởi tạo slider ở đây
+        const slider = jQuery('.tp-banner'); // Hoặc selector của slider bạn đang sử dụng
+    
+     
+    
+        // Thực hiện reset mỗi 2000ms
+        setInterval(() => {
+          loader.style.display = "none";
+        }, 2000);
+      });
+    </script> -->
+    
   </body>
 </html>

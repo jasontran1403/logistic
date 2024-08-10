@@ -909,10 +909,21 @@ body#home_two .all_testimonial_area {
   margin-bottom: 39px;
 }
 
-.incoterms-2000 {
-  font-size: 26px;
-
+.content-header {
+  font-size: 30px!important;
+  text-transform: uppercase;
 }
+
+.content-header-sub {
+  font-size: 24px!important;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.content-header-sub-2 {
+  font-size: 20px!important;
+}
+
 caption {
   font-size: 1.5em;
   font-weight: bold;
