@@ -255,7 +255,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("images/hangkhong.jpg");
+  background-image: url("images/vc_hangkhong.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.3; /* Adjust opacity as needed */
@@ -283,7 +283,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("images/haiquan.jpg");
+  background-image: url("images/dich_vu.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.3; /* Adjust opacity as needed */
@@ -307,7 +307,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("images/noidia.jpg");
+  background-image: url("images/vc_noidia.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.3; /* Adjust opacity as needed */
@@ -333,7 +333,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("images/duongbien.webp");
+  background-image: url("images/vc_duongbien.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.3; /* Adjust opacity as needed */
@@ -357,7 +357,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("images/quocte.jpg");
+  background-image: url("images/chuyenphat_qt.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.3; /* Adjust opacity as needed */
@@ -381,7 +381,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("images/dichvukhac.gif");
+  background-image: url("images/dichvukhac.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.3; /* Adjust opacity as needed */
@@ -518,7 +518,7 @@ html {
   min-height: 365px;
 }
 .single_why_hover {
-  background: rgb(48, 141, 199) none repeat scroll 0 0;
+  background: #057d80 none repeat scroll 0 0;
   height: 100%;
   position: absolute;
   width: 100%;
@@ -550,41 +550,44 @@ html {
   display: inline-block;
   width: 74px;
   height: 114px;
-  background: url(images/logistic-service.png) no-repeat center center;
+  /* background: url(images/logistic-service.png) no-repeat center center; */
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+/* 
 .single_why_us:hover .icon_one{
   background: url(images/logistic-service-hover.png) no-repeat center center; ;
-}
+} */
 .single_why_us .icon_two{
   display: inline-block;
   width: 74px;
   height: 114px;
-  background: url(images/warehousing.png) no-repeat center center; 
+  /* background: url(images/warehousing.png) no-repeat center center;  */
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.single_why_us:hover .icon_two{
+
+/* .single_why_us:hover .icon_two{
   background: url(images/warehousing-hover.png) no-repeat center center;
-}
+} */
 .single_why_us .icon_three{
   display: inline-block;
   width: 74px;
   height: 114px;
-  background: url(images/customer-service.png) no-repeat center center; 
+  /* background: url(images/customer-service.png) no-repeat center center;  */
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+/* 
 .single_why_us:hover .icon_three{
   background: url(images/customer-service-hover.png) no-repeat center center; ;
-}
+} */
 
 /* ============================================
               End Why Us CSS
