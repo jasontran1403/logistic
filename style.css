@@ -255,6 +255,10 @@ html {
   font-size: 28px!important;
 }
 
+.util-content {
+  color: white;
+}
+
 .background-hangkhong {
   overflow: hidden; /* Ensures the pseudo-element doesn't overflow the parent */
   min-height: 380px;
@@ -272,14 +276,11 @@ html {
   background-size: cover;
   background-position: center;
   z-index: -1; /* Ensures the pseudo-element is behind the content */
+  -webkit-background-size: cover; /* Added */
 }
 
 .background-hangkhong > * {
   z-index: 1;
-}
-
-.util-content {
-  color: white;
 }
 
 .background-haiquan {
@@ -299,6 +300,7 @@ html {
   background-size: cover;
   background-position: center;
   z-index: -1; /* Ensures the pseudo-element is behind the content */
+  -webkit-background-size: cover; /* Added */
 }
 
 .background-haiquan > * {
@@ -322,6 +324,7 @@ html {
   background-size: cover;
   background-position: center;
   z-index: -1; /* Ensures the pseudo-element is behind the content */
+  -webkit-background-size: cover; /* Added */
 }
 
 .background-noidia > * {
@@ -347,6 +350,7 @@ html {
   background-size: cover;
   background-position: center;
   z-index: -1; /* Ensures the pseudo-element is behind the content */
+  -webkit-background-size: cover; /* Added */
 }
 
 .background-bien > * {
@@ -370,6 +374,7 @@ html {
   background-size: cover;
   background-position: center;
   z-index: -1; /* Ensures the pseudo-element is behind the content */
+  -webkit-background-size: cover; /* Added */
 }
 
 .background-quocte > * {
@@ -393,17 +398,19 @@ html {
   background-size: cover;
   background-position: center;
   z-index: -1; /* Ensures the pseudo-element is behind the content */
+  -webkit-background-size: cover; /* Added */
 }
 
-.section-services {
-  width: 42svw!important;
-  margin-left: 50px;
-}
 
 .background-khac > * {
   z-index: 1;
 }
 
+
+.section-services {
+  width: 42svw!important;
+  margin-left: 50px;
+}
 .header_we_are dt {
   color: #666666;
   font-family: 'Montserrat', sans-serif;
