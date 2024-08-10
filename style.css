@@ -2920,7 +2920,24 @@ body#services_page .get_quote_area{
   display: none;
 }
 
+.background-hangkhong::before {
+  width: 100%;
+  height: 100%;
+  background-image: url("images/vc_hangkhong.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3; /* Adjust opacity as needed */
+  z-index: -1; /* Ensures the pseudo-element is behind the content */
+}
+
 .service-content {
+  padding: 50px 20px 20px 50px!important;
+}
+
+.check {
+  padding: 0 0 0 20px!important;
+  margin: 0;
+  text-align: left;
 
 }
 

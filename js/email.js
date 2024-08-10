@@ -33,7 +33,7 @@ btnSend.addEventListener("click", () => {
   Email.send({
     Host : "smtp.elasticemail.com",
     Username : "hainguyentran14@gmail.com",
-    Password : "EDB2D6424958DE0E52AE0BEB76EF1AD51427",
+    Password : "Hai14031993@@@",
     To : 'hainguyentran14@gmail.com',
     From : "hainguyentran14@gmail.com",
     Subject : `${fullName.value} - ${phoneNumber.value} - ${email.value}`,
