@@ -129,6 +129,19 @@ html {
   border: none;
 }
 
+.contact-now-header {
+  width: 45svw;
+}
+
+.contact-now-header h2 {
+  color: white!important; 
+  font-size: 18px!important; 
+}
+
+.call-now {
+  margin-left: 150px;
+}
+
 .header_area.scrolled {
   background-color: #d5d3d3; /* Màu xám */
   color: black!important;
@@ -231,7 +244,7 @@ html {
   color: #ffffff!important;
   font-family: 'Montserrat'!important;
   text-align: center;
-  font-size: 36px!important;
+  font-size: 50px!important;
 }
 
 .banner-content-text-2 {
@@ -239,7 +252,7 @@ html {
   letter-spacing: 1px!important;
   font-family: 'Montserrat'!important;
   text-align: center;
-  font-size: 16px!important;
+  font-size: 28px!important;
 }
 
 .background-hangkhong {
@@ -286,7 +299,6 @@ html {
   background-image: url("images/dich_vu.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* Adjust opacity as needed */
   z-index: -1; /* Ensures the pseudo-element is behind the content */
 }
 
@@ -310,7 +322,6 @@ html {
   background-image: url("images/vc_noidia.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* Adjust opacity as needed */
   z-index: -1; /* Ensures the pseudo-element is behind the content */
 }
 
@@ -336,7 +347,6 @@ html {
   background-image: url("images/vc_duongbien.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* Adjust opacity as needed */
   z-index: -1; /* Ensures the pseudo-element is behind the content */
 }
 
@@ -360,7 +370,6 @@ html {
   background-image: url("images/chuyenphat_qt.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* Adjust opacity as needed */
   z-index: -1; /* Ensures the pseudo-element is behind the content */
 }
 
@@ -384,8 +393,12 @@ html {
   background-image: url("images/dichvukhac.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* Adjust opacity as needed */
   z-index: -1; /* Ensures the pseudo-element is behind the content */
+}
+
+.section-services {
+  width: 42svw!important;
+  margin-left: 50px;
 }
 
 .background-khac > * {
@@ -2330,6 +2343,7 @@ body#faq_main_page .section_title{
   color: white;
   padding: 0 30px 0px 30px;
   text-align: center;
+  font-size: 24px;
 }
 .main_two_slider_area h1{
   font-weight: 400;
@@ -2887,6 +2901,12 @@ body#services_page .get_quote_area{
 .header_logo_area {
   display: none;
 }
+
+.section-services {
+  width: 97svw!important;
+  margin-left: 10px;
+}
+
 
 .banner-content-1 {
   z-index: 1!important;
