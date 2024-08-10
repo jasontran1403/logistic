@@ -2913,9 +2913,18 @@ body#services_page .get_quote_area{
   display: none;
 }
 
+.contact-now-header {
+  width: 80svw;
+}
+
+
+.call-now {
+  margin-left: 0;
+}
+
 .section-services {
-  width: 97svw!important;
-  margin-left: 10px;
+  width: 100svw!important;
+  margin-left: 0!important;
 }
 
 

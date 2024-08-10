@@ -19,6 +19,7 @@
 	    <!-- Theme -->
         <link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="nav.css">
+		<link rel="stylesheet" href="loading.css">
 	    <!-- Custom css -->
 	    <link rel="stylesheet" href="style.css">
 
@@ -28,6 +29,8 @@
 		
 	</head>
   	<body>
+		<div id="preloader">
+		</div>
 		    	<!-- Start Header Area -->
 				<button onclick="topFunction()" id="myBtn"></button>
 				<!-- Start Header Area -->
@@ -315,5 +318,13 @@
         <!-- jQuery main script -->
         <script src="js/main.js"></script>
 		<script src="js/navbar.js"></script>
+		<script>
+			var loader = document.getElementById("preloader");
+			window.addEventListener("load", function() {
+			  setInterval(() => {
+				loader.style.display = "none";
+			  }, 2000);
+			});
+		  </script>
   </body>
 </html>

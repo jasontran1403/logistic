@@ -21,12 +21,15 @@
 		<link rel="stylesheet" href="nav.css">
 	    <!-- Custom css -->
 	    <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="loading.css">
 
 		<!-- Favicons -->
 	    <link rel="apple-touch-icon-precomposed" href="images/logo.png">
 	    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
 	</head>
   	<body>
+		<div id="preloader">
+		</div>
 		    	<!-- Start Header Area -->
 				<button onclick="topFunction()" id="myBtn"></button>
 				<!-- Start Header Area -->
@@ -495,5 +498,13 @@
         <!-- jQuery main script -->
         <script src="js/main.js"></script>
 		<script src="js/navbar.js"></script>
+		<script>
+			var loader = document.getElementById("preloader");
+			window.addEventListener("load", function() {
+			  setInterval(() => {
+				loader.style.display = "none";
+			  }, 2000);
+			});
+		  </script>
   </body>
 </html>
