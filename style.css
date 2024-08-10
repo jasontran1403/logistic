@@ -2245,6 +2245,13 @@ body#faq_main_page .section_title{
   text-transform: none;
   border-radius: 0px;
 }
+
+.service-content {
+  padding: 200px 200px 0 200px;
+  line-height: 40px;
+  text-align: center;
+}
+
 .all_parking_trucks .nav.nav-tabs li.active a, .all_parking_trucks .nav.nav-tabs li:hover a {
   color: #0072a5;
   border: 1px solid #0072a5;
@@ -2911,6 +2918,10 @@ body#services_page .get_quote_area{
 @media only screen and (max-width: 767px) {
 .header_logo_area {
   display: none;
+}
+
+.service-content {
+
 }
 
 .contact-now-header {
