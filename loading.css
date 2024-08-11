@@ -8,28 +8,60 @@
 }
 
 #svg {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  stroke: #057d80; /* Set stroke color */
-  stroke-width: 6px;
+  stroke: #057d80;
+  fill-opacity: 1;
+  stroke-width: 1px;
   stroke-dasharray: 6000;
   animation: draw 4.5s ease;
 }
 
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: #057d80;
+  font-size: 36px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 100%); /* Start position: Off-screen (bottom) */
+  stroke-width: 16px;
+  stroke-dasharray: 6000;
+  animation: swipe-up 1.5s ease forwards; /* Add swipe-up animation */
+}
 
 @keyframes draw {
-  0% {
+  from {
     stroke-dashoffset: 6000;
   }
-  100% {
+  to {
     stroke-dashoffset: 0;
   }
 }
 
+@keyframes swipe-up {
+  from {
+    transform: translate(-50%, 100%); /* Start from off-screen (bottom) */
+  }
+  to {
+    transform: translate(-50%, -60%); /* End at the desired position */
+  }
+}
+
+
 @media only screen and (max-width: 767px) {
-  
+  #preloader {
+    background-size: 100%;
+  }
 }
