@@ -476,6 +476,15 @@ html {
   overflow: hidden;
   min-height: 365px;
 }
+
+.btn-info {
+  background-color: #057d80!important;
+}
+
+.btn-info:hover {
+  color: white;
+}
+
 .single_why_hover {
   background: #057d80 none repeat scroll 0 0;
   height: 100%;
