@@ -997,17 +997,17 @@
     <!-- End Our Clients Area -->
 
     <section class="all_testimonial_area section-padding content-center">
-      <div class="container">
+      <div class="container fade-in">
         <div class="row" style="margin-bottom: 20px">
           <div class="col-md-12">
-            <div class="fade-in">
+            <div class="">
               <h3>Tầm nhìn</h3>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="content fade-in">
+            <div class="content">
               <p>
                 Đối tác đáng tin cậy: Trở thành đối tác tin cậy và lựa chọn hàng
                 đầu của khách hàng.
@@ -1029,17 +1029,17 @@
           </div>
         </div>
       </div>
-      <div class="container" style="margin-top: 60px">
+      <div class="container fade-in" style="margin-top: 60px">
         <div class="row" style="margin-bottom: 20px">
           <div class="col-md-12">
-            <div class="fade-in">
+            <div class="">
               <h3>Giá trị cốt lõi</h3>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="content fade-in">
+            <div class="content">
               <p>
                 Chúng tôi tin rằng có thể mang đến cho quý khách hàng sự hài
                 lòng thông qua:
@@ -1402,7 +1402,7 @@
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
-              entry.target.style.setProperty('--delay', `${index * 0.3}s`); // Apply a delay based on the index
+              entry.target.style.setProperty('--delay', `${index * 0.4}s`); // Apply a delay based on the index
               entry.target.classList.add('visible');
             } else {
               entry.target.classList.remove('visible'); // Remove the class when it's out of view to re-trigger the animation
