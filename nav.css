@@ -370,6 +370,10 @@ header.clone #mainmenu a {
     left: 0!important;
   }
 
+  #sub a {
+    font-size: 12px!important;
+  }
+
   header.clone {
     display: block;
     position: inherit;
