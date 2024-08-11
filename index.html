@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Max-Logistic</title>
 
-    
+    <link rel="preload" as="image" href="loadingscreen/loadingscreen.gif">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="loading.css" />
-
+    <link rel="preload" as="image" href="loadingscreen/test.gif">
     <!-- Custom css -->
     <link rel="stylesheet" href="style.css" />
     <link
@@ -1377,11 +1377,11 @@
 
 
       var loader = document.getElementById("preloader");
-      window.addEventListener("load", function() {
-        setInterval(() => {
-          loader.style.display = "none";
-        }, 2000);
-      });
+        window.addEventListener("load", function() {
+          setInterval(() => {
+            loader.style.display = "none";
+          }, 2500);
+        });
     </script>
     
   </body>
