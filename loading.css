@@ -64,4 +64,8 @@
   #preloader {
     background-size: 100%;
   }
+  
+  .logo-name {
+    font-size: 18px;
+  }
 }
