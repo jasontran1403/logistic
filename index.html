@@ -324,14 +324,14 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
             <div class="section_title nice_title">
-              <h4>Tại sao chọn chúng tôi</h4>
-              <p>Lý do để chúng tôi là sự lựa chọn trở thành đối tác của bạn</p>
+              <h4 class="fade-in">Tại sao chọn chúng tôi</h4>
+              <p class="fade-in">Lý do để chúng tôi là sự lựa chọn trở thành đối tác của bạn</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="section_content clearfix">
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4 fade-in">
               <div class="single_why_us">
                 <div class="single_why_hover"></div>
                 <div class="icon_one">
@@ -341,7 +341,7 @@
                 <p>Cam kết đem lại giá trị tốt nhất cho khách hàng</p>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4 fade-in">
               <div class="single_why_us">
                 <div class="single_why_hover"></div>
                 <div class="icon_two">
@@ -354,7 +354,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4 fade-in">
               <div class="single_why_us">
                 <div class="single_why_hover"></div>
                 <div class="icon_three">
@@ -382,7 +382,7 @@
       <div class="container section-content">
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <div class="section_title nice_title">
+            <div class="section_title nice_title fade-in">
               <h4>Dịch vụ cung cấp</h4>
               <p>
                 Runstarss cung cấp tất cả các dịch vụ của ngành giao nhận vận
@@ -395,10 +395,10 @@
           <div class="section_content clearfix">
             <div class="col-md-4 col-12">
               <div class="weare_best_left_service">
-                <div class="row">
+                <div class="row ">
                   <div class="col-md-12">
                     <div class="single_weare_best clearfix background-haiquan">
-                      <dl>
+                      <dl class="fade-in">
                         <dt
                           style="
                             color: white;
@@ -434,7 +434,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="single_weare_best clearfix background-bien">
-                      <dl>
+                      <dl class="fade-in">
                         <dt
                           style="
                             color: white;
@@ -500,7 +500,7 @@
                     <div
                       class="single_weare_best clearfix background-hangkhong"
                     >
-                      <dl>
+                      <dl class="fade-in">
                         <dt
                           style="
                             color: white;
@@ -541,7 +541,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="single_weare_best clearfix background-quocte">
-                      <dl>
+                      <dl class="fade-in">
                         <dt
                           style="
                             color: white;
@@ -581,7 +581,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="single_weare_best clearfix background-noidia">
-                      <dl>
+                      <dl class="fade-in">
                         <dt
                           style="
                             color: white;
@@ -620,7 +620,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="single_weare_best clearfix background-khac">
-                      <dl>
+                      <dl class="fade-in">
                         <dt
                           style="
                             color: white;
@@ -1000,14 +1000,14 @@
       <div class="container">
         <div class="row" style="margin-bottom: 20px">
           <div class="col-md-12">
-            <div class="">
+            <div class="fade-in">
               <h3>Tầm nhìn</h3>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="content">
+            <div class="content fade-in">
               <p>
                 Đối tác đáng tin cậy: Trở thành đối tác tin cậy và lựa chọn hàng
                 đầu của khách hàng.
@@ -1032,14 +1032,14 @@
       <div class="container" style="margin-top: 60px">
         <div class="row" style="margin-bottom: 20px">
           <div class="col-md-12">
-            <div class="">
+            <div class="fade-in">
               <h3>Giá trị cốt lõi</h3>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="content">
+            <div class="content fade-in">
               <p>
                 Chúng tôi tin rằng có thể mang đến cho quý khách hàng sự hài
                 lòng thông qua:
@@ -1395,7 +1395,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    
     <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const elements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+              entry.target.style.setProperty('--delay', `${index * 0.3}s`); // Apply a delay based on the index
+              entry.target.classList.add('visible');
+            } else {
+              entry.target.classList.remove('visible'); // Remove the class when it's out of view to re-trigger the animation
+            }
+          });
+        }, { threshold: 0.1 });
+
+        elements.forEach(element => {
+          observer.observe(element);
+        });
+      });
+
+
+
       var loader = document.getElementById("preloader");
       window.addEventListener("load", function() {
         setInterval(() => {
