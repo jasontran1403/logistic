@@ -269,7 +269,7 @@ html {
   background-position: center;
   z-index: 0;
   left: -15px;
-  width: 560px!important;
+  width: calc(100vw / 3);
   margin: 0!important; /* Loại bỏ khoảng trắng */
   box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng của phần tử */
 }
@@ -284,7 +284,7 @@ html {
   background-position: center;
   z-index: 0;
   left: -15px;
-  width: 560px!important;
+  width: calc(100vw / 3);
   margin: 0!important; /* Loại bỏ khoảng trắng */
   box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng của phần tử */
 }
@@ -298,7 +298,7 @@ html {
   background-position: center;
   z-index: 0;
   left: -15px;
-  width: 560px!important;
+  width: calc(100vw / 3);
   margin: 0!important; /* Loại bỏ khoảng trắng */
   box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng của phần tử */
 }
@@ -312,7 +312,7 @@ html {
   background-position: center;
   z-index: 0;
   left: -15px;
-  width: 560px!important;
+  width: calc(100vw / 3);
   margin: 0!important; /* Loại bỏ khoảng trắng */
   box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng của phần tử */
 }
@@ -327,7 +327,7 @@ html {
   background-position: center;
   z-index: 0;
   left: -15px;
-  width: 560px!important;
+  width: calc(100vw / 3);
   margin: 0!important; /* Loại bỏ khoảng trắng */
   box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng của phần tử */
 }
@@ -341,7 +341,7 @@ html {
   background-position: center;
   z-index: 0;
   left: -15px;
-  width: 560px!important;
+  width: calc(100vw / 3);
   margin: 0!important; /* Loại bỏ khoảng trắng */
   box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng của phần tử */
 }
@@ -737,15 +737,31 @@ body#home_two .transport_features_area {
   overflow: hidden;
 }
 .transport_features_area .panel-title span {
-  background: #2f364f url("images/transport-features-open.png") no-repeat scroll center center;
   padding: 30px 8px;
   float: left;
   height: 50px;
   width: 50px;
 }
-.transport_features_area .panel-title a.collapsed span {
-  background-image: url("images/transport-features-lock.png");
+#container-size {
+  background: #2f364f url("images/1.png") no-repeat scroll center center;
 }
+#incoterms {
+  background: #2f364f url("images/2.png") no-repeat scroll center center;
+}
+#convert-unit {
+  background: #2f364f url("images/3.png") no-repeat scroll center center;
+}
+#list-port {
+  background: #2f364f url("images/4.png") no-repeat scroll center center;
+}
+#dictionary {
+  background: #2f364f url("images/5.png") no-repeat scroll center center;
+}
+#exchange {
+  background: #2f364f url("images/6.png") no-repeat scroll center center;
+}
+/* .transport_features_area .panel-title a.collapsed span {
+} */
 .transport_features {
   min-height: 800px;
   padding-bottom: 120px;
@@ -2864,7 +2880,7 @@ body#services_page .get_quote_area{
 }
 
 .background-hangkhong, .background-quocte, .background-noidia, .background-bien, .background-haiquan, .background-khac {
-  max-width: 100svw!important;
+  width: 100svw!important;
 }
 
 .service-content {
