@@ -30,29 +30,42 @@ btnSend.addEventListener("click", () => {
     return;
   }
 
-  Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "hainguyentran14@gmail.com",
-    Password : "Hai14031993@@@",
-    To : 'hainguyentran14@gmail.com',
-    From : "hainguyentran14@gmail.com",
-    Subject : `${fullName.value} - ${phoneNumber.value} - ${email.value}`,
-    Body : `${message.value}`,
-}).then(
-  message => {
-    if (message === "OK") {
-        toastr.success("Gửi tin nhắn thành công, chúng tôi sẽ sớm phản hồi cho bạn");
-    } else {
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+
+  const raw = JSON.stringify({
+    from: email.value,
+    to: "manager@runstars.vn",
+    subject: `${fullName.value} - ${phoneNumber.value} - ${email.value}`,
+    body: "test",
+  });
+
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    body: raw,
+    redirect: "follow",
+  };
+
+  fetch("https://seal-app-ht5wx.ondigitalocean.app/send-mail", requestOptions)
+    .then((response) => response.text())
+    .then((result) => {
+      if (result === "Success") {
+        toastr.success(
+          "Gửi tin nhắn thành công, chúng tôi sẽ sớm phản hồi cho bạn"
+        );
+      } else {
         toastr.error("Gửi tin nhắn thất bại, xin vui lòng thử lại sau");
-    }
-  }
-);
+      }
+    })
 });
 
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
