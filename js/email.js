@@ -36,8 +36,8 @@ btnSend.addEventListener("click", () => {
   const raw = JSON.stringify({
     from: email.value,
     to: "manager@runstars.vn",
-    subject: `${fullName.value} - ${phoneNumber.value} - ${email.value}`,
-    body: "test",
+    subject: `${fullName.value} - ${phoneNumber.value} - ${email.value} - ${companyName.value}`,
+    body: message.value,
   });
 
   const requestOptions = {
