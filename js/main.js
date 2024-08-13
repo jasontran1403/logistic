@@ -85,8 +85,8 @@ jQuery(document).ready(function($){
           navigationArrows:"solo",
           navigationStyle:"preview4",
           
-          touchenabled:"on",
-          onHoverStop:"on",
+          touchenabled:"off",
+          onHoverStop:"off",
           
           swipe_velocity: 0.7,
           swipe_min_touches: 1,
@@ -121,7 +121,7 @@ jQuery(document).ready(function($){
           spinner:"spinner4",
           
           stopLoop:"off",
-          stopAfterLoops:-1,
+          stopAfterLoops:"off",
           stopAtSlide:-1,
 
           shuffle:"off",

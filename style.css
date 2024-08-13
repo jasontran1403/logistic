@@ -119,6 +119,18 @@ html {
   color: #057d80;
 }
 
+.header-size {
+  font-size: 18px!important;
+}
+
+.sub-header-size {
+  font-size: 13px!important;
+}
+
+.text-size {
+  font-size: 15px!important;
+}
+
 .navbar-nav li:hover {
   background-color: transparent!important;
   color: #057d80;
@@ -130,7 +142,11 @@ html {
 }
 
 .contact-now-header {
-  width: 45svw;
+  width: 40svw;
+}
+
+.contact-now-header h2 {
+  width: 60%;
 }
 
 .contact-now-header h2 {
@@ -138,9 +154,6 @@ html {
   font-size: 18px!important; 
 }
 
-.call-now {
-  margin-left: 150px;
-}
 
 .header_area.scrolled {
   background-color: #d5d3d3; /* Màu xám */
@@ -213,6 +226,9 @@ html {
 .contact-now-section {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
 }
 
 .banner-content-1 {
@@ -720,6 +736,14 @@ html {
   margin-bottom: 22px;
 }
 
+.call-now {
+  width: 150px;
+}
+
+.call-now a {
+  padding: 20px;
+}
+
 
 /* ============================================
               End Get Quote Area
@@ -1064,10 +1088,12 @@ caption {
 
 .image {
   height: 100%;
+  width: 30svw;
+  float: right;
 }
 
 .side-content {
-  height: 500px;
+  max-height: 600px;
   overflow-x: scroll;
   overflow-y: scroll;
 }
@@ -2654,6 +2680,10 @@ width: 100%;}
   background-color: #0056b3; /* Darker background on hover */
 }
 
+#send {
+  background-color: #057d80!important;
+}
+
 /* ============================================
             End 2nd Home page Area
 ===============================================*/
@@ -2757,6 +2787,11 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
           Start Medium Layout: 1280px
 ===============================================*/
 
+@media only screen and (min-width: 3000px) {
+  .call-now {
+    width: 200px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 .container{
   width: 970px;
@@ -2854,6 +2889,7 @@ body#home_two .transport_features .section-content ul li img {
   display: none;
 }
 
+
 .header_we_are i {
   width: 22%;
 }
@@ -2924,10 +2960,24 @@ body#services_page .get_quote_area{
 /* ============================================
           Start Mobile Layout: 320px
 ===============================================*/
-
 @media only screen and (max-width: 767px) {
 .header_logo_area {
   display: none;
+}
+
+
+.call-now {
+  width: 100svw;
+  margin-left: 35%;
+}
+
+.contact-now-section {
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-now-header h2 {
+  width: 80svw!important;
+  padding: 10px 10px 10px 10px;
 }
 
 .background-hangkhong, .background-quocte, .background-noidia, .background-bien, .background-haiquan, .background-khac {
@@ -2942,10 +2992,6 @@ body#services_page .get_quote_area{
   width: 80svw;
 }
 
-
-.call-now {
-  margin-left: 0;
-}
 
 .section-services {
   width: 100svw!important;
@@ -3010,16 +3056,6 @@ body#services_page .get_quote_area{
 section {
   max-width: 100svh;
   overflow: hidden;
-}
-
-.contact-now-section {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.call-now {
-  margin-top: 20px;
 }
 
 .main_menu .navbar-default .navbar-nav {
