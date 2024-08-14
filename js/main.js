@@ -85,7 +85,7 @@ jQuery(document).ready(function($){
           navigationArrows:"solo",
           navigationStyle:"preview4",
           
-          touchenabled:"off",
+          touchenabled:"on",
           onHoverStop:"off",
           
           swipe_velocity: 0.7,

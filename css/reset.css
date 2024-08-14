@@ -1564,7 +1564,7 @@
 }
 .slideOutUp{-webkit-animation-name:slideOutUp;animation-name:slideOutUp;}
 .vbox-overlay *, .vbox-overlay *:before, .vbox-overlay *:after{-webkit-backface-visibility:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
-body{-webkit-overflow-scrolling:touch;}
+body{-webkit-overflow-scrolling:touch; margin: 0; padding: 0; box-sizing: border-box;}
 .vbox-overlay{background:#181818;background:rgba(0,0,0,0.85);width:100%;height:auto;position:absolute;top:0;left:0;z-index:999;overflow:hidden;opacity:0;transition:opacity .25s ease-in-out;-moz-transition:opacity .25s ease-in-out;-webkit-transition:opacity .25s ease-in-out;}
 .relativo{float:left;width:100%;height:100%;display:block;position:relative;}
 .vbox-preloader{position:fixed;width:32px;height:32px;left:50%;top:50%;margin-left:-16px;margin-top:-16px;background-image:url(../images/preload-circle.png);text-indent:-100px;overflow:hidden;-webkit-animation:playload 1.4s steps(18) infinite;-moz-animation:playload 1.4s steps(18) infinite;-ms-animation:playload 1.4s steps(18) infinite;-o-animation:playload 1.4s steps(18) infinite;animation:playload 1.4s steps(18) infinite;}
