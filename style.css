@@ -200,7 +200,7 @@ html, body {
 
 .service-content {
   height: 60svh;
-  padding: 50px 100px 50px 100px;
+  padding: 100px!important;
 }
 
 .content-section p {
@@ -3255,10 +3255,7 @@ section {
   padding: 30px 5px;
   width: 40px;
 }
-.transport_features_area .panel-default > .panel-heading .panel-title a {
-  font-size: 9px;
-  text-indent: 4px;
-}
+
 .get_quote_area {
   background: #000;
 }
@@ -3400,11 +3397,9 @@ body#home_two .single-counter {
 }
 
 .section-util {
-  color: red;
   position: relative;
-  transform: translateX(-20%);
-  left: 50%;
   transform: translateX(-50%);
+  left: 50%;
 }
 
 #accordion {
