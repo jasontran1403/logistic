@@ -98,6 +98,7 @@ html, body {
   padding: 15px 15px 15px 15px;
 }
 
+
 .section-content {
   /* width: 99%; */
   /* padding: 0 0 10px 0; */
@@ -192,6 +193,30 @@ html, body {
   text-align: right;
   width: 68%;
 }
+
+.content-section {
+  margin-bottom: 20px;
+}
+
+.service-content {
+  height: 60svh;
+  padding: 50px 100px 50px 100px;
+}
+
+.content-section p {
+  color: #959595;
+  margin: 0;
+  padding: 0;
+}
+
+.header-section {
+  padding-left: 10px;
+}
+
+.text-section {
+  padding-left: 20px;
+}
+
 .header_we_are i {
   line-height: 54px;
   text-align: center;
@@ -2278,13 +2303,11 @@ body#faq_main_page .section_title{
 
 .service-content {
   padding: 50px; /* Điều chỉnh giá trị này để đạt được khoảng cách mong muốn */
-  line-height: 40px;
-  text-align: center;
-  box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước tổng thể của thẻ */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 50svh; /* Đảm bảo chiều cao của thẻ ít nhất bằng chiều cao của màn hình */
+  line-height: 30px;
+  text-align: left;
+
+  height: 60svh;
+  overflow-x: scroll;
 }
 
 
