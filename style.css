@@ -2825,8 +2825,6 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
   }
 }
 
-
-
 @media only screen and (min-width: 992px) and (max-width: 1299px) {
 .container{
   width: 970px;
@@ -2841,6 +2839,10 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
 }
 
 .service-content {
+  width: 100svw!important;
+}
+
+.side-content {
   width: 100svw!important;
 }
 
