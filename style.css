@@ -150,7 +150,7 @@ html, body {
 }
 
 .contact-now-header h2 {
-  width: 60%;
+  width: 70%;
 }
 
 .contact-now-header h2 {
@@ -269,6 +269,10 @@ html, body {
   font-family: 'Montserrat'!important;
   text-align: center;
   font-size: 24px!important;
+}
+
+.banner-content-text-12 {
+  margin-bottom: 80px!important;
 }
 
 .util-content {
@@ -1065,19 +1069,18 @@ caption {
 ===============================================*/
 
 .side-img {
-  height: 600px;
+  height: 60svh;
 }
 
 .image {
   height: 100%;
-  width: 30svw;
+  width: 35svw;
   float: right;
 }
 
 .side-content {
-  max-height: 600px;
+  height: 60svh;
   overflow-x: scroll;
-  overflow-y: scroll;
 }
 
 .breadcrumb_main_area{
@@ -2792,6 +2795,10 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
     width: 70svw;
   }
 
+  .contact-now-header h2 {
+    width: 55%;
+  }
+
   .banner-content-1 {
     top: 40% !important;
     left: 50%!important;
@@ -2809,7 +2816,6 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
     width: 100%!important;
     font-size: 50px!important;
     text-wrap: wrap;
-    margin-bottom: 80px!important;
   }
   
   .banner-content-text-2 {
@@ -2832,6 +2838,10 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
 
 .side-img {
   display: none;
+}
+
+.service-content {
+  width: 100svw!important;
 }
 
 .header_we_are > dl {
