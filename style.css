@@ -70,7 +70,21 @@ html, body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-      
+
+.sub-header-size {
+  position: relative;
+  display: block;
+  padding-right: 30px; /* Space for the icon */
+  box-sizing: border-box;
+}
+
+.sub-header-size i {
+  position: absolute;
+  right: 10px; /* 10px margin from the right edge */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically centers the icon */
+}
+
       /* Style for dropdown-content links */
 .dropdown-content a {
   padding: 12px 16px;
@@ -98,6 +112,13 @@ html, body {
   padding: 15px 15px 15px 15px;
 }
 
+.sub-menu-size {
+  font-size: 15px!important;
+}
+
+.content-center h3 {
+  line-height: 45px!important;
+}
 
 .section-content {
   /* width: 99%; */
@@ -156,9 +177,8 @@ html, body {
 
 .contact-now-header h2 {
   color: white!important; 
-  font-size: 18px!important; 
+  font-size: 12px!important; 
 }
-
 
 .header_area.scrolled {
   background-color: #d5d3d3; /* Màu xám */
@@ -278,14 +298,14 @@ html, body {
   color: #fff!important; 
   font-family: 'Montserrat'!important;
   letter-spacing: 1px!important;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .banner-content-text-1 {
   color: #ffffff!important;
   font-family: 'Montserrat'!important;
   text-align: center;
-  font-size: 48px!important;
+  font-size: 36px!important;
 }
 
 .banner-content-text-2 {
@@ -293,11 +313,12 @@ html, body {
   letter-spacing: 1px!important;
   font-family: 'Montserrat'!important;
   text-align: center;
-  font-size: 24px!important;
+  font-size: 20px!important;
 }
 
 .banner-content-text-12 {
-  margin-bottom: 80px!important;
+  margin-bottom: 100px!important;
+  line-height: 40px!important;
 }
 
 .util-content {
@@ -748,11 +769,15 @@ html, body {
 }
 
 .call-now {
-  width: 150px;
+  width: 20svw;
 }
 
 .call-now a {
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  justify-content: center;
 }
 
 
@@ -830,21 +855,33 @@ body#home_two .transport_features_area {
 }
 #container-size {
   background: #2f364f url("images/1.png") no-repeat scroll center center;
+  position: absolute;
+  z-index: 1;
 }
 #incoterms {
   background: #2f364f url("images/2.png") no-repeat scroll center center;
+  position: absolute;
+  z-index: 1;
 }
 #convert-unit {
   background: #2f364f url("images/3.png") no-repeat scroll center center;
+  position: absolute;
+  z-index: 1;
 }
 #list-port {
   background: #2f364f url("images/4.png") no-repeat scroll center center;
+  position: absolute;
+  z-index: 1;
 }
 #dictionary {
   background: #2f364f url("images/5.png") no-repeat scroll center center;
+  position: absolute;
+  z-index: 1;
 }
 #exchange {
   background: #2f364f url("images/6.png") no-repeat scroll center center;
+  position: absolute;
+  z-index: 1;
 }
 /* .transport_features_area .panel-title a.collapsed span {
 } */
@@ -867,7 +904,7 @@ body#home_two .transport_features_area {
   color: #fff;
   display: block;
   line-height: 60px;
-  text-indent: 20px;
+  text-indent: 60px;
   border-bottom: none;
 }
 .transport_features_area .panel-group .panel{
@@ -2426,7 +2463,7 @@ body#faq_main_page .section_title{
   font-weight: 400;
   text-transform: none;
   font-size: 45px;
-  line-height: 55px
+  line-height: 55px;
 }
 .main_two_slider_area p {
   font-size: 20px;
@@ -2808,18 +2845,46 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
 ===============================================*/
 
 @media only screen and (min-width: 3000px) {
-  .call-now {
-    width: 200px;
+  
+}
+
+@media only screen and (min-width: 1380px) and (max-width: 1600px) {
+  .contact-now-header h2 {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1265px) and (max-width: 1379px) {
+  .contact-now-header h2 {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1265px) and (max-width: 1379px) {
+  .contact-now-header h2 {
+    width: 100%;
+  }
+
+  .call-now a {
+    margin-left: 30px!important;
+    width: 300px!important;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1264px) {
+  .contact-now-header h2 {
+    width: 100%;
+  }
+
+  .call-now a {
+    margin-left: 30px!important;
+    width: 100%!important;
   }
 }
 
 @media only screen and (min-width: 1199px) {
   .nice_title_white_left {
     width: 70svw;
-  }
-
-  .contact-now-header h2 {
-    width: 55%;
   }
 
   .banner-content-1 {
@@ -2837,13 +2902,13 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
   
   .banner-content-text-1 {
     width: 100%!important;
-    font-size: 50px!important;
+    font-size: 36px!important;
     text-wrap: wrap;
   }
   
   .banner-content-text-2 {
     width: 80svw!important;
-    font-size: 28px!important;
+    font-size: 20px!important;
     text-wrap: wrap;
   }
 }
@@ -2913,6 +2978,14 @@ body#services_page .single_weoffer_best i {
 body#services_page .single_weoffer_best > dl > dt {
   font-size: 16px;
 }
+.contact-now-header h2 {
+  width: 100%;
+}
+
+.call-now a {
+  margin-left: 30px!important;
+  width: 100%!important;
+}
 body#services_page .get_quote_area {
   background-position: 61.5% center;
 }
@@ -2969,7 +3042,7 @@ body#home_two .transport_features .section-content ul li img {
 }
 
 .banner-content-text-2 {
-  font-size: 24px!important;
+  font-size: 20px!important;
   color: #fff!important; 
   letter-spacing: 1px!important;
   font-family: 'Montserrat'!important;
@@ -2990,6 +3063,15 @@ body#home_two .transport_features .section-content ul li img {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
  .container{
   width:750px;
+}
+
+.contact-now-header h2 {
+  width: 100%;
+}
+
+.call-now a {
+  margin-left: 30px!important;
+  width: 100%!important;
 }
 
 .background-haiquan, .background-bien, .background-noidia, .background-hangkhong, .background-quocte, .background-khac {
@@ -3019,7 +3101,6 @@ body#home_two .transport_features .section-content ul li img {
   font-size: 12px;
 }
 .transport_features_area .panel-default > .panel-heading .panel-title a {
-  text-indent: 3px;
   font-size: 10px;
 }
 .single_footer_widgets {
@@ -3140,18 +3221,22 @@ body#services_page .get_quote_area{
 
 
 .call-now {
-  width: 100svw;
-  position: relative;
-  padding-left: 15%;
+  width: 90%!important;
 }
 
 .contact-now-section {
   flex-direction: column;
   gap: 20px;
+  align-items: flex-start;
 }
-.contact-now-header h2 {
-  width: 80svw!important;
-  padding: 10px 10px 10px 10px;
+
+.contact-now-header, .contact-now-header h2 {
+  width: 100%!important;
+}
+
+
+.contact-now a {
+  width: 100%!important;
 }
 
 .background-hangkhong, .background-quocte, .background-noidia, .background-bien, .background-haiquan, .background-khac {
@@ -3162,9 +3247,6 @@ body#services_page .get_quote_area{
   padding: 50px 20px 20px 50px!important;
 }
 
-.contact-now-header {
-  width: 80svw;
-}
 
 
 .section-services {
@@ -3445,4 +3527,19 @@ body#home_two .single-counter {
 
 /* --------------------------------------------------------
                 End Responsive CSS
+                1380 1408
 -----------------------------------------------------------*/
+
+@media only screen and (min-width: 1380px) and (max-width: 1408px) {
+.call-now a {
+  width: 300px!important;
+}
+
+}
+
+
+@media only screen and (max-width: 885px) {
+  .contact-now-header h2 {
+    font-size: 10px!important;
+  }
+}
