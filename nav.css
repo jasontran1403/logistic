@@ -59,9 +59,8 @@ header.clone {
   top: -180px;
   transition: 0.5s top ease-in;
   margin-left: 0;
-  border-bottom: solid 1px #eee;
   margin-top: 0;
-  background: #fff;
+  background: rgb(217, 250, 234);
 }
 
 header.clone .logo-1 {

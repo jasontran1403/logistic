@@ -55,9 +55,7 @@ html, body {
   overflow-x: hidden;
 }
 
-.see-more {
-  margin-top: 30px;
-}
+
 			
 			/* Style for dropdown-content */
 .dropdown-content {
@@ -356,7 +354,7 @@ html, body {
 .background-hangkhong {
   position: relative;
   overflow: hidden;
-  min-height: 380px;
+  min-height: 400px;
   padding: 20px;
   background-image: url(images/dich_vu/hang_khong.png);
   background-size: cover;
@@ -371,7 +369,7 @@ html, body {
 .background-haiquan {
   position: relative;
   overflow: hidden;
-  min-height: 380px;
+  min-height: 400px;
   padding: 20px;
   background-image: url(images/dich_vu/dich_vu_hai_quan.png);
   background-size: cover;
@@ -385,7 +383,7 @@ html, body {
 .background-noidia {
   position: relative;
   overflow: hidden;
-  min-height: 380px;
+  min-height: 400px;
   padding: 20px;
   background-image: url(images/dich_vu/noi_dia.png);
   background-size: cover;
@@ -399,7 +397,7 @@ html, body {
 .background-bien {
   position: relative;
   overflow: hidden;
-  min-height: 380px;
+  min-height: 400px;
   padding: 20px;
   background-image: url(images/dich_vu/duong_bien.png);
   background-size: cover;
@@ -414,7 +412,7 @@ html, body {
 .background-quocte {
   position: relative;
   overflow: hidden;
-  min-height: 380px;
+  min-height: 400px;
   padding: 20px;
   background-image: url(images/dich_vu/quoc_te.png);
   background-size: cover;
@@ -428,7 +426,7 @@ html, body {
 .background-khac {
   position: relative;
   overflow: hidden;
-  min-height: 380px;
+  min-height: 400px;
   padding: 20px;
   background-image: url(images/dich_vu/dich_vu_khac.png);
   background-size: cover;
@@ -723,6 +721,19 @@ html, body {
   margin-bottom: 105px;
 }
 
+.service-section {
+  position: relative; /* Tạo khung tham chiếu cho vị trí tuyệt đối bên trong */
+}
+
+.see-more {
+  position: absolute;
+  top: 100%;
+  transform: translate(0, 100%);
+}
+
+.container .why-us {
+  width: 80svw!important;
+}
 
 
 /* ============================================
@@ -3580,5 +3591,41 @@ body#home_two .single-counter {
 @media only screen and (max-width: 885px) {
   .contact-now-header h2 {
     font-size: 10px!important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1092px) {
+  .background-bien, .background-haiquan, .background-hangkhong, .background-khac, .background-noidia, .background-quocte {
+    min-height: 550px!important;
+  }
+}
+
+@media only screen and (min-width: 1092px) and (max-width: 1192px) {
+  .background-bien, .background-haiquan, .background-hangkhong, .background-khac, .background-noidia, .background-quocte {
+    min-height: 500px!important;
+  }
+}
+
+@media only screen and (min-width: 1192px) and (max-width: 1292px) {
+  .background-bien, .background-haiquan, .background-hangkhong, .background-khac, .background-noidia, .background-quocte {
+    min-height: 480px!important;
+  }
+}
+
+@media only screen and (min-width: 1292px) and (max-width: 1392px) {
+  .background-bien, .background-haiquan, .background-hangkhong, .background-khac, .background-noidia, .background-quocte {
+    min-height: 450px!important;
+  }
+}
+
+@media only screen and (min-width: 1392px) and (max-width: 1512px) {
+  .background-bien, .background-haiquan, .background-hangkhong, .background-khac, .background-noidia, .background-quocte {
+    min-height: 440px!important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .why-us {
+    width: 95svw!important;
   }
 }
