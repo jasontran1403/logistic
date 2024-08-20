@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Runstars</title>
 
-    <link rel="preload" as="image" href="loadingscreen/loadingscreen.gif">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
@@ -47,7 +46,6 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="loading.css" />
-    <link rel="preload" as="image" href="loadingscreen/test.gif">
     <!-- Custom css -->
     <link rel="stylesheet" href="style.css" />
     <link
@@ -1284,12 +1282,7 @@
     <script src="js/main.js"></script>
     <script src="js/email.js"></script>
     <script src="js/navbar.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    
     
     <script>
       document.addEventListener("DOMContentLoaded", function() {
@@ -1310,6 +1303,13 @@
         });
       });
     </script>
+
+    <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    ></script>
     <script>
       gsap.fromTo(
         ".loading-page",
@@ -1321,10 +1321,26 @@
           delay: 1,
         }
       );
+    </script> -->
+    <script>
+      window.addEventListener("load", () => {
+          const preloader = document.querySelector('.loading-page');
+          setTimeout(() => {
+              preloader.style.opacity = '0';
+              preloader.style.display = 'none';
+          }, 1500);
+      });
+
     </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
+    <script>
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+          $(".header_area").addClass("scrolled");
+        } else {
+          $(".header_area").removeClass("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>

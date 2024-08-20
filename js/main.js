@@ -121,7 +121,7 @@ jQuery(document).ready(function($){
           spinner:"spinner4",
           
           stopLoop:"off",
-          stopAfterLoops:"off",
+          stopAfterLoops:-1,
           stopAtSlide:-1,
 
           shuffle:"off",
@@ -150,10 +150,4 @@ jQuery(document).ready(function($){
 
 
 
-$(window).scroll(function () {
-  if ($(this).scrollTop() > 0) {
-    $(".header_area").addClass("scrolled");
-  } else {
-    $(".header_area").removeClass("scrolled");
-  }
-});
+
