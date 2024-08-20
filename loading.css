@@ -33,12 +33,14 @@
   text-transform: uppercase;
   font-weight: bolder;
   position: absolute;
-  top: 60%;
-  left: 41.5%;
+  top: 60%; /* Adjust to 50% for vertical centering */
+  left: 42%; /* Adjust to 50% for horizontal centering */
+  transform: translate(-42%, -60%); /* Translate by -50% on both axes to center */
   stroke-width: 16px;
   stroke-dasharray: 6000;
   animation: swipe-up 1.5s ease forwards; /* Add swipe-up animation */
 }
+
 
 @keyframes draw {
   from {
