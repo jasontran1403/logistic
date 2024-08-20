@@ -71,6 +71,10 @@ html, body {
   z-index: 1;
 }
 
+.single_weare_best {
+  padding: 50px!important;
+}
+
 .sub-header-size {
   position: relative;
   display: block;
@@ -101,8 +105,6 @@ html, body {
 .dropdown-button {
   position: relative; /* Position relative to ensure dropdown-content is correctly positioned */
 }
-
-
 
 .header_top {
   margin: 7px 0;
@@ -145,6 +147,16 @@ html, body {
   color: #057d80;
 }
 
+.icon_one, .icon_two, .icon_three {
+  display: flex!important;
+  flex-direction: row;
+  gap: 30px;
+  width: 100svw!important;
+  align-items: left;
+  justify-content: left;
+  height: 80px!important;
+}
+
 .header-size {
   font-size: 18px!important;
 }
@@ -173,6 +185,22 @@ html, body {
 
 .contact-now-header h2 {
   width: 70%;
+}
+
+.section-1, .section-2 {
+  position: relative!important;
+  width: 100%!important;
+  height: 330px;
+}
+
+.section-1 {
+  z-index: 2; /* Đưa section 1 lên trên */
+}
+
+.section-2 {
+  margin-top: -200px; /* Đẩy section 2 lên trên overlap với section 1 */
+  z-index: 1; /* Đưa section 2 xuống dưới */
+  height: 800px;
 }
 
 .contact-now-header h2 {
@@ -330,7 +358,7 @@ html, body {
   overflow: hidden;
   min-height: 380px;
   padding: 20px;
-  background-image: url(images/vc_hangkhong.jpg);
+  background-image: url(images/dich_vu/hang_khong.png);
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -345,7 +373,7 @@ html, body {
   overflow: hidden;
   min-height: 380px;
   padding: 20px;
-  background-image: url(images/dich_vu.jpg);
+  background-image: url(images/dich_vu/dich_vu_hai_quan.png);
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -359,7 +387,7 @@ html, body {
   overflow: hidden;
   min-height: 380px;
   padding: 20px;
-  background-image: url(images/vc_noidia.jpg);
+  background-image: url(images/dich_vu/noi_dia.png);
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -373,7 +401,7 @@ html, body {
   overflow: hidden;
   min-height: 380px;
   padding: 20px;
-  background-image: url(images/vc_duongbien.jpg);
+  background-image: url(images/dich_vu/duong_bien.png);
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -388,7 +416,7 @@ html, body {
   overflow: hidden;
   min-height: 380px;
   padding: 20px;
-  background-image: url(images/chuyenphat_qt.jpg);
+  background-image: url(images/dich_vu/quoc_te.png);
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -402,7 +430,7 @@ html, body {
   overflow: hidden;
   min-height: 380px;
   padding: 20px;
-  background-image: url(images/dichvukhac.jpg);
+  background-image: url(images/dich_vu/dich_vu_khac.png);
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -540,11 +568,17 @@ html, body {
   transition: 0.5s;
   padding: 30px;
   overflow: hidden;
-  min-height: 365px;
+  min-height: 250px;
 }
 
 .btn-info {
-  background-color: #057d80!important;
+  background-color: transparent!important;
+  border: 2px solid white;
+}
+
+.btn-info:hover {
+  border: 2px solid #057d80;
+  color: #057d80;
 }
 
 .fade-in {
@@ -559,9 +593,6 @@ html, body {
   transform: translateY(0);
 }
 
-.btn-info:hover {
-  color: white;
-}
 
 .single_why_hover {
   background: #057d80 none repeat scroll 0 0;
@@ -839,7 +870,7 @@ html, body {
   color: #fff;
 }
 .transport_features_area {
-  background: rgba(0, 0, 0, 0) url("images/picture1.png") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url(images/picture1-fix.jpg) no-repeat scroll center center / cover ;
   overflow: hidden;
   min-height: 950px;
 }
@@ -1145,10 +1176,16 @@ caption {
   overflow-x: scroll;
 }
 
-.breadcrumb_main_area{
-  background: url(images/top.png) no-repeat center center / cover #000000;
+.service{
+  background: url(images/dich_vu/banner_trang_con.png) no-repeat center center / cover #000000;
   position: relative;
 }
+
+.util{
+  background: url(images/tien_ich/banner_trang_con.png) no-repeat center center / cover #000000;
+  position: relative;
+}
+
 .breadcrumb_bg {
   background: rgba(51, 51, 51, 0.75) none repeat scroll 0 0;
   padding: 14px 0;
@@ -2844,8 +2881,10 @@ body#contact_us_page .contact_info .social_icons > ul > li > a:hover{
           Start Medium Layout: 1280px
 ===============================================*/
 
-@media only screen and (min-width: 3000px) {
-  
+@media only screen and (min-width: 1300px) {
+  .service-content {
+    padding-left: 20%!important;
+  }
 }
 
 @media only screen and (min-width: 1380px) and (max-width: 1600px) {

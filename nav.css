@@ -140,6 +140,7 @@ MAINMENU
   margin-top: 20px;
   display: inline-block;
   font-weight: bold;
+  padding-left: 40px;
 }
 
 .menu-right {
