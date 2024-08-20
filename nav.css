@@ -9,6 +9,11 @@ header.overlay {
   background: rgba(12, 121, 227, 0.2);
 }
 
+.sub-site {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 100px;
+}
+
 header .logo-1 {
   width: 100px;
   height: auto;
