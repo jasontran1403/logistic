@@ -7,19 +7,7 @@
   background-size: 100%;
 }
 
-#svg {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  stroke: #057d80;
-  fill-opacity: 1;
-  stroke-width: 1px;
-  stroke-dasharray: 6000;
-  animation: draw 6s ease;
-}
+
 
 .name-container {
   display: flex;
@@ -44,16 +32,15 @@
   animation: swipe-up 1.5s ease forwards;
 }
 
-
-
-@keyframes draw {
-  from {
-    stroke-dashoffset: 6000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
+#svg {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
 }
+
 
 @keyframes swipe-up {
   from {
