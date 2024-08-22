@@ -39,7 +39,24 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -40%);
+  stroke: #057d80;
+  fill-opacity: 1;
+  stroke-width: 1px;
+  stroke-dasharray: 6000;
+  animation: draw 6s ease; /* Thêm animation rotate */
+  transform-origin: center; /* Đảm bảo xoay quanh tâm của SVG */
+  
 }
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 6000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 
 
 @keyframes swipe-up {
