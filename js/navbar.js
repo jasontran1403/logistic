@@ -5,32 +5,19 @@ jQuery(document).ready(function () {
 	'use strict'; // use strict mode
 	$(document).ready(function() {
 		// Lấy đường dẫn hiện tại
-		const path = window.location.href;
-	  
-		// Hàm để cập nhật tham số ngôn ngữ trong URL
-		function updateLanguageInPath(lang) {
-		  const regex = /([?&])lang=[^&]*/;
-		  
-		  if (path.match(regex)) {
-			// Nếu đã có tham số ?lang=, thay thế bằng giá trị mới
-			return path.replace(regex, `$1lang=${lang}`);
-		  } else {
-			// Nếu chưa có ?lang=, thêm nó vào cuối URL
-			const separator = path.includes('?') ? '&' : '?';
-			return `${path}${separator}lang=${lang}`;
-		  }
-		}
+		const url = window.location.href;
+		const path = url.substring(url.lastIndexOf('/') + 1);
 	  
 		// Bắt sự kiện khi nút "Tiếng Việt" được nhấn
 		$('.lang.ivn').on('click', function() {
-		  const newUrl = updateLanguageInPath('vi');
-		  window.location.href = newUrl;
+		  	// window.location.href = "/tuyendung.html";
+			//localStorage.setItem("lang", "vn");
 		});
 	  
 		// Bắt sự kiện khi nút "English" được nhấn
 		$('.lang.ien').on('click', function() {
-		  const newUrl = updateLanguageInPath('en');
-		  window.location.href = newUrl;
+			// window.location.href = "career.html";
+			//localStorage.setItem("lang", "en");
 		});
 	  });
 	  

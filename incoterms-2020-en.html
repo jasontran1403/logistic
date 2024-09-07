@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en"><!--<![endif]-->
+ 	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Runstars</title>
+		<!-- fonts files -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="fonts/fonts.css">
+		
+		<!-- CSS files -->
+
+	    <!-- Bootstrap css -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	    <!-- UIkit CSS -->
+	    <link rel="stylesheet" href="css/uikit.min.css">
+	    <!-- Theme -->
+        <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="nav.css">
+	    <!-- Custom css -->
+	    <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="loading.css">
+
+		<!-- Favicons -->
+	    <link rel="apple-touch-icon-precomposed" href="images/logo.png">
+	    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	    
+	</head>
+  	<body>
+		<div class="loading-page" id="preloader">
+			<!-- <?xml version="1.0" encoding="UTF-8"?>
+			<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="180" height="115">
+			<path d="M0 0 C2.84817498 8.54452493 1.75098602 19.43935903 -1.73828125 27.60546875 C-6.91704221 37.43389126 -14.4132289 44.45978374 -25 48 C-36.48674117 51.19555957 -47.32475684 50.36800652 -58 45 C-59.485 44.01 -59.485 44.01 -61 43 C-61 42.34 -61 41.68 -61 41 C-60.39671875 41.20496094 -59.7934375 41.40992188 -59.171875 41.62109375 C-58.37265625 41.89050781 -57.5734375 42.15992188 -56.75 42.4375 C-55.96109375 42.70433594 -55.1721875 42.97117188 -54.359375 43.24609375 C-44.19021334 46.4955113 -34.95172147 45.30103934 -25.359375 40.74609375 C-15.32239368 35.23176419 -11.14988554 27.80653039 -8 17 C-7.6446519 15.33788791 -7.30431192 13.67220906 -7 12 C-7.53254395 12.14099121 -8.06508789 12.28198242 -8.61376953 12.42724609 C-48.44821261 22.89375244 -89.84580213 22.68867464 -129 9 C-129 8.67 -129 8.34 -129 8 C-122.68551299 8.42711903 -116.39786715 8.90036047 -110.125 9.75390625 C-75.25966973 14.44287868 -39.74323808 14.19156853 -6.578125 1.3125 C-3 0 -3 0 0 0 Z " fill="#F1BE10" transform="translate(133,55)"/>
+			<path d="M0 0 C0 4.04586562 -1.3623692 4.79537774 -4.1875 7.625 C-25.89620973 28.54540463 -54.93870968 38.63378087 -84 44 C-85.08925781 44.20753906 -86.17851563 44.41507813 -87.30078125 44.62890625 C-93.17397233 45.21808593 -99.03955401 45.10270624 -104.9375 45.0625 C-106.19369141 45.05798828 -107.44988281 45.05347656 -108.74414062 45.04882812 C-111.82947663 45.03709681 -114.91471316 45.020681 -118 45 C-118.3364507 34.2335776 -116.0335654 25.31527896 -108.90625 16.96484375 C-100.48655916 8.28635093 -91.07084881 4.64212959 -79.0625 4.375 C-70.78603425 4.36981208 -64.96878744 6.40879886 -58 11 C-58 11.66 -58 12.32 -58 13 C-58.825 12.71125 -59.65 12.4225 -60.5 12.125 C-61.655 11.75375 -62.81 11.3825 -64 11 C-65.8253125 10.4121875 -65.8253125 10.4121875 -67.6875 9.8125 C-77.33148373 7.54332736 -86.45916168 10.46038537 -95 15 C-102.39226395 20.29416551 -106.21989082 27.50522195 -109 36 C-101.7655126 36.14794276 -94.78864593 35.82797037 -87.625 34.8125 C-86.68019775 34.6786792 -85.73539551 34.5448584 -84.76196289 34.40698242 C-54.03351406 29.82312423 -24.94798847 18.74570563 0 0 Z " fill="#FECB05" transform="translate(175,20)"/>
+			<path d="M0 0 C0 4.04586562 -1.3623692 4.79537774 -4.1875 7.625 C-13.20371613 16.34914153 -24.35086962 24.14336547 -36 29 C-36.99 28.67 -37.98 28.34 -39 28 C-38.34 26.35 -37.68 24.7 -37 23 C-37.66 22.67 -38.32 22.34 -39 22 C-38.4423999 21.74943848 -37.8847998 21.49887695 -37.31030273 21.24072266 C-25.12754791 15.7218784 -13.87505006 9.78929205 -3 2 C-2.01 1.34 -1.02 0.68 0 0 Z " fill="#CB9930" transform="translate(175,20)"/>
+			<path d="M0 0 C1.32 0 2.64 0 4 0 C3.67 2.31 3.34 4.62 3 7 C1.02 7.66 -0.96 8.32 -3 9 C-2.690625 8.443125 -2.38125 7.88625 -2.0625 7.3125 C-0.94238179 4.87459567 -0.43962636 2.63775814 0 0 Z " fill="#E9B716" transform="translate(134,43)"/>
+			<path d="M0 0 C-1.39332574 3.36720387 -2.9789286 4.9859524 -6 7 C-5.67 5.68 -5.34 4.36 -5 3 C-5.66 2.67 -6.32 2.34 -7 2 C-2.25 0 -2.25 0 0 0 Z " fill="#D9A724" transform="translate(143,40)"/>
+			</svg> -->
+			<img id="svg" src="images/450x450px.png" alt="">
+			<div class="name-container">
+				<div class="logo-name">Runst<img src="images/icon2.png"/>rs</div>
+			</div>
+		</div>
+		    	<!-- Start Header Area -->
+				<button onclick="topFunction()" id="myBtn"></button>
+				<!-- Start Header Area -->
+				<header class="sub-site">
+					<div class="container">
+					  <span id="menu-btn"></span>
+					  <div class="row">
+					  <div class="col-md-3">
+						<!-- logo begin -->
+						<div id="logo">
+						<div class="inner">
+						  <a href="/index_en.html" title="Home">
+						  <img src="/images/logo.png" alt="" class="logo-1" />
+						  <img src="/images/logo.png" alt="" class="logo-2" />
+						  </a>
+						</div>
+						</div>
+						<!-- logo close -->
+					  </div>
+				  
+					  <div class="col-md-9">
+						<!-- mainmenu begin -->
+						<nav id="mainmenu-container">
+						<ul id="mainmenu">
+						  <li>
+						  <a  href="/index_en.html#aboutus" title="About us"
+							>About us</a>
+						  </li>
+						  <li>
+						  <a href="javascript:void(0);" title="Services">Services</a>
+						  <ul id="sub">
+							<li>
+							<a href="/customs.html" title="Customs Clearance Services" class="sub-menu-size"
+							  >Customs Clearance Services</a
+							>
+							</li>
+							<li>
+							<a href="/air.html" title="Air Freight" class="sub-menu-size"
+							  >Air Freight</a
+							>
+							</li>
+							<li>
+							<a href="/domestic.html" title="Domestic Transportation" class="sub-menu-size"
+							  >Domestic Transportation</a
+							>
+							</li>
+							<li>
+							<a href="/sea.html" title="Sea Freight" class="sub-menu-size"
+							  >Sea Freight</a
+							>
+							</li>
+							<li>
+							<a href="/fastdelivery.html" title="International Express Delivery" class="sub-menu-size"
+							  >International Express Delivery</a
+							>
+							</li>
+							<li>
+							<a href="/other-service.html" title="Other Services" class="sub-menu-size"
+							  >Other Services</a
+							>
+							</li>
+						  </ul>
+						  </li>
+						  <li>
+						  <a href="javascript:void(0);" title="Tiện ích">Utilities</a>
+						  <ul>
+							<li>
+							<a
+							  href="/container-size.html"
+							  title="Container size" class="sub-menu-size"
+							  >Container size</a
+							>
+							</li>
+							<li>
+							<a href="javascript:void(0);" title="Incoterms" class="sub-menu-size"
+							  >Incoterms</a
+							>
+							<ul id="sub">
+							  <li>
+							  <a href="/incoterms-2000-en.html" title="Incoterms 2000" class="sub-menu-size"
+								>Incoterms 2000</a
+							  >
+							  </li>
+							  <li>
+							  <a href="/incoterms-2010-en.html" title="Incoterms 2010" class="sub-menu-size"
+								>Incoterms 2010</a
+							  >
+							  </li>
+							  <li>
+							  <a href="/incoterms-2020-en.html" title="Incoterms 2020" class="sub-menu-size"
+								>Incoterms 2020</a
+							  >
+							  </li>
+							</ul>
+							</li>
+							<li>
+							<a href="/convert-unit.html" title="Convert unit" class="sub-menu-size"
+							  >Convert unit</a
+							>
+							</li>
+							<li>
+							<a href="/list-port.html" title="Main ports and airports" class="sub-menu-size"
+							  >Main ports and airports</a
+							>
+							</li>
+							<li>
+							<a href="/dictionary.html" title="Maritime dictionary" class="sub-menu-size"
+							  >Maritime dictionary</a
+							>
+							</li>
+							<li>
+							<a href="/exchange.html" title="Foreign exchange" class="sub-menu-size"
+							  >Foreign exchange</a
+							>
+							</li>
+						  </ul>
+						  </li>
+				  
+						  <li><a href="/index_en.html#news" title="News">News</a></li> 
+						  <li>
+						  <a href="/index_en.html#contactus" title="Contact">Contact</a>
+						  </li>
+						  <li>
+						  <a href="/career.html" title="Career">Career</a>
+						  </li>
+						  <li>
+						  <div class="language">
+							<a href="#" class="lang ivn" title="Vietnamese"></a>
+							<a href="#" class="lang ien" title="English"></a>
+						  </div>
+						  <!-- .langauge -->
+						  </li>
+						</ul>
+						</nav>
+						<!-- mainmenu close -->
+					  </div>
+					  </div>
+					</div>
+					</header>
+		<!-- End Header Area -->
+
+		<!-- start breadcrumb -->
+        <section class="breadcrumb_main_area util">
+            <!-- <div class="container-fluid"> -->
+            <div class="row">
+                <div class="breadcrumb_main nice_title content-center" style="padding-top: 30px; max-width: 50svw; margin: 0 auto 30px auto; padding-bottom: 30px;">
+                    <h3>INCOTERMS 2020</h3>
+                    <!-- <img src="images/breadcrumb-nice-title-one.png" alt="">
+					<p class="details">
+						Incoterms 2020
+					</p> -->
+                </div>
+            </div>
+            <!-- </div>  -->
+        </section>
+        <!-- end breadcrunb -->
+		
+		<section class="incoterms-2000">
+			<div class="container section-content" style="width: 100%; padding: 0;">
+				<div class="row">
+					<div class="col-lg-8 col-12 side-content" style="padding: 50px 150px 50px 150px;">
+						<div class="all_blog_posts">
+							<!-- <div class="section_title nice_title left">
+								<h4>
+								</h4>
+							</div> -->
+							<div class="content">
+								<p class="text-size">Incoterms 2020 has recently been published by the ICC (International Chamber of Commerce). Incoterms come in various versions, each corresponding to a specific period in the development of the global economy and inheriting from previous versions. Incoterms are not mandatory, but when used, parties must comply with and bear all risks, costs, and responsibilities according to the agreed terms. It’s important to understand that the introduction of Incoterms 2020 does not replace Incoterms 2010 or previous versions. Businesses should choose the Incoterms conditions that fit their export and import contracts.
+								</p>
+								<p class="text-size">
+									Because the content of Incoterms 2020 is quite extensive, we have summarized the main points of the Incoterms 2020 clauses for your convenience.
+								</p>
+								<img src="/images/2020-1.jpg">
+								<span class="sub-header-size">EXW | Ex Works
+								</span></br>
+								<p class="text-size">If the seller wants to export but lacks the ability to handle tasks such as customs procedures, transportation, insurance, etc., due to lack of export experience, they should propose an EXW contract. Under this condition, the seller only needs to make the goods available at their premises, and the buyer will pay the invoice amount and arrange for pickup.
+
+								</p>
+								<p class="text-size">1.EXW means that the seller delivers the goods to the buyer when the goods are placed at the buyer’s disposal at a specified location (factory or warehouse), which may or may not be the seller’s premises.</p>
+								<p class="text-size">
+									2.For delivery, the seller does not need to load the goods onto a vehicle or handle customs export procedures.
+								</p>	
+								<p class="text-size">
+									3.Delivery occurs – risk is transferred – when the goods are placed at the buyer’s disposal (not yet loaded onto the vehicle).
+								</p>
+								<p>
+									4.EXW is the Incoterms condition that imposes the minimum responsibility on the seller.
+								</p>
+								<p>
+									5.EXW can be used with all modes of transport.
+								</p>
+								<p>
+									6.Delivery point = Named place: The delivery location is the same as the specified location.
+								</p>
+								<span class="sub-header-size">FCA | Free Carrier</span></br>
+								<p class="text-size">
+									If the seller can handle customs export procedures, it is convenient for the seller to undertake this (bearing the additional cost of export duties) and propose an FCA contract. The seller often anticipates the export duties and includes them in the amount due from the buyer
+								</p>
+								<span class="sub-header-size">Main points:</span></br>
+								<p class="text-size">
+									1.FCA means the seller delivers the goods to the buyer in one of two ways:
+								</p>
+								<p class="sub-header-size">
+									When the specified location is the seller’s premises, delivery occurs when the goods are loaded onto a vehicle arranged by the buyer, or
+								</p>
+								<p class="sub-header-size">
+									When the specified location is elsewhere, delivery occurs when the goods are loaded onto the seller’s vehicle and at another specified location, ready to be unloaded from the seller’s vehicle and placed at the disposal of the carrier or another person appointed by the buyer
+								</p>
+								<p class="text-size">
+									2.The specified location for delivery determines where costs and risks are transferred to the buyer
+								</p>
+								<p class="text-size">
+									3.FCA requires the seller to complete customs export procedures.
+								</p>
+								<p class="text-size">
+									4.For contracts using FCA, if a Bill of Lading with an “on board” notation is needed, FCA in Incoterms 2020 specifies that if agreed, the buyer must appoint the carrier to issue a Bill of Lading with an “on board” notation to the seller.
+
+								</p>
+								<p class="text-size">
+									5.FCA can be used with all modes of transport.
+								</p>
+								<p class="text-size">
+									6.Delivery point = Named place: The delivery location is the same as the specified location.
+								</p>
+
+								<span class="sub-header-size">CPT | Carriage Paid To</span></br>
+								<p class="sub-header-size">If the buyer wants to receive the goods under FCA terms but cannot handle the transportation, they may negotiate an agreement under CPT terms. The seller usually anticipates the transportation costs and includes them in the amount due from the buyer.
+								</p>
+								<span class="sub-header-size">Main points:
+								</span></br>
+								<p class="text-size">1.CPT means the seller delivers the goods to the buyer – and transfers the risk of the goods to the buyer when:</p>
+								<p class="sub-header-size">The goods are delivered to a carrier hired by the seller, or</p>
+								<p class="sub-header-size">The seller purchases the goods delivered in this manner to deliver to the buyer.
+
+								</p>
+								<p class="text-size">2.Once the goods are delivered to the buyer in this manner, the seller does not ensure that the goods will arrive in good and complete condition at the destination. Risk transfers from the seller to the buyer when the goods are delivered to the carrier
+
+								</p>
+								<p class="text-size">3.The seller must contract for the carriage of goods from the delivery point to the agreed destination.</p>
+								<p class="text-size">4.CPT can be used with all modes of transport.</p>
+								<p class="text-size">5.Delivery point ≠ Named place: The delivery location is different from the specified location.</p>
+
+								<span class="sub-header-size">CIP | Carriage & Insurance Paid to</span></br>
+								<p class="sub-header-size">If the buyer wants to receive the goods under CPT terms but also needs the seller to purchase insurance for the shipment, the contract should be under CIP terms. The seller buys insurance and bears the cost, but the buyer bears the risk of loss or damage to the goods during transportation
+								</p>
+								<span class="sub-header-size">Main points: 
+								</span></br>
+								<p class="text-size">1.CIP means the seller delivers the goods to the buyer – and transfers the risk of the goods to the buyer when
+								</p>
+								<p class="sub-header-size">
+									The goods are delivered to a carrier hired by the seller, or
+								</p>
+								<p class="sub-header-size">
+									The seller purchases the goods delivered in this manner to deliver to the buyer.
+								</p>
+								<p class="text-size">
+									2.Once the goods are delivered to the buyer in this manner, the seller does not ensure that the goods will arrive in good and complete condition at the destination. Risk transfers from the seller to the buyer when the goods are delivered to the carrier.</p>
+								<p class="text-size">
+									3.The seller must contract for the carriage of goods from the delivery point to the agreed destination.
+								</p>
+								<p class="text-size">
+									4.The seller must purchase insurance for the goods (insurance from the delivery point to at least the destination).
+								</p>
+								<p class="text-size">
+									5.CIP can be used with all modes of transport.
+								</p>
+								<p class="text-size">
+									6.Delivery point ≠ Named place: The delivery location is different from the specified location.
+								</p>
+
+								<span class="sub-header-size">FAS | Free Alongside Ship</span></br>
+								<p class="sub-header-size">If the seller can also deliver the goods alongside the ship at the port of export, they should do so (bearing the additional costs and risks, and including these costs in the amount due from the buyer) and propose an FAS contract.</p>
+								<span class="sub-header-size">Main points:</span></br>
+								<p class="text-size">
+									1.FAS means the seller delivers the goods to the buyer when:
+								</p>
+								<p class="sub-header-size">
+									The goods are placed alongside the ship specified by the buyer at the port of loading, or
+								</p>
+								<p class="sub-header-size">
+									The seller purchases the goods delivered in this manner to deliver to the buyer.
+								</p>
+								<p class="text-size">
+									2.Risk of loss or damage to the goods transfers when the goods are placed alongside the ship, and the buyer bears all costs from that point.
+								</p>
+								<p class="text-size">
+									3.FAS requires the seller to complete customs export procedures.
+								</p>
+								<p class="text-size">
+									4.FAS is used with sea transport.
+								</p>
+								<p class="text-size">
+									5.Delivery point = Named place: The delivery location is the same as the specified location.
+								</p>
+
+								<span class="sub-header-size">FOB | Free On Board</span></br>
+								<p class="sub-header-size">If the seller can also safely load the goods onto the deck of the ship at the port of export, they should do so (bearing the additional costs and risks, and including these costs in the amount due from the buyer) and propose an FOB contract.</p>
+								<spa class="sub-header-size">Main points:</span></br>
+								<p class="text-size">1.FOB means the seller delivers the goods to the buyer when:</p>
+								<p class="sub-header-size">The goods are placed on the deck of the ship specified by the buyer at the port of loading, or</p>
+								<p class="sub-header-size">The seller purchases the goods delivered in this manner to deliver to the buyer.</p>
+								<p class="text-size">2.Risk of loss or damage to the goods transfers when the goods are placed on the deck of the ship, and the buyer bears all costs from that point.</p>
+								<p class="text-size">3.FOB requires the seller to complete customs export procedures.</p>
+								<p class="text-size">4.FOB is used with sea transport.
+								</p>
+								<p class="text-size">5.Delivery point = Named place: The delivery location is the same as the specified location.</p>
+
+								<span class="sub-header-size">CFR/ CNF/ C+F/ C&F | Cost and Freight</span>
+								<p class="sub-header-size">If the seller can also arrange the shipping, they should do so (bearing the additional costs to hire the ship to the import port, and including these costs in the amount due from the buyer – without bearing additional risks) and propose a CFR contract.</p>
+								<span class="sub-header-size">Main points:</span></br>
+								<p class="text-size">1.CFR means the seller delivers the goods to the buyer when:</p>
+								<p class="sub-header-size">The goods are placed on the deck of the ship, or</p>
+								<p class="sub-header-size">The seller purchases the goods delivered in this manner to deliver to the buyer.</p>
+								<p class="text-size">2.Risk of loss or damage to the goods transfers when the goods are placed on the deck of the ship; at that moment, the seller has fulfilled their delivery obligation regardless of whether the goods arrive at the discharge port in good and complete condition.</p>
+								<p class="text-size">3.With CFR, the seller does not bear the responsibility to purchase insurance for the goods; hence the buyer arranges insurance.</p>
+								<p class="text-size">4.The seller must contract for the carriage of goods from the delivery point to the designated port.</p>
+								<p class="text-size">5.CFR is used with sea transport.</p>
+								<p class="text-size">6.Delivery point ≠ Named place: The delivery location is different from the specified location.</p>
+
+								<span class="sub-header-size">CIF | Cost, Insurance & Freight</span>
+								<p class="sub-header-size">If the seller can also purchase insurance for the shipment when transported by sea, they should do so (bearing the additional costs to purchase insurance and including these costs in the amount due from the buyer) and propose a CIF contract.</p>
+								<span class="sub-header-size">Main points:</span></br>
+								<p class="text-size">1.CIF means the seller delivers the goods to the buyer when:</p>
+								<p class="sub-header-size">The goods are placed on the deck of the ship, or</p>
+								<p class="sub-header-size">The seller purchases the goods delivered in this manner to deliver to the buyer.</p>
+								<p class="text-size">2.Risk of loss or damage to the goods transfers when the goods are placed on the deck of the ship; at that moment, the seller has fulfilled their delivery obligation regardless of whether the goods arrive at the discharge port in good and complete condition.</p>
+								<p class="text-size">3.With CIF, the seller is responsible for purchasing insurance for the goods.</p>
+								<p class="text-size">4.The seller must contract for the carriage of goods from the delivery point to the designated port.</p>
+								<p class="text-size">5.F is used with sea tran.</p>
+								<p class="text-size">6.Delivery point ≠ Named place: The delivery location is different from the specified location.</p>
+
+								<span class="sub-header-size">DAP | Delivered At Place</span>
+								<p class="sub-header-size">If the buyer lacks the ability or experience to bring the goods to their domestic import location, the seller can take on this additional task (including the cost in the amount due from the buyer) and propose a DAP contract
+								</p>
+								<span class="sub-header-size">Main points:</span></br>
+								<p class="text-size">1.DAP means the seller delivers the goods to the buyer – and transfers the risk of the goods to the buyer when the goods are placed at the buyer’s disposal on the transport vehicle and ready for unloading at the designated destination.</p>
+								<p class="text-size">2.The seller bears all risks of transporting the goods to the designated destination. Risk of loss or damage to the goods transfers to the buyer at the delivery point.</p>
+								<p class="text-size">3.All costs incurred before the delivery point are borne by the seller, and all costs after the delivery point are borne by the buyer.</p>
+								<p class="text-size">4.The seller must contract for the transport of goods to the designated place.</p>
+								<p class="text-size">5.DAP can be used with all modes of transport.</p>
+								<p class="text-size">6.Delivery point = Named place: The delivery location is the same as the specified location.</p>
+
+								<span class="sub-header-size">DPU | Delivery at Place Unloaded</span>
+								<p class="sub-header-size">If the buyer lacks the ability or experience to bring the goods to the import warehouse and also to unload them from the transport vehicle, the seller can take on this additional task (including the cost in the amount due from the buyer) and propose a DPU contract
+								</p>
+								<span class="sub-header-size">Main points:</span></br>
+								<p class="text-size">1.DPU means the seller delivers the goods to the buyer – and transfers the risk of the goods to the buyer as soon as the goods are unloaded from the transport vehicle and placed at the buyer’s disposal at the designated place</p>
+								<p class="text-size">2.The seller bears all risks of loss or damage to the goods in transporting them to the designated place and unloading them. DPU is the only Incoterms condition that requires the seller to unload the goods at the destination (the seller bears the costs and risks of unloading).</p>
+								<p class="text-size">3.All costs incurred before the delivery point are borne by the seller, and all costs after the delivery point are borne by the buyer.</p>
+								<p class="text-size">4.The seller must contract for the transport of goods to the designated place.</p>
+								<p class="text-size">5.DPU can be used with all modes of transport.</p>
+								<p class="text-size">6.Delivery point = Named place: The delivery location is the same as the specified location.</p>
+
+								<span class="sub-header-size">DDP | Delivered Duty Paid – Giao đã trả thuế
+								</span>
+								<p class="sub-header-size">If the buyer lacks the ability or experience to handle customs import procedures for the shipment, the seller can take on this additional task (including the import duty amount in the amount due from the buyer) and propose a DDP contract
+								</p>
+								<span class="sub-header-size">Main points:</span></br>
+								<p class="text-size">1.DDP means the seller delivers the goods to the buyer when the goods have completed the customs import procedures and are placed at the buyer’s disposal on the transport vehicle, ready for unloading at the designated place.</p>
+								<p class="text-size">2.The seller bears all risks of loss or damage to the goods in transporting them to the designated place.</p>
+								<p class="text-size">3.All costs incurred before the delivery point are borne by the seller (including customs import procedures), and all costs after the delivery point are borne by the buyer.</p>
+								<p class="text-size">4.The seller must contract for the transport of goods to the designated placeđịnh.</p>
+								<p class="text-size">5.DDP can be used with all modes of transport.</p>
+								<p class="text-size">6.Delivery point = Named place: The delivery location is the same as the specified location.</p>
+
+								<img src="/images/2020-2.jpg">
+							</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 side-img" style="padding: 0; margin: 0;">
+						<img class="image" src="images/tien_ich/INCOTERMS.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="contact-now text-light">
+			<div class="container">
+				<div class="row contact-now-section">
+					<div class="col-6 contact-now-header">
+						<h2>Contact us now to get a quote for all your global shipping needs.</h2>
+					</div>
+	
+					<div class="col-6 call-now">
+						<a style="color: white;" href="/index_en.html#contactus" title="Contact us" class="btn-border-light">Contact us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		 
+		<!-- Start Footer -->
+		<footer class="footer_area">
+			<div class="footer_top_area">
+			  <div class="container">
+				<div class="footer_top_up">
+				  <div class="row">
+					<div class="footer_widgets">
+					  <div class="col-md-5 col-sm-6">
+						<div class="single_footer_widgets margin-top-95">
+						  <h4 class="widget_title header-size">Contact information</h4>
+						  <ul class="address_list">
+							<li >
+							  <i><img src="images/map-location.png" alt="" /></i>
+							  <dl>
+								<dt class="sub-header-size">42/11B Dong Xoai, P.13, Tan Binh District</dt>
+								<dd class="sub-header-size">Ho Chi Minh City</dd>
+							  </dl>
+							</li>
+							<li style="display:flex; align-items: baseline;">
+							  <i><img src="images/mobile-icon.png" alt="" /></i>
+							  <dl>
+								<dt class="sub-header-size">+84 903 378 260</dt>
+							  </dl>
+							</li>
+							<li style="display:flex; align-items: baseline;">
+							  <i><img src="images/message-icon.png" alt="" /></i>
+							  <dl>
+								<dt class="sub-header-size">manager@runstars.vn</dt>
+							  </dl>
+							</li>
+						  </ul>
+						</div>
+					  </div>
+					  <div class="col-md-4 hidden-sm">
+						<div class="single_footer_widgets margin-top-95">
+						  <h4 class="widget_title header-size">Subscribe to Updates</h4>
+						  <p class="text-size">Leave your email address, and we will send you information whenever we have promotions</p>
+						  <form action="index.html" class="subscribe_form">
+							<input type="text" placeholder="Email Address" />
+						  </form>
+						</div>
+					  </div>
+					</div>
+					<div class="col-md-3 hidden-sm hidden-xs">
+					  <div class="single_footer_widgets">
+						<div class="footer_fixed_img">
+						  <img src="images/footer_fixed_img.png" alt="" />
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="footer_top_bottom">
+				  <div class="row">
+					<div class="col-md-3 hidden-sm">
+					  <div class="single_footer_widgets margin-bottom-65"></div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+					  <div class="single_footer_widgets margin-bottom-65"></div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+					  <div class="single_footer_widgets margin-bottom-65"></div>
+					</div>
+					<div class="col-md-3 hidden-sm">
+					  <div class="single_footer_widgets margin-bottom-65"></div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="footer_bottom_area">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-6 col-sm-6">
+					<div class="footer_bottom_left"></div>
+				  </div>
+				  <div class="col-md-6 col-sm-6">
+					<div class="footer_bottom_right floatright"></div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </footer>
+		  <!-- End Footer -->
+
+		<!-- jQuery Latest version -->
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- UIKIT JS -->
+        <script src="js/uikit.min.js"></script>
+
+        <!-- revolution slider js -->
+        <script src="js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+		<script src="js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- jQuery Counterup -->
+        <script src="js/jquery.counterup.min.js"></script>
+		
+		<!-- jQuery Waypoints -->
+        <script src="js/waypoints.min.js"></script>
+
+        <!-- jQuery owl carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+
+        <!-- jQuery VenoBox -->
+        <script src="js/venobox.min.js"></script>
+
+        <!-- WOW Animation -->
+        <script src="js/wow.js"></script>
+           
+        <!--Activating WOW Animation only for modern browser-->
+        <!--[if !IE]><!-->
+            <script type="text/javascript">new WOW().init();</script>
+        <!--<![endif]-->
+
+        <!--Oh Yes, IE 9+ Supports animation, lets activate for IE 9+-->
+        <!--[if gte IE 9]>
+            <script type="text/javascript">new WOW().init();</script>
+        <![endif]-->		 
+
+        <!--Opacity & Other IE fix for older browser-->
+        <!--[if lte IE 8]>
+            <script type="text/javascript" src="js/ie-opacity-polyfill.js"></script>
+        <![endif]-->	    
+		<script src="js/language.js"></script>
+        <!-- jQuery main script -->
+        <script src="js/main.js"></script>
+		<script src="js/navbar.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+	gsap.fromTo(
+	  ".loading-page",
+	  { opacity: 1 },
+	  {
+		opacity: 0,
+		display: "none",
+		duration: 3,
+		delay: 1,
+	  }
+	);
+  </script>
+  </body>
+</html>
