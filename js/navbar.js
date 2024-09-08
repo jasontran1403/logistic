@@ -7,19 +7,21 @@ jQuery(document).ready(function () {
 		// Lấy đường dẫn hiện tại
 		const url = window.location.href;
 		const path = url.substring(url.lastIndexOf('/') + 1);
-	  
-		// Bắt sự kiện khi nút "Tiếng Việt" được nhấn
-		$('.lang.ivn').on('click', function() {
-		  	// window.location.href = "/tuyendung.html";
-			//localStorage.setItem("lang", "vn");
-		});
-	  
-		// Bắt sự kiện khi nút "English" được nhấn
-		$('.lang.ien').on('click', function() {
-			// window.location.href = "career.html";
-			//localStorage.setItem("lang", "en");
-		});
-	  });
+		const validVnUrl = ["index.html", "haiquan.html", "hangkhong.html", "noidia.html", "duongbien.html", "chuyenphatnhanh.html", "dvkhac.html", "kichthuoc.html", "incoterms-2000.html", "incoterms-2010.html", "incoterms-2022.html", "chuyendoi.html", "cangsanbay.html", "tudien.html", "tygia.html",  "tuyendung.html"];
+		const validEnUrl = ["index_en.html", "customs.html", "air.html", "domestic.html", "sea.html", "fastdelivery.html", "other-service.html", "container-size.html", "incoterms-2000-enen.html", "incoterms-2010-en.html", "incoterms-2022-en.html", "convert-unit.html", "list-port.html", "dictionary.html", "exchange.html",  "career.html"];
+		let convertPath = null;
+		
+		if (validVnUrl.includes(path)) {
+			convertPath = getCorrespondingUrl(path, validVnUrl, validEnUrl);
+			$('.ivn').attr('href', `/${path}`);
+			$('.ien').attr('href', `/${convertPath}`);
+		} else {
+			
+			convertPath = getCorrespondingUrl(path, validEnUrl, validVnUrl);
+			$('.ien').attr('href', `/${path}`);
+        	$('.ivn').attr('href', `/${convertPath}`);
+		}
+	});
 	  
 	  
 	var $header = jQuery("header"),
@@ -53,5 +55,10 @@ jQuery(document).ready(function () {
 	//--------------------------------------------------------------
 	
 	//--------------------------------------------------------------
+	// Hàm để lấy phần tử tương ứng từ mảng khác
+	function getCorrespondingUrl(path, sourceUrls, targetUrls) {
+	const index = sourceUrls.indexOf(path);
+	return index !== -1 ? targetUrls[index] : path;
+	}
 });
 
