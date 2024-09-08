@@ -4,6 +4,30 @@ const email = document.getElementById("email");
 const phoneNumber = document.getElementById("phoneNumber");
 const message = document.getElementById("message");
 
+const url = window.location.href;
+const urlWithoutHash = url.split("#")[0];
+const hashPart = url.includes("#") ? url.split("#")[1] : null;
+const path = urlWithoutHash.substring(urlWithoutHash.lastIndexOf("/") + 1);
+const validVnUrl = [
+  "",
+  "index.html",
+  "haiquan.html",
+  "hangkhong.html",
+  "noidia.html",
+  "duongbien.html",
+  "chuyenphatnhanh.html",
+  "dvkhac.html",
+  "kichthuoc.html",
+  "incoterms-2000.html",
+  "incoterms-2010.html",
+  "incoterms-2022.html",
+  "chuyendoi.html",
+  "cangsanbay.html",
+  "tudien.html",
+  "tygia.html",
+  "tuyendung.html",
+];
+
 const btnSend = document.getElementById("send");
 btnSend.addEventListener("click", () => {
   if (
@@ -13,7 +37,12 @@ btnSend.addEventListener("click", () => {
     phoneNumber.value == "" ||
     message.value == ""
   ) {
-    toastr.error("Vui lòng nhập đầy đủ thông tin");
+    if (validVnUrl.includes(path)) {
+      toastr.error("Vui lòng nhập đầy đủ thông tin");
+    } else {
+      toastr.error("Please enter complete information");
+    }
+    
     return;
   }
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -21,12 +50,22 @@ btnSend.addEventListener("click", () => {
     /^(?:\+84|0)(3[2-9]|5[6|8|9]|7[0|6-9]|8[1-9]|9[0-9])[0-9]{7}$/;
 
   if (!emailRegex.test(email.value)) {
-    toastr.error("Địa chỉ email không hợp lệ");
+    if (validVnUrl.includes(path)) {
+      toastr.error("Địa chỉ email không hợp lệ");
+    } else {
+      toastr.error("Email address is invalid");
+    }
+    
     return;
   }
 
   if (!phoneRegex.test(phoneNumber.value)) {
-    toastr.error("Số điện thoại không hợp lệ");
+    if (validVnUrl.includes(path)) {
+      toastr.error("Số điện thoại không hợp lệ");
+    } else {
+      toastr.error("Phone number is invalid");
+    }
+    
     return;
   }
 
@@ -51,13 +90,24 @@ btnSend.addEventListener("click", () => {
     .then((response) => response.text())
     .then((result) => {
       if (result === "Success") {
-        toastr.success(
-          "Gửi tin nhắn thành công, chúng tôi sẽ sớm phản hồi cho bạn"
-        );
+        if (validVnUrl.includes(path)) {
+          toastr.success(
+            "Gửi tin nhắn thành công, chúng tôi sẽ sớm phản hồi cho bạn"
+          );
+        } else {
+          toastr.success(
+            "Message was sent, we will contact you soon"
+          );
+        }
+        
       } else {
-        toastr.error("Gửi tin nhắn thất bại, xin vui lòng thử lại sau");
+        if (validVnUrl.includes(path)) {
+          toastr.error("Gửi tin nhắn thất bại, xin vui lòng thử lại sau");
+        } else {
+          toastr.error("Message sent fail, please try again later");
+        }
       }
-    })
+    });
 });
 
 let mybutton = document.getElementById("myBtn");
