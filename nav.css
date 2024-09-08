@@ -35,23 +35,16 @@ header .logo-2 {
 padding: 0 !important;
 margin:0 2px !important;
 display:inline-block !important;
-width:16px !important;
-height:16px !important;
+width:18px !important;
+height:18px !important;
 background:url(images/lang.png) no-repeat 0 center;
 position:relative;
 cursor:pointer;
 vertical-align:middle
 }
 
-.lang.ivn{background-position:0 center !important;}
-.lang.ien{background-position:-16px center !important;}
-.lang.ifr{background-position:-32px center !important;}
-.lang.icn{background-position:-48px center !important;}
-.lang.ijp{background-position:-64px center !important;}
-.lang.ikr{background-position:-80px center !important;}
-.lang.ith{background-position:-96px center !important;}
-.lang.iit{background-position:-112px center !important;}
-.lang.ide{background-position:-128px center !important;}
+.lang.ivn{background-position: -8px center !important;}
+.lang.ien{background-position: -43px center !important;}
 
 header.clone {
   width: 100%;

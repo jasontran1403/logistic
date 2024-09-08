@@ -11,15 +11,20 @@ jQuery(document).ready(function () {
 		const validEnUrl = ["index_en.html", "customs.html", "air.html", "domestic.html", "sea.html", "fastdelivery.html", "other-service.html", "container-size.html", "incoterms-2000-enen.html", "incoterms-2010-en.html", "incoterms-2022-en.html", "convert-unit.html", "list-port.html", "dictionary.html", "exchange.html",  "career.html"];
 		let convertPath = null;
 		
-		if (validVnUrl.includes(path)) {
-			convertPath = getCorrespondingUrl(path, validVnUrl, validEnUrl);
-			$('.ivn').attr('href', `/${path}`);
-			$('.ien').attr('href', `/${convertPath}`);
+		if (path === "") {
+			$('.ivn').attr('href', `/index.html`);
+			$('.ien').attr('href', `/index_en.html`);
 		} else {
-			
-			convertPath = getCorrespondingUrl(path, validEnUrl, validVnUrl);
-			$('.ien').attr('href', `/${path}`);
-        	$('.ivn').attr('href', `/${convertPath}`);
+			if (validVnUrl.includes(path)) {
+				convertPath = getCorrespondingUrl(path, validVnUrl, validEnUrl);
+				$('.ivn').attr('href', `/${path}`);
+				$('.ien').attr('href', `/${convertPath}`);
+			} else {
+				
+				convertPath = getCorrespondingUrl(path, validEnUrl, validVnUrl);
+				$('.ien').attr('href', `/${path}`);
+				$('.ivn').attr('href', `/${convertPath}`);
+			}
 		}
 	});
 	  
