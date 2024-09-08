@@ -35,16 +35,16 @@ header .logo-2 {
 padding: 0 !important;
 margin:0 2px !important;
 display:inline-block !important;
-width:18px !important;
-height:18px !important;
+width:16px !important;
+height:16px !important;
 background:url(images/lang.png) no-repeat 0 center;
 position:relative;
 cursor:pointer;
 vertical-align:middle
 }
 
-.lang.ivn{background-position: -8px center !important;}
-.lang.ien{background-position: -43px center !important;}
+.lang.ivn{background-position: -9px center !important;}
+.lang.ien{background-position: -44px center !important;}
 
 header.clone {
   width: 100%;
